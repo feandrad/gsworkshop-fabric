@@ -1,16 +1,33 @@
-# Fabric Example Mod
+# Griswold's Workshop - Fabric edition
 
-## Setup
+## Become a real Blacksmith in Minecraft. Port from my ond 1.7.10 mod for Fabric
 
-1. Edit build.gradle and mod.json to suit your needs.
-    * The "mixins" object can be removed from mod.json if you do not need to use mixins.
-    * Please replace all occurences of "modid" with your own mod ID - sometimes, a different string may also suffice.
-2. Run the following command:
+Mod under development.
+ 
 
-```
-./gradlew idea
-```
+### Implemented Features
+None yet. :(
+ 
+
+### Planning Features (Not Implemented Yet):
+
+- Adds Copper, Tin, Bronze, Platinum, Titanium;
+
+- Adds Amethyst, Topaz, Sapphire and Ruby
+
+- Adds Flint and Bone Tools;
+
+- New Tool: Hammer. Use a Hammer to create Ore Dusts. Hammers can't crush metals that are harder than itself;
+
+- Add Mithrill Shrines in Overworld and Orichalcum Forges in the Nether.
+
+- Add Forging Anvil to shape metal;
+
+- Add Jeweler's Anvil to craft jewelery and add Sockets to your weapon;
+
+- Add gem enchantments. Magic Gems can be socked into tools to give them the enchantments. Gems are recovered when the tool breaks;
+
 
 ## License
 
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
