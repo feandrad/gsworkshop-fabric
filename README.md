@@ -1,6 +1,7 @@
 # Griswold's Workshop - Fabric edition
 
-## Become a real Blacksmith in Minecraft. Port from my ond 1.7.10 mod for Fabric
+## Become a real Blacksmith in Minecraft. 
+Port from my old 1.7.10 mod: https://www.curseforge.com/minecraft/mc-mods/griswolds-workshop
 
 Mod under development.
  
