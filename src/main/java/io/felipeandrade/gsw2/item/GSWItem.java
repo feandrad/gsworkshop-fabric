@@ -1,4 +1,4 @@
-package io.felipeandrade.gsw2.material;
+package io.felipeandrade.gsw2.item;
 
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;

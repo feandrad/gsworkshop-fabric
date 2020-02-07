@@ -1,7 +1,9 @@
-package io.felipeandrade.gsw2.material;
+package io.felipeandrade.gsw2.item;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+
+import io.felipeandrade.gsw2.material.GSWMaterial;
 
 public class MaterialItem extends GSWItem {
 
@@ -15,8 +17,9 @@ public class MaterialItem extends GSWItem {
         this.settings = settings;
     }
 
-
-    public static GSWItem makeItem(String unlocalizedName, GSWMaterial material){
-        return new MaterialItem(unlocalizedName, material, new Item.Settings().group(ItemGroup.MISC));
+    public MaterialItem(String unlocalizedName, GSWMaterial material) {
+        this(unlocalizedName, material, new Item.Settings().group(ItemGroup.MISC));
     }
+
+
 }

@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import io.felipeandrade.gsw2.common.MaterialFactory;
 import io.felipeandrade.gsw2.common.Registrable;
+import io.felipeandrade.gsw2.material.factory.MaterialFactory;
 import io.felipeandrade.gsw2.material.gem.GemFactory;
 import io.felipeandrade.gsw2.material.metal.MetalFactory;
 

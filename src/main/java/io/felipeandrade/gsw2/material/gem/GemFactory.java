@@ -3,9 +3,10 @@ package io.felipeandrade.gsw2.material.gem;
 import java.util.ArrayList;
 import java.util.List;
 
-import io.felipeandrade.gsw2.common.MaterialFactory;
-import io.felipeandrade.gsw2.material.GSWItem;
+import io.felipeandrade.gsw2.block.GSWBlock;
+import io.felipeandrade.gsw2.item.GSWItem;
 import io.felipeandrade.gsw2.material.GSWMaterial;
+import io.felipeandrade.gsw2.material.factory.MaterialFactory;
 
 public class GemFactory extends MaterialFactory {
 
@@ -28,8 +29,8 @@ public class GemFactory extends MaterialFactory {
     }
 
     @Override
-    public List<GSWItem> allBlocks() {
-        ArrayList<GSWItem> result = new ArrayList<>();
+    public List<GSWBlock> allBlocks() {
+        ArrayList<GSWBlock> result = new ArrayList<>();
 
         result.addAll(AMETHYST_MATERIAL.allBlocks());
         result.addAll(TOPAZ_MATERIAL.allBlocks());
