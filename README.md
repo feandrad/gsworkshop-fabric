@@ -1,16 +1,16 @@
 # Griswold's Workshop - Fabric edition
 
-## Become a real Blacksmith in Minecraft. 
+### Become a real Blacksmith in Minecraft. 
 Port from my old 1.7.10 mod: https://www.curseforge.com/minecraft/mc-mods/griswolds-workshop
 
 Mod under development.
  
 
-### Implemented Features
+## Implemented Features
 None yet. :(
  
 
-### Planning Features (Not Implemented Yet):
+## Planning Features (Not Implemented Yet):
 
 - Adds Copper, Tin, Bronze, Platinum, Titanium;
 
