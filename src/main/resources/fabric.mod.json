@@ -1,29 +1,28 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "gsw2",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Griswold's Workshop",
+  "description": "Become a real Blacksmith in Minecraft.\nPort from my old 1.7.10 mod: https://www.curseforge.com/minecraft/mc-mods/griswolds-workshop\nMod under development.",
   "authors": [
-    "Me!"
+    "feandrad"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://felipeandrade.io/",
+    "sources": "https://github.com/feandrad/gsworkshop-fabric"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "CC BY-NC-SA 4.0",
+  "icon": "assets/gsw2/modicon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "io.felipeandrade.gsw2.GSW2Mod"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
   ],
 
   "depends": {
