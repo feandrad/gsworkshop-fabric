@@ -1,22 +1,42 @@
 {
+  "block.gsw2.ore_block": "Minério de Cobre",
+  "block.gsw2.tin_ore": "Minério de Estanho",
+  "block.gsw2.silver_ore": "Minério de Prata",
+  "block.gsw2.titanium_ore": "Minério de Titânio",
+  "block.gsw2.platinum_ore": "Minério de Platina",
+  "block.gsw2.mithril_ore": "Minério de Mithril",
+  "block.gsw2.orichalcum_ore": "Minério de Orichalcum",
+  "block.gsw2.amethyst_ore": "Minério de Ametista",
+  "block.gsw2.topaz_ore": "Minério de Topázio",
+  "block.gsw2.sapphire_ore": "Minério de Safira",
+  "block.gsw2.ruby_ore": "Minério de Rubi",
+
+  "block.gsw2.metal_block": "Bloco de Cobre",
+  "block.gsw2.tin_block": "Bloco de Estanho",
+  "block.gsw2.silver_block": "Bloco de Prata",
+  "block.gsw2.titanium_block": "Bloco de Titânio",
+  "block.gsw2.platinum_block": "Bloco de Platina",
+  "block.gsw2.mithril_block": "Bloco de Mithril",
+  "block.gsw2.orichalcum_block": "Bloco de Orichalcum",
+  "block.gsw2.amethyst_block": "Bloco de Ametista",
+  "block.gsw2.topaz_block": "Bloco de Topázio",
+  "block.gsw2.sapphire_block": "Bloco de Safira",
+  "block.gsw2.ruby_block": "Bloco de Rubi",
+
+  "block.gsw2.bronze_block": "Bloco de Bronze",
+  "block.gsw2.steel_block": "Bloco de Aço",
+
+
   "item.gsw2.amethyst_gem": "Ametista",
   "item.gsw2.topaz_gem": "Topázio",
   "item.gsw2.sapphire_gem": "Safira",
   "item.gsw2.ruby_gem": "Rubi",
-
-  "item.gsw2.amethyst_block": "Bloco de Amethyst",
-  "item.gsw2.topaz_block": "Bloco de Topázio",
-  "item.gsw2.sapphire_block": "Bloco de Safira",
-  "item.gsw2.ruby_block": "Bloco de Rubi",
 
 
   "item.gsw2.copper_ingot": "Barra de Cobre",
   "item.gsw2.copper_nugget": "Nugget de Cobre",
   "item.gsw2.copper_dust": "Pó de Cobre",
   "item.gsw2.copper_plate": "Placa de Cobre",
-
-  "item.gsw2.copper_block": "Bloco de Cobre",
-  "item.gsw2.copper_ore": "Minério de Cobre",
 
   "item.gsw2.copper_helmet": "Capacete de Cobre",
   "item.gsw2.copper_chestplate": "Armadura de Cobre",
@@ -36,9 +56,6 @@
   "item.gsw2.tin_dust": "Pó de Estanho",
   "item.gsw2.tin_plate": "Placa de Estanho",
 
-  "item.gsw2.tin_block": "Bloco de Estanho",
-  "item.gsw2.tin_ore": "Minério de Estanho",
-
   "item.gsw2.tin_helmet": "Capacete de Estanho",
   "item.gsw2.tin_chestplate": "Armadura de Estanho",
   "item.gsw2.tin_leggings": "Calça de Estanho",
@@ -56,9 +73,6 @@
   "item.gsw2.silver_nugget": "Nugget de Prata",
   "item.gsw2.silver_dust": "Pó de Prata",
   "item.gsw2.silver_plate": "Placa de Prata",
-
-  "item.gsw2.silver_block": "Bloco de Prata",
-  "item.gsw2.silver_ore": "Minério de Prata",
 
   "item.gsw2.silver_helmet": "Capacete de Prata",
   "item.gsw2.silver_chestplate": "Armadura de Prata",
@@ -78,9 +92,6 @@
   "item.gsw2.titanium_dust": "Pó de Titânio",
   "item.gsw2.titanium_plate": "Placa de Titânio",
 
-  "item.gsw2.titanium_block": "Bloco de Titânio",
-  "item.gsw2.titanium_ore": "Minério de Titânio",
-
   "item.gsw2.titanium_helmet": "Capacete de Titânio",
   "item.gsw2.titanium_chestplate": "Armadura de Titânio",
   "item.gsw2.titanium_leggings": "Calça de Titânio",
@@ -98,9 +109,6 @@
   "item.gsw2.platinum_nugget": "Nugget de Platina",
   "item.gsw2.platinum_dust": "Pó de Platina",
   "item.gsw2.platinum_plate": "Placa de Platina",
-
-  "item.gsw2.platinum_block": "Bloco de Platina",
-  "item.gsw2.platinum_ore": "Minério de Platina",
 
   "item.gsw2.platinum_helmet": "Capacete de Platina",
   "item.gsw2.platinum_chestplate": "Armadura de Platina",
@@ -120,8 +128,6 @@
   "item.gsw2.bronze_dust": "Pó de Bronze",
   "item.gsw2.bronze_plate": "Placa de Bronze",
 
-  "item.gsw2.bronze_block": "Bloco de Bronze",
-
   "item.gsw2.bronze_helmet": "Capacete de Bronze",
   "item.gsw2.bronze_chestplate": "Armadura de Bronze",
   "item.gsw2.bronze_leggings": "Calça de Bronze",
@@ -139,8 +145,6 @@
   "item.gsw2.steel_nugget": "Nugget de Aço",
   "item.gsw2.steel_dust": "Pó de Aço",
   "item.gsw2.steel_plate": "Placa de Aço",
-
-  "item.gsw2.steel_block": "Bloco de Aço",
 
   "item.gsw2.steel_helmet": "Capacete de Aço",
   "item.gsw2.steel_chestplate": "Armadura de Aço",
@@ -160,9 +164,6 @@
   "item.gsw2.mithril_dust": "Pó de Mithril",
   "item.gsw2.mithril_plate": "Placa de Mithril",
 
-  "item.gsw2.mithril_block": "Bloco de Mithril",
-  "item.gsw2.mithril_ore": "Minério de Mithril",
-
   "item.gsw2.mithril_helmet": "Capacete de Mithril",
   "item.gsw2.mithril_chestplate": "Armadura de Mithril",
   "item.gsw2.mithril_leggings": "Calça de Mithril",
@@ -180,9 +181,6 @@
   "item.gsw2.orichalcum_nugget": "Nugget de Orichalcum",
   "item.gsw2.orichalcum_dust": "Pó de Orichalcum",
   "item.gsw2.orichalcum_plate": "Placa de Orichalcum",
-
-  "item.gsw2.orichalcum_block": "Bloco de Orichalcum",
-  "item.gsw2.orichalcum_ore": "Minério de Orichalcum",
 
   "item.gsw2.orichalcum_helmet": "Capacete de Orichalcum",
   "item.gsw2.orichalcum_chestplate": "Armadura de Orichalcum",
