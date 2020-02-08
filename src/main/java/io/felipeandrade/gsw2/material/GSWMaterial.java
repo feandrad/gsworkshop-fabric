@@ -45,6 +45,14 @@ public abstract class GSWMaterial implements Localizeable {
             BronzeMaterial.MATERIAL
     );
 
+    public int getPrimaryColor() {
+        return primaryColor;
+    }
+
+    public int getSecondaryColor() {
+        return secondaryColor;
+    }
+
 
     //    public static final GSWMaterial TIN = new CopperMaterial();
 //    public static final GSWMaterial SILVER = new CopperMaterial("silver");

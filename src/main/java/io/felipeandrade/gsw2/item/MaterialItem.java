@@ -1,5 +1,7 @@
 package io.felipeandrade.gsw2.item;
 
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 
@@ -19,6 +21,12 @@ public class MaterialItem extends GSWItem {
 
     public MaterialItem(String unlocalizedName, GSWMaterial material) {
         this(unlocalizedName, material, new Item.Settings().group(ItemGroup.MISC));
+    }
+
+
+    @Environment(EnvType.CLIENT)
+    public int getColor(int num) {
+        return material.getPrimaryColor();
     }
 
 

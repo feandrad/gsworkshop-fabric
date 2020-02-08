@@ -30,7 +30,7 @@ public class CopperMaterial extends GSWMaterial {
 
     @Override
     public List<? extends GSWBlock> allBlocks() {
-        return Arrays.asList(METAL_BLOCK, ORE_BLOCK);
+        return Arrays.asList( ORE_BLOCK);
     }
 
     @Override
@@ -45,7 +45,7 @@ public class CopperMaterial extends GSWMaterial {
     public static final MaterialItem DUST = new MaterialItem("dust", MATERIAL);
     public static final MaterialItem PLATE = new MaterialItem("plate", MATERIAL);
 
-    public static final GSWBlock METAL_BLOCK = new MaterialBlock("block", MATERIAL, GSWMaterialBlock.SETTINGS_METAL);
+//    public static final GSWBlock METAL_BLOCK = new MaterialBlock("block", MATERIAL, GSWMaterialBlock.SETTINGS_METAL);
     public static final GSWMaterialBlock ORE_BLOCK = new GSWMaterialBlock( MATERIAL, GSWMaterialBlock.SETTINGS_ORE);
 
     public static final GSWToolMaterial TOOL_MATERIAL = new GSWToolMaterial(1, 131, 4.0F, 1.0F, 15, CopperMaterial.INGOT);
