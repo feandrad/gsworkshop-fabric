@@ -1,21 +1,6 @@
 {
-  "parent": "block/cube",
+  "parent": "block/cube_all",
   "textures": {
-    "particle": "block/smooth_stone",
-    "material": "sw2:block/material_block"
-  },
-  "elements": [
-    {
-      "from": [0,0,0],
-      "to": [16, 16, 16],
-      "faces": {
-        "down":  { "uv": [0,0, 16,5.34], "texture": "#material", "cullface": "down" },
-        "up":    { "uv": [0,0, 16,5.34], "texture": "#material", "cullface": "up" },
-        "north": { "uv": [0,0, 16,5.34], "texture": "#material", "cullface": "north" },
-        "south": { "uv": [0,0, 16,5.34], "texture": "#material", "cullface": "south" },
-        "west":  { "uv": [0,0, 16,5.34], "texture": "#material", "cullface": "west" },
-        "east":  { "uv": [0,0, 16,5.34], "texture": "#material", "cullface": "east" }
-      }
-    }
-  ]
+    "all": "gsw2:block/template/material_block"
+  }
 }
