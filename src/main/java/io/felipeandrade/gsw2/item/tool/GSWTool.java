@@ -1,4 +1,4 @@
-package io.felipeandrade.gsw2.tool;
+package io.felipeandrade.gsw2.item.tool;
 
 import io.felipeandrade.gsw2.common.Localizeable;
 import io.felipeandrade.gsw2.common.Registrable;

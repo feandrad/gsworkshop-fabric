@@ -11,7 +11,7 @@ import io.felipeandrade.gsw2.block.MaterialBlock;
 import io.felipeandrade.gsw2.item.GSWItem;
 import io.felipeandrade.gsw2.material.GSWMaterial;
 import io.felipeandrade.gsw2.item.MaterialItem;
-import io.felipeandrade.gsw2.tool.GSWShovel;
+import io.felipeandrade.gsw2.item.tool.GSWShovel;
 
 public class GemMaterial extends GSWMaterial {
 
