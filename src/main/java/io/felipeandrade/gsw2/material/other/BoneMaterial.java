@@ -1,4 +1,4 @@
-package io.felipeandrade.gsw2.material;
+package io.felipeandrade.gsw2.material.other;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -16,13 +16,14 @@ import io.felipeandrade.gsw2.item.tool.GSWShovel;
 import io.felipeandrade.gsw2.item.tool.GSWSword;
 import io.felipeandrade.gsw2.item.tool.GSWTool;
 import io.felipeandrade.gsw2.item.tool.GSWToolMaterial;
+import io.felipeandrade.gsw2.material.GSWMaterial;
 
-public class FlintMaterial extends GSWMaterial {
+public class BoneMaterial extends GSWMaterial {
 
-    public static final GSWMaterial MATERIAL = new FlintMaterial();
+    public static final GSWMaterial MATERIAL = new BoneMaterial();
 
-    public FlintMaterial() {
-        super("flint", GSWColor.black);
+    public BoneMaterial() {
+        super("bone", GSWColor.old_lace);
     }
 
     @Override
@@ -30,7 +31,7 @@ public class FlintMaterial extends GSWMaterial {
         return Arrays.asList(SWORD, PICKAXE, AXE, SHOVEL, HOE, HAMMER);
     }
 
-    public static final GSWToolMaterial TOOL_MATERIAL = new GSWToolMaterial(0, 64, 5.0F, 1.0F, 5, Items.FLINT);
+    public static final GSWToolMaterial TOOL_MATERIAL = new GSWToolMaterial(0, 32, 5.0F, 1.0F, 15, Items.BONE);
 
     public static final GSWTool SWORD = new GSWSword(MATERIAL, TOOL_MATERIAL, 2, -3.0f, new Item.Settings().group(ItemGroup.COMBAT));
     public static final GSWTool PICKAXE = new GSWPickaxe(MATERIAL, TOOL_MATERIAL, 2, -3.0f, new Item.Settings().group(ItemGroup.TOOLS));

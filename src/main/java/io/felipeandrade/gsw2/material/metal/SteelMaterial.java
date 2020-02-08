@@ -30,7 +30,7 @@ public class SteelMaterial extends GSWMaterial {
     public static final GSWMaterial MATERIAL = new SteelMaterial();
 
     public SteelMaterial() {
-        super("steel", GSWColor.slate_gray);
+        super("steel", GSWColor.dim_gray_dim_grey);
     }
 
     @Override

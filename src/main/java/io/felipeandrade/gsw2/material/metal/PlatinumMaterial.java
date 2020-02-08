@@ -29,7 +29,7 @@ public class PlatinumMaterial extends GSWMaterial {
     public static final GSWMaterial MATERIAL = new PlatinumMaterial();
 
     public PlatinumMaterial() {
-        super("platinum", GSWColor.cadet_blue);
+        super("platinum", GSWColor.deep_sky_blue);
     }
 
     @Override

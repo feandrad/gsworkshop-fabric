@@ -6,8 +6,8 @@ import java.util.List;
 
 import io.felipeandrade.gsw2.common.ClientProxyInit;
 import io.felipeandrade.gsw2.common.Registrable;
-import io.felipeandrade.gsw2.material.BoneMaterial;
-import io.felipeandrade.gsw2.material.FlintMaterial;
+import io.felipeandrade.gsw2.material.other.BoneMaterial;
+import io.felipeandrade.gsw2.material.other.FlintMaterial;
 import io.felipeandrade.gsw2.material.GSWMaterial;
 import io.felipeandrade.gsw2.material.gem.AmethystMaterial;
 import io.felipeandrade.gsw2.material.gem.RubyMaterial;
