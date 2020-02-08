@@ -7,6 +7,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
+import io.felipeandrade.gsw2.block.ColorProviderMaterialBlock;
 import io.felipeandrade.gsw2.block.GSWBlock;
 import io.felipeandrade.gsw2.block.GSWMaterialBlock;
 import io.felipeandrade.gsw2.common.GSWColor;
@@ -19,8 +20,8 @@ import io.felipeandrade.gsw2.item.tool.GSWShovel;
 import io.felipeandrade.gsw2.item.tool.GSWSword;
 import io.felipeandrade.gsw2.item.tool.GSWTool;
 import io.felipeandrade.gsw2.item.tool.GSWToolMaterial;
-import io.felipeandrade.gsw2.material.GSWMaterial;
 import io.felipeandrade.gsw2.material.ColorProviderMaterialItem;
+import io.felipeandrade.gsw2.material.GSWMaterial;
 import io.felipeandrade.gsw2.material.GSWMaterialItem;
 
 
@@ -55,7 +56,7 @@ public class BronzeMaterial extends GSWMaterial {
     public static final GSWMaterialItem GEAR = new ColorProviderMaterialItem("gear", MATERIAL, new Item.Settings().group(ItemGroup.MISC));
     public static final GSWMaterialItem WIRE = new ColorProviderMaterialItem("wire", MATERIAL, new Item.Settings().group(ItemGroup.MISC));
 
-    public static final GSWBlock METAL_BLOCK = new GSWMaterialBlock(MATERIAL, GSWMaterialBlock.SETTINGS_METAL);
+    public static final GSWBlock METAL_BLOCK = new ColorProviderMaterialBlock(MATERIAL, GSWMaterialBlock.SETTINGS_METAL);
 
 
     public static final GSWToolMaterial TOOL_MATERIAL = new GSWToolMaterial(2, 250, 5.0F, 2.0F, 5, INGOT);
