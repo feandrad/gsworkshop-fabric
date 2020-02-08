@@ -1,6 +1,6 @@
 {
-  "parent": "block/cube_all",
+  "parent": "gsw2:block/template/material_block",
   "textures": {
-    "all": "gsw2:block/template/material_block2"
+    "material": "gsw2:block/template/material_block2"
   }
 }

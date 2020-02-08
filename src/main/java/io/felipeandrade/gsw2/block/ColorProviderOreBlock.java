@@ -6,6 +6,7 @@ import net.minecraft.client.color.block.BlockColorProvider;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.BlockRenderView;
 
+import io.felipeandrade.gsw2.common.ClientProxyInit;
 import io.felipeandrade.gsw2.material.GSWMaterial;
 
 public class ColorProviderOreBlock extends GSWOreBlock implements BlockColorProvider {
@@ -16,12 +17,12 @@ public class ColorProviderOreBlock extends GSWOreBlock implements BlockColorProv
 
     @Override
     public int getColor(BlockState state, BlockRenderView view, BlockPos pos, int tintIndex) {
-        return material.getPrimaryColor();
+        return material.getSecondaryColor();
     }
 
     @Override
-    public void register() {
-        super.register();
+    public void onClientInit() {
+        super.onClientInit();
         ColorProviderRegistry.BLOCK.register(this, this);
     }
 }

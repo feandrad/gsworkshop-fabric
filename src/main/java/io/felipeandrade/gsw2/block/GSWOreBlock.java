@@ -27,7 +27,6 @@ public class GSWOreBlock extends GSWBlock implements BlockColorProvider, ClientP
 
     @Override
     public void onClientInit() {
-        ColorProviderRegistry.BLOCK.register(this, this);
         BlockRenderLayerMap.INSTANCE.putBlock(this, RenderLayer.getCutout());
     }
 
