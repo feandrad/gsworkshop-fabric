@@ -2,16 +2,14 @@ package io.felipeandrade.gsw2.material.metal;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 import io.felipeandrade.gsw2.block.GSWBlock;
 import io.felipeandrade.gsw2.block.GSWMaterialBlock;
-import io.felipeandrade.gsw2.block.MaterialBlock;
+import io.felipeandrade.gsw2.block.GSWOreBlock;
 import io.felipeandrade.gsw2.common.GSWColor;
 import io.felipeandrade.gsw2.item.GSWItem;
 import io.felipeandrade.gsw2.item.tool.GSWTool;
-import io.felipeandrade.gsw2.item.tool.GSWToolMaterial;
 import io.felipeandrade.gsw2.material.GSWMaterial;
 import io.felipeandrade.gsw2.material.GSWMaterialItem;
 
@@ -30,7 +28,7 @@ public class TinMaterial extends GSWMaterial {
 
     @Override
     public List<? extends GSWBlock> allBlocks() {
-        return Collections.singletonList(METAL_BLOCK);
+        return Arrays.asList(ORE_BLOCK, METAL_BLOCK);
     }
 
     @Override
@@ -46,6 +44,7 @@ public class TinMaterial extends GSWMaterial {
     public static final GSWMaterialItem GEAR = new GSWMaterialItem("gear", MATERIAL);
     public static final GSWMaterialItem WIRE = new GSWMaterialItem("wire", MATERIAL);
 
-    public static final GSWBlock METAL_BLOCK = new MaterialBlock("block", MATERIAL, GSWMaterialBlock.SETTINGS_METAL);
+    public static final GSWBlock METAL_BLOCK = new GSWMaterialBlock(MATERIAL, GSWMaterialBlock.SETTINGS_METAL);
+    public static final GSWBlock ORE_BLOCK = new GSWOreBlock(MATERIAL, GSWMaterialBlock.SETTINGS_METAL);
 
 }

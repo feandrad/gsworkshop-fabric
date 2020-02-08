@@ -1,5 +1,5 @@
 {
-  "block.gsw2.ore_block": "Copper Ore",
+  "block.gsw2.copper_ore": "Copper Ore",
   "block.gsw2.tin_ore": "Tin Ore",
   "block.gsw2.silver_ore": "Silver Ore",
   "block.gsw2.titanium_ore": "Titanium Ore",
@@ -11,7 +11,7 @@
   "block.gsw2.sapphire_ore": "Sapphire Ore",
   "block.gsw2.ruby_ore": "Ruby Ore",
 
-  "block.gsw2.metal_block": "Copper Block",
+  "block.gsw2.copper_block": "Copper Block",
   "block.gsw2.tin_block": "Tin Block",
   "block.gsw2.silver_block": "Silver Block",
   "block.gsw2.titanium_block": "Titanium Block",

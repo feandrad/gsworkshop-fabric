@@ -9,19 +9,18 @@ import java.util.List;
 
 import io.felipeandrade.gsw2.block.GSWBlock;
 import io.felipeandrade.gsw2.block.GSWMaterialBlock;
-import io.felipeandrade.gsw2.block.MaterialBlock;
 import io.felipeandrade.gsw2.common.GSWColor;
 import io.felipeandrade.gsw2.item.GSWItem;
 import io.felipeandrade.gsw2.item.tool.GSWAxe;
 import io.felipeandrade.gsw2.item.tool.GSWHammer;
 import io.felipeandrade.gsw2.item.tool.GSWHoe;
 import io.felipeandrade.gsw2.item.tool.GSWPickaxe;
-import io.felipeandrade.gsw2.item.tool.GSWSword;
-import io.felipeandrade.gsw2.material.GSWMaterialItem;
 import io.felipeandrade.gsw2.item.tool.GSWShovel;
+import io.felipeandrade.gsw2.item.tool.GSWSword;
 import io.felipeandrade.gsw2.item.tool.GSWTool;
 import io.felipeandrade.gsw2.item.tool.GSWToolMaterial;
 import io.felipeandrade.gsw2.material.GSWMaterial;
+import io.felipeandrade.gsw2.material.GSWMaterialItem;
 
 
 public class BronzeMaterial extends GSWMaterial {
@@ -55,7 +54,7 @@ public class BronzeMaterial extends GSWMaterial {
     public static final GSWMaterialItem GEAR = new GSWMaterialItem("gear", MATERIAL);
     public static final GSWMaterialItem WIRE = new GSWMaterialItem("wire", MATERIAL);
 
-    public static final GSWBlock METAL_BLOCK = new MaterialBlock("block", MATERIAL, GSWMaterialBlock.SETTINGS_METAL);
+    public static final GSWBlock METAL_BLOCK = new GSWMaterialBlock(MATERIAL, GSWMaterialBlock.SETTINGS_METAL);
 
 
     public static final GSWToolMaterial TOOL_MATERIAL = new GSWToolMaterial(2, 250, 5.0F, 2.0F, 5, INGOT);

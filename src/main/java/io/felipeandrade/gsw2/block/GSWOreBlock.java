@@ -20,11 +20,14 @@ public class GSWOreBlock extends GSWBlock {
 
     protected final GSWMaterial material;
 
+    public GSWOreBlock(GSWMaterial material, Block.Settings settings) {
+        this(material.unlocalizedName() + "_ore" , material, settings);
+    }
+
     public GSWOreBlock(String unlocalizedName, GSWMaterial material, Block.Settings settings) {
         super(unlocalizedName, settings);
         this.material = material;
     }
-
 
 
 }

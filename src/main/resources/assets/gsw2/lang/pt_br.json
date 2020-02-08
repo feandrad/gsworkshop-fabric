@@ -1,5 +1,5 @@
 {
-  "block.gsw2.ore_block": "Minério de Cobre",
+  "block.gsw2.copper_ore": "Minério de Cobre",
   "block.gsw2.tin_ore": "Minério de Estanho",
   "block.gsw2.silver_ore": "Minério de Prata",
   "block.gsw2.titanium_ore": "Minério de Titânio",
@@ -11,7 +11,7 @@
   "block.gsw2.sapphire_ore": "Minério de Safira",
   "block.gsw2.ruby_ore": "Minério de Rubi",
 
-  "block.gsw2.metal_block": "Bloco de Cobre",
+  "block.gsw2.copper_block": "Bloco de Cobre",
   "block.gsw2.tin_block": "Bloco de Estanho",
   "block.gsw2.silver_block": "Bloco de Prata",
   "block.gsw2.titanium_block": "Bloco de Titânio",
