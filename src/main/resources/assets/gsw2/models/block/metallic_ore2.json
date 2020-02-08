@@ -1,0 +1,33 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "particle": "block/smooth_stone",
+    "ore": "gsw2:block/metallic_ore"
+  },
+  "elements": [
+    {
+      "from": [ 0, 0, 0 ],
+      "to": [ 16, 16, 16 ],
+      "faces": {
+        "down":  { "uv": [0,0, 16,5.34], "texture": "#ore", "cullface": "down" },
+        "up":    { "uv": [0,0, 16,5.34], "texture": "#ore", "cullface": "up" },
+        "north": { "uv": [0,0, 16,5.34], "texture": "#ore", "cullface": "north" },
+        "south": { "uv": [0,0, 16,5.34], "texture": "#ore", "cullface": "south" },
+        "west":  { "uv": [0,0, 16,5.34], "texture": "#ore", "cullface": "west" },
+        "east":  { "uv": [0,0, 16,5.34], "texture": "#ore", "cullface": "east" }
+      }
+    },
+    {
+      "from": [ 0, 0, 0 ],
+      "to": [ 16, 16, 16 ],
+      "faces": {
+        "down":  { "uv": [0,10.67, 16,16], "texture": "#ore", "cullface": "down" },
+        "up":    { "uv": [0,10.67, 16,16], "texture": "#ore", "cullface": "up" },
+        "north": { "uv": [0,10.67, 16,16], "texture": "#ore", "cullface": "north" },
+        "south": { "uv": [0,10.67, 16,16], "texture": "#ore", "cullface": "south" },
+        "west":  { "uv": [0,10.67, 16,16], "texture": "#ore", "cullface": "west" },
+        "east":  { "uv": [0,10.67, 16,16], "texture": "#ore", "cullface": "east" }
+      }
+    }
+  ]
+}

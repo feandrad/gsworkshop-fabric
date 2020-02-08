@@ -14,7 +14,7 @@ import static io.felipeandrade.gsw2.GSW2Mod.MOD_ID;
 
 public class GSWBlock extends Block implements Registrable, Localizeable {
 
-    String unlocalizedName;
+    private String unlocalizedName;
 
     public GSWBlock(String unlocalizedName, Settings settings) {
         super(settings);

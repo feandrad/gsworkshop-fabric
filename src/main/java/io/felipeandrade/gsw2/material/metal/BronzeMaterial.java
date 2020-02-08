@@ -10,7 +10,9 @@ import java.util.Collections;
 import java.util.List;
 
 import io.felipeandrade.gsw2.block.GSWBlock;
+import io.felipeandrade.gsw2.block.GSWMaterialBlock;
 import io.felipeandrade.gsw2.block.MaterialBlock;
+import io.felipeandrade.gsw2.common.GSWColor;
 import io.felipeandrade.gsw2.item.GSWItem;
 import io.felipeandrade.gsw2.item.MaterialItem;
 import io.felipeandrade.gsw2.item.tool.GSWShovel;
@@ -22,7 +24,7 @@ import io.felipeandrade.gsw2.material.GSWMaterial;
 public class BronzeMaterial extends GSWMaterial {
 
     public BronzeMaterial() {
-        super("bronze");
+        super("bronze", GSWColor.chocolate, GSWColor.peru);
     }
 
     @Override
@@ -47,7 +49,8 @@ public class BronzeMaterial extends GSWMaterial {
     public static final MaterialItem DUST = new MaterialItem("dust", MATERIAL);
     public static final MaterialItem PLATE = new MaterialItem("plate", MATERIAL);
 
-    public static final GSWBlock METAL_BLOCK = new MaterialBlock("block", MATERIAL, FabricBlockSettings.copy(Blocks.IRON_BLOCK).build());
+    public static final GSWBlock METAL_BLOCK = new MaterialBlock("block", MATERIAL, GSWMaterialBlock.SETTINGS_METAL);
+
 
     public static final GSWToolMaterial TOOL_MATERIAL = new GSWToolMaterial(2, 250, 5.0F, 2.0F, 5, INGOT);
 
