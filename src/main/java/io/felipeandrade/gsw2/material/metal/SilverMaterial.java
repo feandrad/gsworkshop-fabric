@@ -23,12 +23,12 @@ import io.felipeandrade.gsw2.item.tool.GSWToolMaterial;
 import io.felipeandrade.gsw2.material.GSWMaterial;
 import io.felipeandrade.gsw2.material.GSWMaterialItem;
 
-public class CopperMaterial extends GSWMaterial {
+public class SilverMaterial extends GSWMaterial {
 
-    public static final GSWMaterial MATERIAL = new CopperMaterial();
+    public static final GSWMaterial MATERIAL = new SilverMaterial();
 
-    public CopperMaterial() {
-        super("copper", GSWColor.dark_orange);
+    public SilverMaterial() {
+        super("silver", GSWColor.alice_blue);
     }
 
     @Override
