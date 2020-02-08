@@ -17,12 +17,12 @@ import io.felipeandrade.gsw2.item.tool.GSWTool;
 import io.felipeandrade.gsw2.material.GSWMaterial;
 import io.felipeandrade.gsw2.material.GSWMaterialItem;
 
-public class RubiMaterial extends GSWMaterial {
+public class RubyMaterial extends GSWMaterial {
 
-    public static final GSWMaterial MATERIAL = new RubiMaterial();
+    public static final GSWMaterial MATERIAL = new RubyMaterial();
 
-    public RubiMaterial() {
-        super("rubi", GSWColor.light_coral);
+    public RubyMaterial() {
+        super("ruby", GSWColor.light_coral);
     }
 
     @Override

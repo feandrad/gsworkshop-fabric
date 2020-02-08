@@ -30,4 +30,5 @@ public class GSWPickaxe extends PickaxeItem implements GSWTool {
     public void register() {
         Registry.register(Registry.ITEM, new Identifier(MOD_ID, unlocalizedName), this);
     }
+
 }

@@ -4,17 +4,17 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import io.felipeandrade.gsw2.common.ClientProxyInit;
 import io.felipeandrade.gsw2.common.Registrable;
 import io.felipeandrade.gsw2.material.GSWMaterial;
 import io.felipeandrade.gsw2.material.gem.AmethystMaterial;
-import io.felipeandrade.gsw2.material.gem.RubiMaterial;
+import io.felipeandrade.gsw2.material.gem.RubyMaterial;
 import io.felipeandrade.gsw2.material.gem.SapphireMaterial;
 import io.felipeandrade.gsw2.material.gem.TopazMaterial;
 import io.felipeandrade.gsw2.material.metal.BronzeMaterial;
 import io.felipeandrade.gsw2.material.metal.CopperMaterial;
 import io.felipeandrade.gsw2.material.metal.SilverMaterial;
 import io.felipeandrade.gsw2.material.metal.TinMaterial;
-
 
 public abstract class GSWRegistryHandler {
 
@@ -28,7 +28,7 @@ public abstract class GSWRegistryHandler {
             AmethystMaterial.MATERIAL,
             TopazMaterial.MATERIAL,
             SapphireMaterial.MATERIAL,
-            RubiMaterial.MATERIAL
+            RubyMaterial.MATERIAL
     );
 
     public static void registerAll() {
@@ -42,7 +42,11 @@ public abstract class GSWRegistryHandler {
 
         for (Registrable registrable : result) {
             registrable.register();
+            if (registrable instanceof ClientProxyInit) {
+                GSW2Mod.CLIENT_PROXY.add(((ClientProxyInit) registrable));
+            }
         }
 
     }
+
 }

@@ -18,9 +18,8 @@
 
   "environment": "*",
   "entrypoints": {
-    "main": [
-      "io.felipeandrade.gsw2.GSW2Mod"
-    ]
+    "main": ["io.felipeandrade.gsw2.GSW2Mod"],
+    "client": ["io.felipeandrade.gsw2.GSW2Mod"]
   },
   "mixins": [
   ],
