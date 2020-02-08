@@ -8,10 +8,9 @@ import java.util.List;
 
 import io.felipeandrade.gsw2.block.GSWBlock;
 import io.felipeandrade.gsw2.block.GSWMaterialBlock;
-import io.felipeandrade.gsw2.block.MaterialBlock;
 import io.felipeandrade.gsw2.common.GSWColor;
 import io.felipeandrade.gsw2.item.GSWItem;
-import io.felipeandrade.gsw2.item.MaterialItem;
+import io.felipeandrade.gsw2.material.GSWMaterialItem;
 import io.felipeandrade.gsw2.item.tool.GSWShovel;
 import io.felipeandrade.gsw2.item.tool.GSWTool;
 import io.felipeandrade.gsw2.item.tool.GSWToolMaterial;
@@ -40,10 +39,10 @@ public class CopperMaterial extends GSWMaterial {
 
     public static final GSWMaterial MATERIAL = new CopperMaterial();
 
-    public static final GSWItem INGOT = new MaterialItem("ingot", MATERIAL);
-    public static final MaterialItem NUGGET = new MaterialItem("nugget", MATERIAL);
-    public static final MaterialItem DUST = new MaterialItem("dust", MATERIAL);
-    public static final MaterialItem PLATE = new MaterialItem("plate", MATERIAL);
+    public static final GSWItem INGOT = new GSWMaterialItem("ingot", MATERIAL);
+    public static final GSWMaterialItem NUGGET = new GSWMaterialItem("nugget", MATERIAL);
+    public static final GSWMaterialItem DUST = new GSWMaterialItem("dust", MATERIAL);
+    public static final GSWMaterialItem PLATE = new GSWMaterialItem("plate", MATERIAL);
 
 //    public static final GSWBlock METAL_BLOCK = new MaterialBlock("block", MATERIAL, GSWMaterialBlock.SETTINGS_METAL);
     public static final GSWMaterialBlock ORE_BLOCK = new GSWMaterialBlock( MATERIAL, GSWMaterialBlock.SETTINGS_ORE);
