@@ -4,7 +4,9 @@ import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
 import net.minecraft.client.color.item.ItemColorProvider;
 import net.minecraft.item.ItemStack;
 
-public class ColorProviderMaterialItem extends GSWMaterialItem implements ItemColorProvider {
+import io.felipeandrade.gsw2.common.ClientProxyInit;
+
+public class ColorProviderMaterialItem extends GSWMaterialItem implements ItemColorProvider, ClientProxyInit {
 
 
     public ColorProviderMaterialItem(String unlocalizedName, GSWMaterial material, Settings settings) {
@@ -19,6 +21,10 @@ public class ColorProviderMaterialItem extends GSWMaterialItem implements ItemCo
     @Override
     public void register() {
         super.register();
+    }
+
+    @Override
+    public void onClientInit() {
         ColorProviderRegistry.ITEM.register(this, this);
     }
 }
