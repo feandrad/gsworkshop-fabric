@@ -1,10 +1,5 @@
 {
   "variants": {
-    "ore": {
-      "model": "gsw2:block/copper_ore"
-    },
-    "block": {
-      "model": "gsw2:block/copper_block"
-    }
+    "": { "model": "gsw2:block/template/material_block2" }
   }
 }
