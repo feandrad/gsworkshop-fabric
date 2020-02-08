@@ -51,6 +51,6 @@ public class BronzeMaterial extends GSWMaterial {
 
     public static final GSWToolMaterial TOOL_MATERIAL = new GSWToolMaterial(2, 250, 5.0F, 2.0F, 5, INGOT);
 
-    public static final GSWTool SHOVEL = new GSWShovel(MATERIAL, TOOL_MATERIAL, new Item.Settings().group(ItemGroup.TOOLS));
+    public static final GSWTool SHOVEL = new GSWShovel(MATERIAL, TOOL_MATERIAL, -3.0f, new Item.Settings().group(ItemGroup.TOOLS));
 
 }

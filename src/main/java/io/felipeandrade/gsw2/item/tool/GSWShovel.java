@@ -12,13 +12,13 @@ public class GSWShovel extends ShovelItem implements GSWTool {
 
     private final String unlocalizedName;
 
-    public GSWShovel(String unlocalizedName, GSWToolMaterial toolMaterial, Settings settings) {
-        super(toolMaterial, toolMaterial.getAttackDamage(), toolMaterial.getMiningSpeed(), settings);
+    public GSWShovel(String unlocalizedName, GSWToolMaterial toolMaterial, float attackSpeed, Settings settings) {
+        super(toolMaterial, toolMaterial.getAttackDamage(), attackSpeed, settings);
         this.unlocalizedName = unlocalizedName;
     }
 
-    public GSWShovel(GSWMaterial material, GSWToolMaterial toolMaterial,  Settings settings) {
-        this(material.unlocalizedName() + "_shovel", toolMaterial, settings);
+    public GSWShovel(GSWMaterial material, GSWToolMaterial toolMaterial, float attackSpeed, Settings settings) {
+        this(material.unlocalizedName() + "_shovel", toolMaterial, attackSpeed, settings);
     }
 
     @Override

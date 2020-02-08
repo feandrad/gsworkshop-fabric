@@ -51,6 +51,6 @@ public class CopperMaterial extends GSWMaterial {
 
     public static final GSWToolMaterial TOOL_MATERIAL = new GSWToolMaterial(1, 131, 4.0F, 1.0F, 15, CopperMaterial.INGOT);
 
-    public static final GSWTool SHOVEL = new GSWShovel(MATERIAL, TOOL_MATERIAL, new Item.Settings().group(ItemGroup.TOOLS));
+    public static final GSWTool SHOVEL = new GSWShovel(MATERIAL, TOOL_MATERIAL, -3.0f, new Item.Settings().group(ItemGroup.TOOLS));
 
 }
