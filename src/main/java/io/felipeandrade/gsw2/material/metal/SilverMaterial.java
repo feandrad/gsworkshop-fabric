@@ -20,6 +20,7 @@ import io.felipeandrade.gsw2.item.tool.GSWSword;
 import io.felipeandrade.gsw2.item.tool.GSWTool;
 import io.felipeandrade.gsw2.item.tool.GSWToolMaterial;
 import io.felipeandrade.gsw2.material.GSWMaterial;
+import io.felipeandrade.gsw2.material.ColorProviderMaterialItem;
 import io.felipeandrade.gsw2.material.GSWMaterialItem;
 
 public class SilverMaterial extends GSWMaterial {
@@ -46,12 +47,12 @@ public class SilverMaterial extends GSWMaterial {
     }
 
 
-    public static final GSWItem INGOT = new GSWMaterialItem("ingot", MATERIAL);
-    public static final GSWMaterialItem NUGGET = new GSWMaterialItem("nugget", MATERIAL);
-    public static final GSWMaterialItem DUST = new GSWMaterialItem("dust", MATERIAL);
-    public static final GSWMaterialItem PLATE = new GSWMaterialItem("plate", MATERIAL);
-    public static final GSWMaterialItem GEAR = new GSWMaterialItem("gear", MATERIAL);
-    public static final GSWMaterialItem WIRE = new GSWMaterialItem("wire", MATERIAL);
+    public static final GSWItem INGOT = new ColorProviderMaterialItem("ingot", MATERIAL, new Item.Settings().group(ItemGroup.MISC));
+    public static final GSWMaterialItem NUGGET = new ColorProviderMaterialItem("nugget", MATERIAL, new Item.Settings().group(ItemGroup.MISC));
+    public static final GSWMaterialItem DUST = new ColorProviderMaterialItem("dust", MATERIAL, new Item.Settings().group(ItemGroup.MISC));
+    public static final GSWMaterialItem PLATE = new ColorProviderMaterialItem("plate", MATERIAL, new Item.Settings().group(ItemGroup.MISC));
+    public static final GSWMaterialItem GEAR = new ColorProviderMaterialItem("gear", MATERIAL, new Item.Settings().group(ItemGroup.MISC));
+    public static final GSWMaterialItem WIRE = new ColorProviderMaterialItem("wire", MATERIAL, new Item.Settings().group(ItemGroup.MISC));
 
     public static final GSWBlock METAL_BLOCK = new GSWMaterialBlock(MATERIAL, GSWMaterialBlock.SETTINGS_METAL);
     public static final GSWBlock ORE_BLOCK = new GSWOreBlock(MATERIAL, GSWMaterialBlock.SETTINGS_METAL);

@@ -6,6 +6,10 @@ import java.util.List;
 
 import io.felipeandrade.gsw2.common.Registrable;
 import io.felipeandrade.gsw2.material.GSWMaterial;
+import io.felipeandrade.gsw2.material.gem.AmethystMaterial;
+import io.felipeandrade.gsw2.material.gem.RubiMaterial;
+import io.felipeandrade.gsw2.material.gem.SapphireMaterial;
+import io.felipeandrade.gsw2.material.gem.TopazMaterial;
 import io.felipeandrade.gsw2.material.metal.BronzeMaterial;
 import io.felipeandrade.gsw2.material.metal.CopperMaterial;
 import io.felipeandrade.gsw2.material.metal.SilverMaterial;
@@ -18,7 +22,13 @@ public abstract class GSWRegistryHandler {
             CopperMaterial.MATERIAL,
             TinMaterial.MATERIAL,
             SilverMaterial.MATERIAL,
-            BronzeMaterial.MATERIAL
+
+            BronzeMaterial.MATERIAL,
+
+            AmethystMaterial.MATERIAL,
+            TopazMaterial.MATERIAL,
+            SapphireMaterial.MATERIAL,
+            RubiMaterial.MATERIAL
     );
 
     public static void registerAll() {
