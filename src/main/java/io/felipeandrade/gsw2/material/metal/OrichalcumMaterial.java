@@ -24,12 +24,12 @@ import io.felipeandrade.gsw2.material.ColorProviderMaterialItem;
 import io.felipeandrade.gsw2.material.GSWMaterial;
 import io.felipeandrade.gsw2.material.GSWMaterialItem;
 
-public class CopperMaterial extends GSWMaterial {
+public class OrichalcumMaterial extends GSWMaterial {
 
-    public static final GSWMaterial MATERIAL = new CopperMaterial();
+    public static final GSWMaterial MATERIAL = new OrichalcumMaterial();
 
-    public CopperMaterial() {
-        super("copper", GSWColor.dark_orange);
+    public OrichalcumMaterial() {
+        super("orichalcum", GSWColor.midnight_blue);
     }
 
     @Override

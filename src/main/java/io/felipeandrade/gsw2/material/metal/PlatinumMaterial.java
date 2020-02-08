@@ -24,12 +24,12 @@ import io.felipeandrade.gsw2.material.ColorProviderMaterialItem;
 import io.felipeandrade.gsw2.material.GSWMaterial;
 import io.felipeandrade.gsw2.material.GSWMaterialItem;
 
-public class CopperMaterial extends GSWMaterial {
+public class PlatinumMaterial extends GSWMaterial {
 
-    public static final GSWMaterial MATERIAL = new CopperMaterial();
+    public static final GSWMaterial MATERIAL = new PlatinumMaterial();
 
-    public CopperMaterial() {
-        super("copper", GSWColor.dark_orange);
+    public PlatinumMaterial() {
+        super("platinum", GSWColor.cadet_blue);
     }
 
     @Override

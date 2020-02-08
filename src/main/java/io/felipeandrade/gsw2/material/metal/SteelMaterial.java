@@ -4,6 +4,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 import io.felipeandrade.gsw2.block.ColorProviderMaterialBlock;
@@ -24,12 +25,12 @@ import io.felipeandrade.gsw2.material.ColorProviderMaterialItem;
 import io.felipeandrade.gsw2.material.GSWMaterial;
 import io.felipeandrade.gsw2.material.GSWMaterialItem;
 
-public class CopperMaterial extends GSWMaterial {
+public class SteelMaterial extends GSWMaterial {
 
-    public static final GSWMaterial MATERIAL = new CopperMaterial();
+    public static final GSWMaterial MATERIAL = new SteelMaterial();
 
-    public CopperMaterial() {
-        super("copper", GSWColor.dark_orange);
+    public SteelMaterial() {
+        super("steel", GSWColor.slate_gray);
     }
 
     @Override
@@ -39,7 +40,7 @@ public class CopperMaterial extends GSWMaterial {
 
     @Override
     public List<? extends GSWBlock> allBlocks() {
-        return Arrays.asList(ORE_BLOCK, METAL_BLOCK);
+        return Collections.singletonList(METAL_BLOCK);
     }
 
     @Override
@@ -56,7 +57,6 @@ public class CopperMaterial extends GSWMaterial {
     public static final GSWMaterialItem WIRE = new ColorProviderMaterialItem("wire", MATERIAL, new Item.Settings().group(ItemGroup.MISC));
 
     public static final GSWBlock METAL_BLOCK = new ColorProviderMaterialBlock(MATERIAL, GSWMaterialBlock.SETTINGS_METAL);
-    public static final GSWBlock ORE_BLOCK = new ColorProviderOreBlock(MATERIAL, GSWMaterialBlock.SETTINGS_METAL);
 
 
     public static final GSWToolMaterial TOOL_MATERIAL = new GSWToolMaterial(2, 250, 5.0F, 2.0F, 5, INGOT);

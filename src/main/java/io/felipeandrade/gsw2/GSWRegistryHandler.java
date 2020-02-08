@@ -13,8 +13,13 @@ import io.felipeandrade.gsw2.material.gem.SapphireMaterial;
 import io.felipeandrade.gsw2.material.gem.TopazMaterial;
 import io.felipeandrade.gsw2.material.metal.BronzeMaterial;
 import io.felipeandrade.gsw2.material.metal.CopperMaterial;
+import io.felipeandrade.gsw2.material.metal.MithrilMaterial;
+import io.felipeandrade.gsw2.material.metal.OrichalcumMaterial;
+import io.felipeandrade.gsw2.material.metal.PlatinumMaterial;
 import io.felipeandrade.gsw2.material.metal.SilverMaterial;
+import io.felipeandrade.gsw2.material.metal.SteelMaterial;
 import io.felipeandrade.gsw2.material.metal.TinMaterial;
+import io.felipeandrade.gsw2.material.metal.TitaniumMaterial;
 
 public abstract class GSWRegistryHandler {
 
@@ -22,13 +27,19 @@ public abstract class GSWRegistryHandler {
             CopperMaterial.MATERIAL,
             TinMaterial.MATERIAL,
             SilverMaterial.MATERIAL,
+            TitaniumMaterial.MATERIAL,
+            PlatinumMaterial.MATERIAL,
 
             BronzeMaterial.MATERIAL,
+            SteelMaterial.MATERIAL,
 
             AmethystMaterial.MATERIAL,
             TopazMaterial.MATERIAL,
             SapphireMaterial.MATERIAL,
-            RubyMaterial.MATERIAL
+            RubyMaterial.MATERIAL,
+
+            MithrilMaterial.MATERIAL,
+            OrichalcumMaterial.MATERIAL
     );
 
     public static void registerAll() {

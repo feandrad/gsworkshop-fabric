@@ -24,12 +24,12 @@ import io.felipeandrade.gsw2.material.ColorProviderMaterialItem;
 import io.felipeandrade.gsw2.material.GSWMaterial;
 import io.felipeandrade.gsw2.material.GSWMaterialItem;
 
-public class CopperMaterial extends GSWMaterial {
+public class MithrilMaterial extends GSWMaterial {
 
-    public static final GSWMaterial MATERIAL = new CopperMaterial();
+    public static final GSWMaterial MATERIAL = new MithrilMaterial();
 
-    public CopperMaterial() {
-        super("copper", GSWColor.dark_orange);
+    public MithrilMaterial() {
+        super("mithril", GSWColor.spring_green);
     }
 
     @Override
