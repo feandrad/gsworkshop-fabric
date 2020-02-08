@@ -6,6 +6,8 @@ import java.util.List;
 
 import io.felipeandrade.gsw2.common.ClientProxyInit;
 import io.felipeandrade.gsw2.common.Registrable;
+import io.felipeandrade.gsw2.material.BoneMaterial;
+import io.felipeandrade.gsw2.material.FlintMaterial;
 import io.felipeandrade.gsw2.material.GSWMaterial;
 import io.felipeandrade.gsw2.material.gem.AmethystMaterial;
 import io.felipeandrade.gsw2.material.gem.RubyMaterial;
@@ -24,6 +26,9 @@ import io.felipeandrade.gsw2.material.metal.TitaniumMaterial;
 public abstract class GSWRegistryHandler {
 
     public static final List<GSWMaterial> ALL_GSW_MATERIALS = Arrays.asList(
+            BoneMaterial.MATERIAL,
+            FlintMaterial.MATERIAL,
+
             CopperMaterial.MATERIAL,
             TinMaterial.MATERIAL,
             SilverMaterial.MATERIAL,

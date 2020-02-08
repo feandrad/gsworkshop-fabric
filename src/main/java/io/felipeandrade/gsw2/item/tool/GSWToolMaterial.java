@@ -1,5 +1,6 @@
 package io.felipeandrade.gsw2.item.tool;
 
+import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
@@ -34,7 +35,7 @@ public class GSWToolMaterial implements ToolMaterial {
     }
 
     public GSWToolMaterial(int miningLevel, int itemDurability, float miningSpeed, float attackDamage,
-                           int enchantability, GSWItem... repairItems) {
+                           int enchantability, ItemConvertible... repairItems) {
         this(miningLevel, itemDurability, miningSpeed, attackDamage, enchantability,
                 Ingredient.ofItems(repairItems));
     }

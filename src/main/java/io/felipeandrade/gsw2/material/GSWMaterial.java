@@ -1,5 +1,7 @@
 package io.felipeandrade.gsw2.material;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import io.felipeandrade.gsw2.block.GSWBlock;
@@ -24,11 +26,17 @@ public abstract class GSWMaterial implements Localizeable {
         this.secondaryColor = secondaryColor;
     }
 
-    public abstract List<? extends GSWItem> allItems();
+    public List<? extends GSWItem> allItems() {
+        return new ArrayList<>();
+    }
 
-    public abstract List<? extends GSWBlock> allBlocks();
+    public List<? extends GSWBlock> allBlocks() {
+        return new ArrayList<>();
+    }
 
-    public abstract List<? extends GSWTool> allTools();
+    public List<? extends GSWTool> allTools() {
+        return new ArrayList<>();
+    }
 
 
     @Override
