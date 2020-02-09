@@ -12,13 +12,13 @@ public class GSWPickaxe extends PickaxeItem implements GSWTool {
 
     private final String unlocalizedName;
 
-    public GSWPickaxe(String unlocalizedName, GSWToolMaterial toolMaterial, int attackDamage, float attackSpeed, Settings settings) {
+    GSWPickaxe(String unlocalizedName, GSWToolMaterial toolMaterial, int attackDamage, float attackSpeed, Settings settings) {
         super(toolMaterial, attackDamage, attackSpeed, settings);
         this.unlocalizedName = unlocalizedName;
     }
 
-    public GSWPickaxe(GSWMaterial material, GSWToolMaterial toolMaterial, int attackDamage, float attackSpeed, Settings settings) {
-        this(material.unlocalizedName() + "_pickaxe", toolMaterial, attackDamage, attackSpeed, settings);
+    public GSWPickaxe(GSWMaterial material, GSWToolMaterial toolMaterial, Settings settings) {
+        this(material.unlocalizedName() + "_pickaxe", toolMaterial, 1, -2.8f, settings);
     }
 
     @Override

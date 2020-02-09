@@ -8,11 +8,11 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.BlockRenderView;
 
-import io.felipeandrade.gsw2.common.ClientProxyInit;
+import io.felipeandrade.gsw2.common.ClientResourceInit;
 import io.felipeandrade.gsw2.material.GSWMaterial;
 
 public class ColorProviderMaterialBlock extends GSWMaterialBlock
-        implements BlockColorProvider, ItemColorProvider, ClientProxyInit {
+        implements BlockColorProvider, ItemColorProvider, ClientResourceInit {
 
 
     public ColorProviderMaterialBlock(GSWMaterial material, Settings settings) {

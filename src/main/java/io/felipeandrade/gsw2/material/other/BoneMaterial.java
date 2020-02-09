@@ -31,13 +31,13 @@ public class BoneMaterial extends GSWMaterial {
         return Arrays.asList(SWORD, PICKAXE, AXE, SHOVEL, HOE, HAMMER);
     }
 
-    public static final GSWToolMaterial TOOL_MATERIAL = new GSWToolMaterial(0, 32, 5.0F, 1.0F, 15, Items.BONE);
+    public static final GSWToolMaterial TOOL_MATERIAL = new GSWToolMaterial(1, 42, 3.0F, 1.0F, 18, Items.BONE);
 
-    public static final GSWTool SWORD = new GSWSword(MATERIAL, TOOL_MATERIAL, 2, -3.0f, new Item.Settings().group(ItemGroup.COMBAT));
-    public static final GSWTool PICKAXE = new GSWPickaxe(MATERIAL, TOOL_MATERIAL, 2, -3.0f, new Item.Settings().group(ItemGroup.TOOLS));
-    public static final GSWTool AXE = new GSWAxe(MATERIAL, TOOL_MATERIAL, 3, -3.0f, new Item.Settings().group(ItemGroup.TOOLS));
-    public static final GSWTool SHOVEL = new GSWShovel(MATERIAL, TOOL_MATERIAL, -3.0f, new Item.Settings().group(ItemGroup.TOOLS));
+    public static final GSWTool SWORD = new GSWSword(MATERIAL, TOOL_MATERIAL,  new Item.Settings().group(ItemGroup.COMBAT));
+    public static final GSWTool PICKAXE = new GSWPickaxe(MATERIAL, TOOL_MATERIAL,  new Item.Settings().group(ItemGroup.TOOLS));
+    public static final GSWTool AXE = new GSWAxe(MATERIAL, TOOL_MATERIAL,  new Item.Settings().group(ItemGroup.TOOLS));
+    public static final GSWTool SHOVEL = new GSWShovel(MATERIAL, TOOL_MATERIAL,  new Item.Settings().group(ItemGroup.TOOLS));
     public static final GSWTool HOE = new GSWHoe(MATERIAL, TOOL_MATERIAL, -3.0f, new Item.Settings().group(ItemGroup.TOOLS));
-    public static final GSWTool HAMMER = new GSWHammer(MATERIAL, TOOL_MATERIAL, 3, -3.0f, new Item.Settings().group(ItemGroup.TOOLS));
+    public static final GSWTool HAMMER = new GSWHammer(MATERIAL, TOOL_MATERIAL, new Item.Settings().group(ItemGroup.TOOLS));
 
 }

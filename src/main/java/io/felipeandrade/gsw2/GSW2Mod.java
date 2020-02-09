@@ -6,13 +6,13 @@ import net.fabricmc.api.ModInitializer;
 import java.util.ArrayList;
 import java.util.List;
 
-import io.felipeandrade.gsw2.common.ClientProxyInit;
+import io.felipeandrade.gsw2.common.ClientResourceInit;
 
 public class GSW2Mod implements ModInitializer, ClientModInitializer {
 
     public static final String MOD_ID = "gsw2";
 
-    public static final List<ClientProxyInit> CLIENT_PROXY = new ArrayList<>();
+    public static final List<ClientResourceInit> CLIENT_RES = new ArrayList<>();
 
     @Override
     public void onInitialize() {
@@ -21,7 +21,7 @@ public class GSW2Mod implements ModInitializer, ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
-        for (ClientProxyInit clientProxy : CLIENT_PROXY) {
+        for (ClientResourceInit clientProxy : CLIENT_RES) {
             clientProxy.onClientInit();
         }
     }

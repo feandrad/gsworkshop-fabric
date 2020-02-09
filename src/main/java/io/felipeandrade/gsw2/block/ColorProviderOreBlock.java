@@ -8,7 +8,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.BlockRenderView;
 
-import io.felipeandrade.gsw2.common.ClientProxyInit;
 import io.felipeandrade.gsw2.material.GSWMaterial;
 
 public class ColorProviderOreBlock extends GSWOreBlock implements BlockColorProvider, ItemColorProvider {

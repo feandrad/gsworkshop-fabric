@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import io.felipeandrade.gsw2.common.ClientProxyInit;
+import io.felipeandrade.gsw2.common.ClientResourceInit;
 import io.felipeandrade.gsw2.common.Registrable;
 import io.felipeandrade.gsw2.material.other.BoneMaterial;
 import io.felipeandrade.gsw2.material.other.FlintMaterial;
@@ -58,8 +58,8 @@ public abstract class GSWRegistryHandler {
 
         for (Registrable registrable : result) {
             registrable.register();
-            if (registrable instanceof ClientProxyInit) {
-                GSW2Mod.CLIENT_PROXY.add(((ClientProxyInit) registrable));
+            if (registrable instanceof ClientResourceInit) {
+                GSW2Mod.CLIENT_RES.add(((ClientResourceInit) registrable));
             }
         }
 

@@ -59,13 +59,13 @@ public class MithrilMaterial extends GSWMaterial {
     public static final GSWBlock ORE_BLOCK = new ColorProviderOreBlock(MATERIAL, GSWMaterialBlock.SETTINGS_METAL);
 
 
-    public static final GSWToolMaterial TOOL_MATERIAL = new GSWToolMaterial(2, 250, 5.0F, 2.0F, 5, INGOT);
+    public static final GSWToolMaterial TOOL_MATERIAL = new GSWToolMaterial(4, 3000, 10.0F, 4.0F, 30, INGOT);
 
-    public static final GSWTool SWORD = new GSWSword(MATERIAL, TOOL_MATERIAL, 2, -3.0f, new Item.Settings().group(ItemGroup.COMBAT));
-    public static final GSWTool PICKAXE = new GSWPickaxe(MATERIAL, TOOL_MATERIAL, 2, -3.0f, new Item.Settings().group(ItemGroup.TOOLS));
-    public static final GSWTool AXE = new GSWAxe(MATERIAL, TOOL_MATERIAL, 3, -3.0f, new Item.Settings().group(ItemGroup.TOOLS));
-    public static final GSWTool SHOVEL = new GSWShovel(MATERIAL, TOOL_MATERIAL, -3.0f, new Item.Settings().group(ItemGroup.TOOLS));
-    public static final GSWTool HOE = new GSWHoe(MATERIAL, TOOL_MATERIAL, -3.0f, new Item.Settings().group(ItemGroup.TOOLS));
-    public static final GSWTool HAMMER = new GSWHammer(MATERIAL, TOOL_MATERIAL, 3, -3.0f, new Item.Settings().group(ItemGroup.TOOLS));
+    public static final GSWTool SWORD = new GSWSword(MATERIAL, TOOL_MATERIAL, new Item.Settings().group(ItemGroup.COMBAT));
+    public static final GSWTool PICKAXE = new GSWPickaxe(MATERIAL, TOOL_MATERIAL, new Item.Settings().group(ItemGroup.TOOLS));
+    public static final GSWTool AXE = new GSWAxe(MATERIAL, TOOL_MATERIAL, new Item.Settings().group(ItemGroup.TOOLS));
+    public static final GSWTool SHOVEL = new GSWShovel(MATERIAL, TOOL_MATERIAL, new Item.Settings().group(ItemGroup.TOOLS));
+    public static final GSWTool HOE = new GSWHoe(MATERIAL, TOOL_MATERIAL, -0.0f, new Item.Settings().group(ItemGroup.TOOLS));
+    public static final GSWTool HAMMER = new GSWHammer(MATERIAL, TOOL_MATERIAL, new Item.Settings().group(ItemGroup.TOOLS));
 
 }

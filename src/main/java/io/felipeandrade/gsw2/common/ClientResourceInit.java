@@ -1,5 +1,5 @@
 package io.felipeandrade.gsw2.common;
 
-public interface ClientProxyInit {
+public interface ClientResourceInit {
     void onClientInit();
 }

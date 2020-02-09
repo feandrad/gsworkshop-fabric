@@ -13,13 +13,13 @@ public class GSWAxe extends AxeItem implements GSWTool {
 
     private final String unlocalizedName;
 
-    public GSWAxe(String unlocalizedName, GSWToolMaterial toolMaterial, int attackDamage, float attackSpeed, Settings settings) {
-        super(toolMaterial, attackDamage, attackSpeed, settings);
+    public GSWAxe(String unlocalizedName, GSWToolMaterial toolMaterial, Settings settings) {
+        super(toolMaterial, 6.0f, -3.2f, settings);
         this.unlocalizedName = unlocalizedName;
     }
 
-    public GSWAxe(GSWMaterial material, GSWToolMaterial toolMaterial, int attackDamage, float attackSpeed, Settings settings) {
-        this(material.unlocalizedName() + "_axe", toolMaterial, attackDamage, attackSpeed, settings);
+    public GSWAxe(GSWMaterial material, GSWToolMaterial toolMaterial, Settings settings) {
+        this(material.unlocalizedName() + "_axe", toolMaterial, settings);
     }
 
     @Override
