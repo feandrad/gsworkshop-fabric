@@ -29,7 +29,7 @@ public class OrichalcumMaterial extends GSWMaterial {
     public static final GSWMaterial MATERIAL = new OrichalcumMaterial();
 
     public OrichalcumMaterial() {
-        super("orichalcum", GSWColor.midnight_blue);
+        super("orichalcum", GSWColor.blue_violet);
     }
 
     @Override

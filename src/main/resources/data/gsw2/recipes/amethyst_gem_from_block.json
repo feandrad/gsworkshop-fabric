@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "gsw2:amethyst_block" }
+  ],
+  "result": {
+    "item": "gsw2:amethyst_gem",
+    "count": 9
+  },
+  "group": "amethyst_gem"
+}

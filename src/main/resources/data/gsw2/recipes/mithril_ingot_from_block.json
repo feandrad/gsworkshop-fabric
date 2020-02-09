@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "gsw2:mithril_block" }
+  ],
+  "result": {
+    "item": "gsw2:mithril_ingot",
+    "count": 9
+  },
+  "group": "mithril_ingot"
+}

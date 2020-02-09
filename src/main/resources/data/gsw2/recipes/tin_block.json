@@ -7,11 +7,11 @@
     ],
     "key": {
         "i": {
-            "item": "gsw2:copper_ingot"
+            "item": "gsw2:tin_ingot"
         }
     },
     "result": {
-        "item": "gsw2:copper_block",
+        "item": "gsw2:tin_block",
         "count": 1
     },
     "group": "tin_block"
