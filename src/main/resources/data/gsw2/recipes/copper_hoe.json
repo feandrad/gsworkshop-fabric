@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ii",
+        " /",
+        " /"
+    ],
+    "key": {
+        "i": {
+            "item": "gsw2:copper_ingot"
+        },
+        "/": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "gsw2:copper_hoe",
+        "count": 1
+    },
+    "group": "tool_hoe"
+}

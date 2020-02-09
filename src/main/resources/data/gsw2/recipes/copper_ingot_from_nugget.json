@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "iii",
+        "iii",
+        "iii"
+    ],
+    "key": {
+        "i": {
+            "item": "gsw2:copper_nugget"
+        }
+    },
+    "result": {
+        "item": "gsw2:copper_ingot",
+        "count": 1
+    },
+    "group": "copper_ingot"
+}

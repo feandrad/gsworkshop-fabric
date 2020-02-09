@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "gsw2:copper_block",
+    "c:copper_block"
+  ]
+}

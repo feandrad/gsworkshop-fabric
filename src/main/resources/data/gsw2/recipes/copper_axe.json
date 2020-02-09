@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ii",
+        "i/",
+        " /"
+    ],
+    "key": {
+        "i": {
+            "item": "gsw:copper_ingot"
+        },
+        "/": {
+            "item": "gsw:stick"
+        }
+    },
+    "result": {
+        "item": "gsw2:copper_axe",
+        "count": 1
+    },
+    "group": "tool_axe"
+}

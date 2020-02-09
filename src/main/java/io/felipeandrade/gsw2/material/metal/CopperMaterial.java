@@ -1,5 +1,6 @@
 package io.felipeandrade.gsw2.material.metal;
 
+import net.fabricmc.fabric.api.tag.FabricTag;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 
