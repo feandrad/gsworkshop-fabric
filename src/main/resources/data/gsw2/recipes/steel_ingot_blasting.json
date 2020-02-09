@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "gsw2:steel_ore"
+  },
+  "result": "gsw2:steel_ingot",
+  "experience": 0.7,
+  "cookingtime": 100,
+  "group": "steel_ingot"
+}
