@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "gsw2:sapphire_ore"
+  },
+  "result": "gsw2:sapphire_gem",
+  "experience": 1.0,
+  "cookingtime": 100,
+  "group": "sapphire_gem"
+}
