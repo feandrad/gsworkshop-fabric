@@ -1,7 +1,7 @@
 {
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
-        { "item": "gsw2:copper_ingot" }
+        { "tag": "c:copper_ingot" }
     ],
     "result": {
         "item": "gsw2:copper_nugget",

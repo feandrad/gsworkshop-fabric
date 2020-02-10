@@ -2,16 +2,17 @@
     "type": "minecraft:crafting_shaped",
     "pattern": [
         "iii",
-        "i i"
+        "iii",
+        "iii"
     ],
     "key": {
         "i": {
-            "item": "gsw2:copper_ingot"
+            "tag": "c:copper_nugget"
         }
     },
     "result": {
-        "item": "gsw2:copper_helmet",
+        "item": "gsw2:copper_ingot",
         "count": 1
     },
-    "group": "armor_helmet"
+    "group": "copper_ingot"
 }

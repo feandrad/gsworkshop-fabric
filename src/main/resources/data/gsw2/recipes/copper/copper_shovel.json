@@ -2,15 +2,15 @@
     "type": "minecraft:crafting_shaped",
     "pattern": [
         "i",
-        "/",
-        "/"
+        "#",
+        "#"
     ],
     "key": {
         "i": {
-            "item": "gsw2:copper_ingot"
+            "tag": "c:copper_ingot"
         },
-        "/": {
-            "item": "minecraft:stick"
+        "#": {
+            "tag": "c:tool_rod"
         }
     },
     "result": {
