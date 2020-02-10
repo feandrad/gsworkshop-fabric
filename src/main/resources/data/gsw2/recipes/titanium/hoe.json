@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ii",
+        " #",
+        " #"
+    ],
+    "key": {
+        "i": { "tag": "c:titanium_ingot" },
+        "#": { "tag": "c:tool_rod" }
+    },
+    "result": {
+        "item": "gsw2:titanium_hoe",
+        "count": 1
+    },
+    "group": "tool_hoe"
+}

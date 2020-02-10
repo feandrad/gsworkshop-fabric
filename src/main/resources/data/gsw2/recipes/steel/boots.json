@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "i i",
+        "i i "
+    ],
+    "key": {
+        "i": {
+            "tag": "c:steel_ingot"
+        }
+    },
+    "result": {
+        "item": "gsw2:steel_boots",
+        "count": 1
+    },
+    "group": "armor_boots"
+}

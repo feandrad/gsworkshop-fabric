@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "tag": "c:mithril_dust"
+  },
+  "result": "gsw2:mithril_ingot",
+  "experience": 0.1,
+  "cookingtime": 100,
+  "group": "mithril_ingot"
+}

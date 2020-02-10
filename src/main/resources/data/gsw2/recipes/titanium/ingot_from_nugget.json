@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "iii",
+        "iii",
+        "iii"
+    ],
+    "key": {
+        "i": {
+            "tag": "c:titanium_nugget"
+        }
+    },
+    "result": {
+        "item": "gsw2:titanium_ingot",
+        "count": 1
+    },
+    "group": "titanium_ingot"
+}

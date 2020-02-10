@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        { "tag": "c:steel_ingot" }
+    ],
+    "result": {
+        "item": "gsw2:steel_nugget",
+        "count": 9
+    },
+    "group": "steel_nugget"
+}

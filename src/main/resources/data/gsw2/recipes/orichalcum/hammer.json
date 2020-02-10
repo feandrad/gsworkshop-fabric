@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " i ",
+    " #i",
+    "#  "
+  ],
+  "key": {
+    "i": { "tag": "c:orichalcum_block" },
+    "#": { "tag": "c:tool_rod" }
+  },
+  "result": {
+    "item": "gsw2:orichalcum_hammer",
+    "count": 1
+  },
+  "group": "tool_pickaxe"
+}

@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "i",
+        "#",
+        "#"
+    ],
+    "key": {
+        "i": {
+            "tag": "c:steel_ingot"
+        },
+        "#": {
+            "tag": "c:tool_rod"
+        }
+    },
+    "result": {
+        "item": "gsw2:steel_shovel",
+        "count": 1
+    },
+    "group": "tool_shovel"
+}

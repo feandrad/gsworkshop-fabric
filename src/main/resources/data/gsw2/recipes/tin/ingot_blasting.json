@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "tag": "c:tin_dust"
+  },
+  "result": "gsw2:tin_ingot",
+  "experience": 0.1,
+  "cookingtime": 100,
+  "group": "tin_ingot"
+}

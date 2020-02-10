@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "iii",
+        "i i"
+    ],
+    "key": {
+        "i": {
+            "tag": "c:mithril_ingot"
+        }
+    },
+    "result": {
+        "item": "gsw2:mithril_helmet",
+        "count": 1
+    },
+    "group": "armor_helmet"
+}
