@@ -23,7 +23,7 @@ public class FlintMaterial extends GSWMaterial {
     public static final GSWMaterial MATERIAL = new FlintMaterial();
 
     public FlintMaterial() {
-        super("flint", GSWColor.black);
+        super("flint", GSWColor.dark_gray_dark_grey);
     }
 
     @Override

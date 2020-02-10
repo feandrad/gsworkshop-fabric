@@ -1,0 +1,7 @@
+{
+  "parent": "gsw2:item/template/tool",
+  "textures": {
+    "layer0": "gsw2:item/wood_handle",
+    "layer1": "gsw2:item/template/pickaxe2"
+  }
+}
