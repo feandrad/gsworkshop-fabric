@@ -56,7 +56,7 @@ public class CopperMaterial extends GSWMaterial {
     public static final GSWMaterialItem WIRE = new ColorProviderMaterialItem("wire", MATERIAL, new Item.Settings().group(GSWItemGroup.MATERIALS));
 
     public static final GSWBlock METAL_BLOCK = new ColorProviderMaterialBlock(MATERIAL, GSWMaterialBlock.SETTINGS_METAL);
-    public static final GSWBlock ORE_BLOCK = new ColorProviderOreBlock(MATERIAL, GSWMaterialBlock.SETTINGS_METAL);
+    public static final GSWBlock ORE_BLOCK = new ColorProviderOreBlock(MATERIAL, GSWMaterialBlock.SETTINGS_ORE);
 
 
     public static final GSWToolMaterial TOOL_MATERIAL = new GSWToolMaterial(1, 160, 5.0F, 1.6F, 16, INGOT);

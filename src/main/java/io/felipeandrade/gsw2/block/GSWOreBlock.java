@@ -8,6 +8,7 @@ import net.minecraft.client.render.RenderLayer;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.BlockRenderView;
 
+import io.felipeandrade.gsw2.GSWItemGroup;
 import io.felipeandrade.gsw2.common.ClientResourceInit;
 import io.felipeandrade.gsw2.material.GSWMaterial;
 
@@ -20,7 +21,7 @@ public class GSWOreBlock extends GSWBlock implements BlockColorProvider, ClientR
     }
 
     public GSWOreBlock(String unlocalizedName, GSWMaterial material, Block.Settings settings) {
-        super(unlocalizedName, settings);
+        super(unlocalizedName, GSWItemGroup.MATERIALS, settings);
         this.material = material;
     }
 

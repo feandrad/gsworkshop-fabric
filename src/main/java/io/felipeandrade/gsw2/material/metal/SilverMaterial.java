@@ -56,7 +56,7 @@ public class SilverMaterial extends GSWMaterial {
     public static final GSWMaterialItem WIRE = new ColorProviderMaterialItem("wire", MATERIAL, new Item.Settings().group(GSWItemGroup.MATERIALS));
 
     public static final GSWBlock METAL_BLOCK = new ColorProviderMaterialBlock(MATERIAL, GSWMaterialBlock.SETTINGS_METAL);
-    public static final GSWBlock ORE_BLOCK = new ColorProviderOreBlock(MATERIAL, GSWMaterialBlock.SETTINGS_METAL);
+    public static final GSWBlock ORE_BLOCK = new ColorProviderOreBlock(MATERIAL, GSWMaterialBlock.SETTINGS_ORE);
 
 
     public static final GSWToolMaterial TOOL_MATERIAL = new GSWToolMaterial(2, 180, 7.0F, 1.8F, 18, INGOT);

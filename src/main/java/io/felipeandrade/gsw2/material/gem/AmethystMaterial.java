@@ -44,7 +44,7 @@ public class AmethystMaterial extends GSWMaterial {
     public static final GSWItem GEM = new GSWMaterialItem("gem", MATERIAL, new Item.Settings().group(GSWItemGroup.MATERIALS));
 
     public static final GSWBlock GEM_BLOCK = new GSWMaterialBlock(MATERIAL, GSWMaterialBlock.SETTINGS_GEM);
-    public static final GSWBlock ORE_BLOCK = new GemOreBlock(MATERIAL, GSWMaterialBlock.SETTINGS_GEM);
+    public static final GSWBlock ORE_BLOCK = new GemOreBlock(MATERIAL, GSWMaterialBlock.SETTINGS_ORE);
 
 }
 

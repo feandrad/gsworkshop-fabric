@@ -4,18 +4,7 @@ import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
-import io.felipeandrade.gsw2.item.GSWItem;
-import io.felipeandrade.gsw2.material.metal.BronzeMaterial;
-import io.felipeandrade.gsw2.material.metal.CopperMaterial;
-
 public class GSWToolMaterial implements ToolMaterial {
-
-//    SILVER(1, 131, 5.0F, 2.0F, 17,  ),
-//    STEEL(3, 500, 7.0F, 2.0F, 5,  ),
-//    TITANIUM(3, 3000, 8.0F, 3.0F, 1,  ),
-//    PLATINUM(3, 750, 12.0F, 2.0F, 22,  ),
-//    MITHRIL(4, 2500, 14.0F, 3.0F, 30,  ),
-//    ORICHALCUM(4, 5000, 10.0F, 4.0F, 1,  );
 
     private final int miningLevel;
     private final int itemDurability;

@@ -1,5 +1,8 @@
 package io.felipeandrade.gsw2.material.metal;
 
+import net.fabricmc.fabric.api.block.FabricBlockSettings;
+import net.fabricmc.fabric.api.tools.FabricToolTags;
+import net.minecraft.block.Blocks;
 import net.minecraft.item.Item;
 
 import java.util.Arrays;
@@ -9,7 +12,6 @@ import io.felipeandrade.gsw2.GSWItemGroup;
 import io.felipeandrade.gsw2.block.ColorProviderMaterialBlock;
 import io.felipeandrade.gsw2.block.ColorProviderOreBlock;
 import io.felipeandrade.gsw2.block.GSWBlock;
-import io.felipeandrade.gsw2.block.GSWMaterialBlock;
 import io.felipeandrade.gsw2.common.GSWColor;
 import io.felipeandrade.gsw2.item.GSWItem;
 import io.felipeandrade.gsw2.item.tool.GSWAxe;
@@ -55,8 +57,8 @@ public class MithrilMaterial extends GSWMaterial {
     public static final GSWMaterialItem GEAR = new ColorProviderMaterialItem("gear", MATERIAL, new Item.Settings().group(GSWItemGroup.MATERIALS));
     public static final GSWMaterialItem WIRE = new ColorProviderMaterialItem("wire", MATERIAL, new Item.Settings().group(GSWItemGroup.MATERIALS));
 
-    public static final GSWBlock METAL_BLOCK = new ColorProviderMaterialBlock(MATERIAL, GSWMaterialBlock.SETTINGS_METAL);
-    public static final GSWBlock ORE_BLOCK = new ColorProviderOreBlock(MATERIAL, GSWMaterialBlock.SETTINGS_METAL);
+    public static final GSWBlock METAL_BLOCK = new ColorProviderMaterialBlock(MATERIAL, FabricBlockSettings.copy(Blocks.OBSIDIAN).breakByTool(FabricToolTags.PICKAXES, 4).build());
+    public static final GSWBlock ORE_BLOCK = new ColorProviderOreBlock(MATERIAL, FabricBlockSettings.copy(Blocks.OBSIDIAN).breakByTool(FabricToolTags.PICKAXES, 4).build());
 
 
     public static final GSWToolMaterial TOOL_MATERIAL = new GSWToolMaterial(4, 3000, 10.0F, 4.0F, 30, INGOT);

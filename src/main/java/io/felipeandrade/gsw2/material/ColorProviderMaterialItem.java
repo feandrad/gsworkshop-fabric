@@ -1,12 +1,9 @@
 package io.felipeandrade.gsw2.material;
 
 import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
-import net.minecraft.client.color.item.ItemColorProvider;
 import net.minecraft.item.ItemStack;
 
-import io.felipeandrade.gsw2.common.ClientResourceInit;
-
-public class ColorProviderMaterialItem extends GSWMaterialItem implements ItemColorProvider, ClientResourceInit {
+public class ColorProviderMaterialItem extends GSWMaterialItem implements GSWItemColorProvider {
 
 
     public ColorProviderMaterialItem(String unlocalizedName, GSWMaterial material, Settings settings) {
@@ -16,11 +13,6 @@ public class ColorProviderMaterialItem extends GSWMaterialItem implements ItemCo
     @Override
     public int getColor(ItemStack stack, int tintIndex) {
         return material.getPrimaryColor();
-    }
-
-    @Override
-    public void register() {
-        super.register();
     }
 
     @Override

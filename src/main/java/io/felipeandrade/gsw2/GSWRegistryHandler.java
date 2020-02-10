@@ -6,8 +6,6 @@ import java.util.List;
 
 import io.felipeandrade.gsw2.common.ClientResourceInit;
 import io.felipeandrade.gsw2.common.Registrable;
-import io.felipeandrade.gsw2.material.other.BoneMaterial;
-import io.felipeandrade.gsw2.material.other.FlintMaterial;
 import io.felipeandrade.gsw2.material.GSWMaterial;
 import io.felipeandrade.gsw2.material.gem.AmethystMaterial;
 import io.felipeandrade.gsw2.material.gem.RubyMaterial;
@@ -22,6 +20,8 @@ import io.felipeandrade.gsw2.material.metal.SilverMaterial;
 import io.felipeandrade.gsw2.material.metal.SteelMaterial;
 import io.felipeandrade.gsw2.material.metal.TinMaterial;
 import io.felipeandrade.gsw2.material.metal.TitaniumMaterial;
+import io.felipeandrade.gsw2.material.other.BoneMaterial;
+import io.felipeandrade.gsw2.material.other.FlintMaterial;
 
 public abstract class GSWRegistryHandler {
 
@@ -38,13 +38,13 @@ public abstract class GSWRegistryHandler {
             BronzeMaterial.MATERIAL,
             SteelMaterial.MATERIAL,
 
+            MithrilMaterial.MATERIAL,
+            OrichalcumMaterial.MATERIAL,
+
             AmethystMaterial.MATERIAL,
             TopazMaterial.MATERIAL,
             SapphireMaterial.MATERIAL,
-            RubyMaterial.MATERIAL,
-
-            MithrilMaterial.MATERIAL,
-            OrichalcumMaterial.MATERIAL
+            RubyMaterial.MATERIAL
     );
 
     public static void registerAll() {
