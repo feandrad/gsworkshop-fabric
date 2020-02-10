@@ -1,12 +1,12 @@
 package io.felipeandrade.gsw2.material.metal;
 
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import io.felipeandrade.gsw2.GSWItemGroup;
 import io.felipeandrade.gsw2.block.ColorProviderMaterialBlock;
 import io.felipeandrade.gsw2.block.ColorProviderOreBlock;
 import io.felipeandrade.gsw2.block.GSWBlock;
@@ -42,12 +42,12 @@ public class TinMaterial extends GSWMaterial {
     }
 
 
-    public static final GSWItem INGOT = new ColorProviderMaterialItem("ingot", MATERIAL, new Item.Settings().group(ItemGroup.MISC));
-    public static final GSWMaterialItem NUGGET = new ColorProviderMaterialItem("nugget", MATERIAL, new Item.Settings().group(ItemGroup.MISC));
-    public static final GSWMaterialItem DUST = new ColorProviderMaterialItem("dust", MATERIAL, new Item.Settings().group(ItemGroup.MISC));
-    public static final GSWMaterialItem PLATE = new ColorProviderMaterialItem("plate", MATERIAL, new Item.Settings().group(ItemGroup.MISC));
-    public static final GSWMaterialItem GEAR = new ColorProviderMaterialItem("gear", MATERIAL, new Item.Settings().group(ItemGroup.MISC));
-    public static final GSWMaterialItem WIRE = new ColorProviderMaterialItem("wire", MATERIAL, new Item.Settings().group(ItemGroup.MISC));
+    public static final GSWItem INGOT = new ColorProviderMaterialItem("ingot", MATERIAL, new Item.Settings().group(GSWItemGroup.MATERIALS));
+    public static final GSWMaterialItem NUGGET = new ColorProviderMaterialItem("nugget", MATERIAL, new Item.Settings().group(GSWItemGroup.MATERIALS));
+    public static final GSWMaterialItem DUST = new ColorProviderMaterialItem("dust", MATERIAL, new Item.Settings().group(GSWItemGroup.MATERIALS));
+    public static final GSWMaterialItem PLATE = new ColorProviderMaterialItem("plate", MATERIAL, new Item.Settings().group(GSWItemGroup.MATERIALS));
+    public static final GSWMaterialItem GEAR = new ColorProviderMaterialItem("gear", MATERIAL, new Item.Settings().group(GSWItemGroup.MATERIALS));
+    public static final GSWMaterialItem WIRE = new ColorProviderMaterialItem("wire", MATERIAL, new Item.Settings().group(GSWItemGroup.MATERIALS));
 
     public static final GSWBlock METAL_BLOCK = new ColorProviderMaterialBlock(MATERIAL, GSWMaterialBlock.SETTINGS_METAL);
     public static final GSWBlock ORE_BLOCK = new ColorProviderOreBlock(MATERIAL, GSWMaterialBlock.SETTINGS_METAL);

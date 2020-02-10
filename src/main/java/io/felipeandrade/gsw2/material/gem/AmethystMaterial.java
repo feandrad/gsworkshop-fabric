@@ -1,13 +1,13 @@
 package io.felipeandrade.gsw2.material.gem;
 
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
+import io.felipeandrade.gsw2.GSWItemGroup;
 import io.felipeandrade.gsw2.block.GSWBlock;
 import io.felipeandrade.gsw2.block.GSWMaterialBlock;
 import io.felipeandrade.gsw2.block.GemOreBlock;
@@ -41,7 +41,7 @@ public class AmethystMaterial extends GSWMaterial {
     }
 
 
-    public static final GSWItem GEM = new GSWMaterialItem("gem", MATERIAL, new Item.Settings().group(ItemGroup.MISC));
+    public static final GSWItem GEM = new GSWMaterialItem("gem", MATERIAL, new Item.Settings().group(GSWItemGroup.MATERIALS));
 
     public static final GSWBlock GEM_BLOCK = new GSWMaterialBlock(MATERIAL, GSWMaterialBlock.SETTINGS_GEM);
     public static final GSWBlock ORE_BLOCK = new GemOreBlock(MATERIAL, GSWMaterialBlock.SETTINGS_GEM);

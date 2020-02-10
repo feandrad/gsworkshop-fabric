@@ -1,11 +1,11 @@
 package io.felipeandrade.gsw2.material.metal;
 
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 
 import java.util.Arrays;
 import java.util.List;
 
+import io.felipeandrade.gsw2.GSWItemGroup;
 import io.felipeandrade.gsw2.block.ColorProviderMaterialBlock;
 import io.felipeandrade.gsw2.block.ColorProviderOreBlock;
 import io.felipeandrade.gsw2.block.GSWBlock;
@@ -48,12 +48,12 @@ public class PlatinumMaterial extends GSWMaterial {
     }
 
 
-    public static final GSWItem INGOT = new ColorProviderMaterialItem("ingot", MATERIAL, new Item.Settings().group(ItemGroup.MISC));
-    public static final GSWMaterialItem NUGGET = new ColorProviderMaterialItem("nugget", MATERIAL, new Item.Settings().group(ItemGroup.MISC));
-    public static final GSWMaterialItem DUST = new ColorProviderMaterialItem("dust", MATERIAL, new Item.Settings().group(ItemGroup.MISC));
-    public static final GSWMaterialItem PLATE = new ColorProviderMaterialItem("plate", MATERIAL, new Item.Settings().group(ItemGroup.MISC));
-    public static final GSWMaterialItem GEAR = new ColorProviderMaterialItem("gear", MATERIAL, new Item.Settings().group(ItemGroup.MISC));
-    public static final GSWMaterialItem WIRE = new ColorProviderMaterialItem("wire", MATERIAL, new Item.Settings().group(ItemGroup.MISC));
+    public static final GSWItem INGOT = new ColorProviderMaterialItem("ingot", MATERIAL, new Item.Settings().group(GSWItemGroup.MATERIALS));
+    public static final GSWMaterialItem NUGGET = new ColorProviderMaterialItem("nugget", MATERIAL, new Item.Settings().group(GSWItemGroup.MATERIALS));
+    public static final GSWMaterialItem DUST = new ColorProviderMaterialItem("dust", MATERIAL, new Item.Settings().group(GSWItemGroup.MATERIALS));
+    public static final GSWMaterialItem PLATE = new ColorProviderMaterialItem("plate", MATERIAL, new Item.Settings().group(GSWItemGroup.MATERIALS));
+    public static final GSWMaterialItem GEAR = new ColorProviderMaterialItem("gear", MATERIAL, new Item.Settings().group(GSWItemGroup.MATERIALS));
+    public static final GSWMaterialItem WIRE = new ColorProviderMaterialItem("wire", MATERIAL, new Item.Settings().group(GSWItemGroup.MATERIALS));
 
     public static final GSWBlock METAL_BLOCK = new ColorProviderMaterialBlock(MATERIAL, GSWMaterialBlock.SETTINGS_METAL);
     public static final GSWBlock ORE_BLOCK = new ColorProviderOreBlock(MATERIAL, GSWMaterialBlock.SETTINGS_METAL);
@@ -61,11 +61,11 @@ public class PlatinumMaterial extends GSWMaterial {
 
     public static final GSWToolMaterial TOOL_MATERIAL = new GSWToolMaterial(3, 980, 8.0F, 3.0F, 18, INGOT);
 
-    public static final GSWTool SWORD = new GSWSword(MATERIAL, TOOL_MATERIAL,  new Item.Settings().group(ItemGroup.COMBAT));
-    public static final GSWTool PICKAXE = new GSWPickaxe(MATERIAL, TOOL_MATERIAL,  new Item.Settings().group(ItemGroup.TOOLS));
-    public static final GSWTool AXE = new GSWAxe(MATERIAL, TOOL_MATERIAL, new Item.Settings().group(ItemGroup.TOOLS));
-    public static final GSWTool SHOVEL = new GSWShovel(MATERIAL, TOOL_MATERIAL,  new Item.Settings().group(ItemGroup.TOOLS));
-    public static final GSWTool HOE = new GSWHoe(MATERIAL, TOOL_MATERIAL, -0.0f, new Item.Settings().group(ItemGroup.TOOLS));
-    public static final GSWTool HAMMER = new GSWHammer(MATERIAL, TOOL_MATERIAL,  new Item.Settings().group(ItemGroup.TOOLS));
+    public static final GSWTool SWORD = new GSWSword(MATERIAL, TOOL_MATERIAL,  new Item.Settings().group(GSWItemGroup.TOOLS));
+    public static final GSWTool PICKAXE = new GSWPickaxe(MATERIAL, TOOL_MATERIAL,  new Item.Settings().group(GSWItemGroup.TOOLS));
+    public static final GSWTool AXE = new GSWAxe(MATERIAL, TOOL_MATERIAL, new Item.Settings().group(GSWItemGroup.TOOLS));
+    public static final GSWTool SHOVEL = new GSWShovel(MATERIAL, TOOL_MATERIAL,  new Item.Settings().group(GSWItemGroup.TOOLS));
+    public static final GSWTool HOE = new GSWHoe(MATERIAL, TOOL_MATERIAL, -0.0f, new Item.Settings().group(GSWItemGroup.TOOLS));
+    public static final GSWTool HAMMER = new GSWHammer(MATERIAL, TOOL_MATERIAL,  new Item.Settings().group(GSWItemGroup.TOOLS));
 
 }
