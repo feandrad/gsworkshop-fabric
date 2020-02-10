@@ -10,7 +10,7 @@ import java.util.List;
 
 import io.felipeandrade.gsw2.block.GSWBlock;
 import io.felipeandrade.gsw2.block.GSWMaterialBlock;
-import io.felipeandrade.gsw2.block.GSWOreBlock;
+import io.felipeandrade.gsw2.block.GemOreBlock;
 import io.felipeandrade.gsw2.common.GSWColor;
 import io.felipeandrade.gsw2.item.GSWItem;
 import io.felipeandrade.gsw2.item.tool.GSWTool;
@@ -44,7 +44,7 @@ public class RubyMaterial extends GSWMaterial {
     public static final GSWItem GEM = new GSWMaterialItem("gem", MATERIAL, new Item.Settings().group(ItemGroup.MISC));
 
     public static final GSWBlock GEM_BLOCK = new GSWMaterialBlock(MATERIAL, GSWMaterialBlock.SETTINGS_GEM);
-    public static final GSWBlock ORE_BLOCK = new GSWOreBlock(MATERIAL, GSWMaterialBlock.SETTINGS_GEM);
+    public static final GSWBlock ORE_BLOCK = new GemOreBlock(MATERIAL, GSWMaterialBlock.SETTINGS_GEM);
 
 }
 
