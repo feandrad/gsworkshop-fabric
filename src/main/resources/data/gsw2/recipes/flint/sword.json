@@ -7,7 +7,7 @@
   ],
   "key": {
     "i": { "tag": "c:flint" },
-    "#": { "tag": "c:tool_rod" }
+    "#": { "tag": "gsw2:tool_rod" }
   },
   "result": {
     "item": "gsw2:flint_sword",
