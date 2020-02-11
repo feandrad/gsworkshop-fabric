@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " i ",
+    " #i",
+    "#  "
+  ],
+  "key": {
+    "i": { "tag": "c:iron_block" },
+    "#": { "tag": "gsw2:tool_rod" }
+  },
+  "result": {
+    "item": "gsw2:iron_hammer",
+    "count": 1
+  },
+  "group": "tool_pickaxe"
+}

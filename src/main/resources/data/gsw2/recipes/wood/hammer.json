@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " i ",
+    " #i",
+    "#  "
+  ],
+  "key": {
+    "i": { "tag": "c:wood_log" },
+    "#": { "tag": "gsw2:tool_rod" }
+  },
+  "result": {
+    "item": "gsw2:wood_hammer",
+    "count": 1
+  },
+  "group": "tool_pickaxe"
+}
