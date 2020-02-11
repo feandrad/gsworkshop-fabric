@@ -38,6 +38,7 @@ public class BoneMaterial extends GSWMaterial {
     public static final GSWTool AXE = new GSWAxe(MATERIAL, TOOL_MATERIAL,  new Item.Settings().group(GSWItemGroup.TOOLS));
     public static final GSWTool SHOVEL = new GSWShovel(MATERIAL, TOOL_MATERIAL,  new Item.Settings().group(GSWItemGroup.TOOLS));
     public static final GSWTool HOE = new GSWHoe(MATERIAL, TOOL_MATERIAL, -3.0f, new Item.Settings().group(GSWItemGroup.TOOLS));
+
     public static final GSWTool HAMMER = new GSWHammer(MATERIAL, TOOL_MATERIAL, new Item.Settings().group(GSWItemGroup.TOOLS));
 
 }

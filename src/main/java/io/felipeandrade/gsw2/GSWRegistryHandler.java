@@ -27,34 +27,18 @@ import io.felipeandrade.gsw2.material.vanilla.FlintMaterial;
 import io.felipeandrade.gsw2.material.vanilla.GoldMaterial;
 import io.felipeandrade.gsw2.material.vanilla.IronMaterial;
 import io.felipeandrade.gsw2.material.vanilla.StoneMaterial;
+import io.felipeandrade.gsw2.material.vanilla.WoodMaterial;
+import io.felipeandrade.gsw2.material.vanilla.WoolMaterial;
 
 public abstract class GSWRegistryHandler {
 
     public static final List<GSWMaterial> ALL_GSW_MATERIALS = Arrays.asList(
-            BoneMaterial.MATERIAL,
-            FlintMaterial.MATERIAL,
-            StoneMaterial.MATERIAL,
-            IronMaterial.MATERIAL,
-            GoldMaterial.MATERIAL,
-            DiamondMaterial.MATERIAL,
-            CoalMaterial.MATERIAL,
-
-            CopperMaterial.MATERIAL,
-            TinMaterial.MATERIAL,
-            SilverMaterial.MATERIAL,
-            TitaniumMaterial.MATERIAL,
-            PlatinumMaterial.MATERIAL,
-
-            BronzeMaterial.MATERIAL,
-            SteelMaterial.MATERIAL,
-
-            MithrilMaterial.MATERIAL,
-            OrichalcumMaterial.MATERIAL,
-
-            AmethystMaterial.MATERIAL,
-            TopazMaterial.MATERIAL,
-            SapphireMaterial.MATERIAL,
-            RubyMaterial.MATERIAL
+            WoodMaterial.MATERIAL, StoneMaterial.MATERIAL, IronMaterial.MATERIAL, GoldMaterial.MATERIAL, DiamondMaterial.MATERIAL,
+            BoneMaterial.MATERIAL, FlintMaterial.MATERIAL, CoalMaterial.MATERIAL, WoolMaterial.MATERIAL,
+            CopperMaterial.MATERIAL, TinMaterial.MATERIAL, SilverMaterial.MATERIAL, TitaniumMaterial.MATERIAL, PlatinumMaterial.MATERIAL,
+            BronzeMaterial.MATERIAL, SteelMaterial.MATERIAL,
+            MithrilMaterial.MATERIAL, OrichalcumMaterial.MATERIAL,
+            AmethystMaterial.MATERIAL, TopazMaterial.MATERIAL, SapphireMaterial.MATERIAL, RubyMaterial.MATERIAL
     );
 
     public static void registerAll() {

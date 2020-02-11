@@ -2,8 +2,10 @@ package io.felipeandrade.gsw2.common;
 
 public class GSWColor {
 
+    public static final int none = -1;
+
     public static final int Black = parseColor(0, 0, 0);
-    public static final int White = parseColor(255, 255, 255);
+    public static final int WHITE = parseColor(255, 255, 255);
     public static final int Red = parseColor(255, 0, 0);
     public static final int Lime = parseColor(0, 255, 0);
     public static final int Blue = parseColor(0, 0, 255);
@@ -150,7 +152,8 @@ public class GSWColor {
     public static final int ivory = parseColor(255, 255, 240);
     public static final int azure = parseColor(240, 255, 255);
     public static final int snow = parseColor(255, 250, 250);
-    public static final int black = parseColor(0, 0, 0);
+
+    public static final int jet_grey_gray = parseColor(52, 52, 52);
     public static final int dim_gray_dim_grey = parseColor(105, 105, 105);
     public static final int gray_grey = parseColor(128, 128, 128);
     public static final int dark_gray_dark_grey = parseColor(169, 169, 169);
@@ -158,7 +161,6 @@ public class GSWColor {
     public static final int light_gray_light_grey = parseColor(211, 211, 211);
     public static final int gainsboro = parseColor(220, 220, 220);
     public static final int white_smoke = parseColor(245, 245, 245);
-    public static final int white = parseColor(255, 255, 255);
 
 
 //    RGB = (R*65536)+(G*256)+B , (when R is RED, G is GREEN and B is BLUE)

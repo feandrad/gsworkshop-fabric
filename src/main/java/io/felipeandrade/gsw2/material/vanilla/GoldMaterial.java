@@ -1,6 +1,7 @@
 package io.felipeandrade.gsw2.material.vanilla;
 
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ToolMaterials;
 
 import java.util.Arrays;
@@ -21,7 +22,7 @@ public class GoldMaterial extends GSWMaterial {
     public static final GSWMaterial MATERIAL = new GoldMaterial();
 
     public GoldMaterial() {
-        super("gold", GSWColor.light_golden_rod_yellow);
+        super("gold", GSWColor.gold);
     }
 
     @Override
@@ -41,6 +42,6 @@ public class GoldMaterial extends GSWMaterial {
     public static final GSWMaterialItem WIRE = new ColorProviderMaterialItem("wire", MATERIAL, new Item.Settings().group(GSWItemGroup.MATERIALS));
 
 
-    public static final GSWTool HAMMER = new GSWHammer(MATERIAL, ToolMaterials.GOLD, new Item.Settings().group(GSWItemGroup.TOOLS));
+    public static final GSWTool HAMMER = new GSWHammer(MATERIAL, ToolMaterials.GOLD, new Item.Settings().group(ItemGroup.TOOLS));
 
 }

@@ -17,17 +17,17 @@ import io.felipeandrade.gsw2.material.ColorProviderMaterialItem;
 import io.felipeandrade.gsw2.material.GSWMaterial;
 import io.felipeandrade.gsw2.material.GSWMaterialItem;
 
-public class IronMaterial extends GSWMaterial {
+public class WoodMaterial extends GSWMaterial {
 
-    public static final GSWMaterial MATERIAL = new IronMaterial();
+    public static final GSWMaterial MATERIAL = new WoodMaterial();
 
-    public IronMaterial() {
-        super("iron", GSWColor.none);
+    public WoodMaterial() {
+        super("wood", GSWColor.sienna);
     }
 
     @Override
     public List<? extends GSWItem> allItems() {
-        return Arrays.asList(DUST, PLATE, GEAR, WIRE);
+        return Arrays.asList(GEAR, DUST);
     }
 
     @Override
@@ -37,11 +37,8 @@ public class IronMaterial extends GSWMaterial {
 
 
     public static final GSWMaterialItem DUST = new ColorProviderMaterialItem("dust", MATERIAL, new Item.Settings().group(GSWItemGroup.MATERIALS));
-    public static final GSWMaterialItem PLATE = new ColorProviderMaterialItem("plate", MATERIAL, new Item.Settings().group(GSWItemGroup.MATERIALS));
     public static final GSWMaterialItem GEAR = new ColorProviderMaterialItem("gear", MATERIAL, new Item.Settings().group(GSWItemGroup.MATERIALS));
-    public static final GSWMaterialItem WIRE = new ColorProviderMaterialItem("wire", MATERIAL, new Item.Settings().group(GSWItemGroup.MATERIALS));
 
-
-    public static final GSWTool HAMMER = new GSWHammer(MATERIAL, ToolMaterials.IRON, new Item.Settings().group(ItemGroup.TOOLS));
+    public static final GSWTool HAMMER = new GSWHammer(MATERIAL, ToolMaterials.WOOD, new Item.Settings().group(ItemGroup.TOOLS));
 
 }

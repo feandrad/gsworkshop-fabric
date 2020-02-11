@@ -1,6 +1,7 @@
 package io.felipeandrade.gsw2.material.vanilla;
 
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ToolMaterials;
 
 import java.util.Collections;
@@ -20,7 +21,7 @@ public class StoneMaterial extends GSWMaterial {
     public static final GSWMaterial MATERIAL = new StoneMaterial();
 
     public StoneMaterial() {
-        super("stone", GSWColor.gray_grey);
+        super("stone", GSWColor.dark_gray_dark_grey);
     }
 
     @Override
@@ -36,6 +37,6 @@ public class StoneMaterial extends GSWMaterial {
 
     public static final GSWMaterialItem GEAR = new ColorProviderMaterialItem("gear", MATERIAL, new Item.Settings().group(GSWItemGroup.MATERIALS));
 
-    public static final GSWTool HAMMER = new GSWHammer(MATERIAL, ToolMaterials.STONE, new Item.Settings().group(GSWItemGroup.TOOLS));
+    public static final GSWTool HAMMER = new GSWHammer(MATERIAL, ToolMaterials.STONE, new Item.Settings().group(ItemGroup.TOOLS));
 
 }

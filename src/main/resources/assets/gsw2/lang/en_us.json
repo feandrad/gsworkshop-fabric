@@ -27,6 +27,43 @@
   "block.gsw2.steel_block": "Steel Block",
 
 
+
+  "item.gsw2.wool_helmet": "Woolen Helmet",
+  "item.gsw2.wool_chestplate": "Woolen Chestplate",
+  "item.gsw2.wool_leggings": "Woolen Leggings",
+  "item.gsw2.wool_boots": "Woolen Boots",
+
+
+  "item.gsw2.wood_dust": "Sawdust",
+  "item.gsw2.wood_gear": "Wooden Gear",
+  "item.gsw2.wood_hammer": "Wooden Hammer",
+
+  "item.gsw2.wood_helmet": "Wooden Helmet",
+  "item.gsw2.wood_chestplate": "Wooden Chestplate",
+  "item.gsw2.wood_leggings": "Wooden Leggings",
+  "item.gsw2.wood_boots": "Wooden Boots",
+
+
+  "item.gsw2.stone_gear": "Stone Gear",
+  "item.gsw2.stone_hammer": "Stone Hammer",
+
+
+  "item.gsw2.bone_sword": "Bone Sword",
+  "item.gsw2.bone_pickaxe": "Bone Pickaxe",
+  "item.gsw2.bone_axe": "Bone Axe",
+  "item.gsw2.bone_shovel": "Bone Shovel",
+  "item.gsw2.bone_hoe": "Bone Hoe",
+  "item.gsw2.bone_hammer": "Bone Hammer",
+
+
+  "item.gsw2.flint_sword": "Flint Sword",
+  "item.gsw2.flint_pickaxe": "Flint Pickaxe",
+  "item.gsw2.flint_axe": "Flint Axe",
+  "item.gsw2.flint_shovel": "Flint Shovel",
+  "item.gsw2.flint_hoe": "Flint Hoe",
+  "item.gsw2.flint_hammer": "Flint Hammer",
+
+
   "item.gsw2.amethyst_gem": "Amethyst",
   "item.gsw2.topaz_gem": "Topaz",
   "item.gsw2.sapphire_gem": "Sapphire",
@@ -37,6 +74,8 @@
   "item.gsw2.copper_nugget": "Copper Nugget",
   "item.gsw2.copper_dust": "Copper Dust",
   "item.gsw2.copper_plate": "Copper Plate",
+  "item.gsw2.copper_gear": "Copper Gear",
+  "item.gsw2.copper_wire": "Copper Wire",
 
   "item.gsw2.copper_helmet": "Copper Helmet",
   "item.gsw2.copper_chestplate": "Copper Chestplate",
@@ -49,8 +88,8 @@
   "item.gsw2.copper_shovel": "Copper Shovel",
   "item.gsw2.copper_hoe": "Copper Hoe",
   "item.gsw2.copper_hammer": "Copper Hammer",
-  
-  
+
+
   "item.gsw2.tin_ingot": "Tin Ingot",
   "item.gsw2.tin_nugget": "Tin Nugget",
   "item.gsw2.tin_dust": "Tin Dust",
@@ -85,8 +124,8 @@
   "item.gsw2.silver_shovel": "Silver Shovel",
   "item.gsw2.silver_hoe": "Silver Hoe",
   "item.gsw2.silver_hammer": "Silver Hammer",
-  
-  
+
+
   "item.gsw2.titanium_ingot": "Titanium Ingot",
   "item.gsw2.titanium_nugget": "Titanium Nugget",
   "item.gsw2.titanium_dust": "Titanium Dust",
@@ -104,7 +143,7 @@
   "item.gsw2.titanium_hoe": "Titanium Hoe",
   "item.gsw2.titanium_hammer": "Titanium Hammer",
 
-  
+
   "item.gsw2.platinum_ingot": "Platinum Ingot",
   "item.gsw2.platinum_nugget": "Platinum Nugget",
   "item.gsw2.platinum_dust": "Platinum Dust",
