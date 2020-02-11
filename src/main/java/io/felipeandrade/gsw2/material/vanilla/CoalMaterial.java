@@ -17,7 +17,7 @@ public class CoalMaterial extends GSWMaterial {
     public static final GSWMaterial MATERIAL = new CoalMaterial();
 
     public CoalMaterial() {
-        super("coal", GSWColor.dim_gray_dim_grey);
+        super("coal", GSWColor.jet_grey_gray);
     }
 
     @Override
