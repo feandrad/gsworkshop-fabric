@@ -3,6 +3,7 @@ package io.felipeandrade.gsw2.item.tool;
 import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
 import net.minecraft.item.HoeItem;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.ToolMaterial;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -16,13 +17,13 @@ public class GSWHoe extends HoeItem implements GSWTool, GSWItemColorProvider {
     protected final String unlocalizedName;
     private final GSWMaterial material;
 
-    public GSWHoe(String unlocalizedName, GSWMaterial material, GSWToolMaterial toolMaterial, float attackSpeed, Settings settings) {
+    public GSWHoe(String unlocalizedName, GSWMaterial material, ToolMaterial toolMaterial, float attackSpeed, Settings settings) {
         super(toolMaterial, attackSpeed, settings);
         this.unlocalizedName = unlocalizedName;
         this.material = material;
     }
 
-    public GSWHoe(GSWMaterial material, GSWToolMaterial toolMaterial, float attackSpeed, Settings settings) {
+    public GSWHoe(GSWMaterial material, ToolMaterial toolMaterial, float attackSpeed, Settings settings) {
         this(material.unlocalizedName() + "_hoe", material, toolMaterial, attackSpeed, settings);
     }
 

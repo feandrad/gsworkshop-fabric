@@ -3,6 +3,7 @@ package io.felipeandrade.gsw2.item.tool;
 import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.SwordItem;
+import net.minecraft.item.ToolMaterial;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -16,13 +17,13 @@ public class GSWSword extends SwordItem implements GSWTool, GSWItemColorProvider
     private final String unlocalizedName;
     private final GSWMaterial material;
 
-    public GSWSword(String unlocalizedName, GSWMaterial material, GSWToolMaterial toolMaterial, Settings settings) {
+    public GSWSword(String unlocalizedName, GSWMaterial material, ToolMaterial toolMaterial, Settings settings) {
         super(toolMaterial, 3, -2.4f, settings);
         this.unlocalizedName = unlocalizedName;
         this.material = material;
     }
 
-    public GSWSword(GSWMaterial material, GSWToolMaterial toolMaterial, Settings settings) {
+    public GSWSword(GSWMaterial material, ToolMaterial toolMaterial, Settings settings) {
         this(material.unlocalizedName() + "_sword", material, toolMaterial, settings);
     }
 

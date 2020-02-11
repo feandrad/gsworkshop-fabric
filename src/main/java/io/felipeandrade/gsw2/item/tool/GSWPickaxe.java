@@ -5,6 +5,7 @@ import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.PickaxeItem;
+import net.minecraft.item.ToolMaterial;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.registry.Registry;
@@ -20,13 +21,13 @@ public class GSWPickaxe extends PickaxeItem implements GSWTool, GSWItemColorProv
     protected final String unlocalizedName;
     protected final GSWMaterial material;
 
-    GSWPickaxe(String unlocalizedName, GSWMaterial material, GSWToolMaterial toolMaterial, int attackDamage, float attackSpeed, Settings settings) {
+    GSWPickaxe(String unlocalizedName, GSWMaterial material, ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Settings settings) {
         super(toolMaterial, attackDamage, attackSpeed, settings);
         this.unlocalizedName = unlocalizedName;
         this.material = material;
     }
 
-    public GSWPickaxe(GSWMaterial material, GSWToolMaterial toolMaterial, Settings settings) {
+    public GSWPickaxe(GSWMaterial material, ToolMaterial toolMaterial, Settings settings) {
         this(material.unlocalizedName() + "_pickaxe", material, toolMaterial, 1, -2.8f, settings);
     }
 

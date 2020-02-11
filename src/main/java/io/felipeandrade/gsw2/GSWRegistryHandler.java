@@ -20,14 +20,24 @@ import io.felipeandrade.gsw2.material.metal.SilverMaterial;
 import io.felipeandrade.gsw2.material.metal.SteelMaterial;
 import io.felipeandrade.gsw2.material.metal.TinMaterial;
 import io.felipeandrade.gsw2.material.metal.TitaniumMaterial;
-import io.felipeandrade.gsw2.material.other.BoneMaterial;
-import io.felipeandrade.gsw2.material.other.FlintMaterial;
+import io.felipeandrade.gsw2.material.vanilla.BoneMaterial;
+import io.felipeandrade.gsw2.material.vanilla.CoalMaterial;
+import io.felipeandrade.gsw2.material.vanilla.DiamondMaterial;
+import io.felipeandrade.gsw2.material.vanilla.FlintMaterial;
+import io.felipeandrade.gsw2.material.vanilla.GoldMaterial;
+import io.felipeandrade.gsw2.material.vanilla.IronMaterial;
+import io.felipeandrade.gsw2.material.vanilla.StoneMaterial;
 
 public abstract class GSWRegistryHandler {
 
     public static final List<GSWMaterial> ALL_GSW_MATERIALS = Arrays.asList(
             BoneMaterial.MATERIAL,
             FlintMaterial.MATERIAL,
+            StoneMaterial.MATERIAL,
+            IronMaterial.MATERIAL,
+            GoldMaterial.MATERIAL,
+            DiamondMaterial.MATERIAL,
+            CoalMaterial.MATERIAL,
 
             CopperMaterial.MATERIAL,
             TinMaterial.MATERIAL,

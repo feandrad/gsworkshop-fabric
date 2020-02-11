@@ -3,6 +3,7 @@ package io.felipeandrade.gsw2.item.tool;
 import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
 import net.minecraft.item.AxeItem;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.ToolMaterial;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -16,13 +17,13 @@ public class GSWAxe extends AxeItem implements GSWTool, GSWItemColorProvider {
     private final String unlocalizedName;
     private final GSWMaterial material;
 
-    public GSWAxe(String unlocalizedName, GSWMaterial material, GSWToolMaterial toolMaterial, Settings settings) {
+    public GSWAxe(String unlocalizedName, GSWMaterial material, ToolMaterial toolMaterial, Settings settings) {
         super(toolMaterial, 6.0f, -3.2f, settings);
         this.unlocalizedName = unlocalizedName;
         this.material = material;
     }
 
-    public GSWAxe(GSWMaterial material, GSWToolMaterial toolMaterial, Settings settings) {
+    public GSWAxe(GSWMaterial material, ToolMaterial toolMaterial, Settings settings) {
         this(material.unlocalizedName() + "_axe", material, toolMaterial, settings);
     }
 

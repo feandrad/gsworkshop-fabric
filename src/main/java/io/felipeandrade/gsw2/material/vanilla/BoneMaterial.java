@@ -1,4 +1,4 @@
-package io.felipeandrade.gsw2.material.other;
+package io.felipeandrade.gsw2.material.vanilla;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
