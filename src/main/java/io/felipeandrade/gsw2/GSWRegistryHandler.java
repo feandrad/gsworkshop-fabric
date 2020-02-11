@@ -43,7 +43,7 @@ public abstract class GSWRegistryHandler {
             AmethystMaterial.MATERIAL, TopazMaterial.MATERIAL, SapphireMaterial.MATERIAL, RubyMaterial.MATERIAL
     );
 
-    public static void registerAll() {
+    public static void registerBlocksAndItems() {
         ArrayList<Registrable> result = new ArrayList<>();
 
         for (GSWMaterial material : ALL_GSW_MATERIALS) {

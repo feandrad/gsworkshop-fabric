@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import io.felipeandrade.gsw2.common.ClientResourceInit;
+import io.felipeandrade.gsw2.world.GSWWorldGen;
 
 public class GSW2Mod implements ModInitializer, ClientModInitializer {
 
@@ -16,7 +17,8 @@ public class GSW2Mod implements ModInitializer, ClientModInitializer {
 
     @Override
     public void onInitialize() {
-        GSWRegistryHandler.registerAll();
+        GSWRegistryHandler.registerBlocksAndItems();
+        GSWWorldGen.registerWorldGen();
     }
 
     @Override
