@@ -7,24 +7,25 @@ Mod under development.
  
 
 ## Implemented Features
-None yet. :(
- 
 
-## Planning Features (Not Implemented Yet):
-
-- Adds Copper, Tin, Bronze, Platinum, Titanium;
+- Adds Copper, Tin, Bronze, Silver, Steel, Platinum, Titanium;
 
 - Adds Amethyst, Topaz, Sapphire and Ruby
 
 - Adds Flint and Bone Tools;
 
-- New Tool: Hammer. Use a Hammer to create Ore Dusts. Hammers can't crush metals that are harder than itself;
+- New Tool: Hammer. For now is just an expensive Pickaxe...
+ 
+
+## Planning Features (Not Implemented Yet):
+
+- Use a Hammer to create Ore Dusts. Hammers can't crush metals that are harder than itself;
 
 - Add Mithrill Shrines in Overworld and Orichalcum Forges in the Nether.
 
 - Add Forging Anvil to shape metal;
 
-- Add Jeweler's Anvil to craft jewelery and add Sockets to your weapon;
+- Add Jeweler's Anvil to craft jewelery and add Sockets to your tool;
 
 - Add gem enchantments. Magic Gems can be socked into tools to give them the enchantments. Gems are recovered when the tool breaks;
 
