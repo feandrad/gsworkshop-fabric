@@ -1,0 +1,6 @@
+{
+  "parent": "gsw:item/template/gem",
+  "textures": {
+    "layer0": "gsw:item/ruby_gem"
+  }
+}

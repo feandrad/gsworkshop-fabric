@@ -1,0 +1,7 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "gsw:item/wood_handle",
+    "layer1": "gsw:item/template/pickaxe"
+  }
+}

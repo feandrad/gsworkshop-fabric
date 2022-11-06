@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "gsw:amethyst_ore"
+  },
+  "result": "gsw:amethyst_gem",
+  "experience": 1.0,
+  "cookingtime": 200,
+  "group": "amethyst_gem"
+}

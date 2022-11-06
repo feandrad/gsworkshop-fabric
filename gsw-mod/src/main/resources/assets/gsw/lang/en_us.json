@@ -1,0 +1,236 @@
+{
+  "block.gsw.copper_ore": "Copper Ore",
+  "block.gsw.tin_ore": "Tin Ore",
+  "block.gsw.silver_ore": "Silver Ore",
+  "block.gsw.titanium_ore": "Titanium Ore",
+  "block.gsw.platinum_ore": "Platinum Ore",
+  "block.gsw.mithril_ore": "Mithril Ore",
+  "block.gsw.orichalcum_ore": "Orichalcum Ore",
+  "block.gsw.amethyst_ore": "Amethyst Ore",
+  "block.gsw.topaz_ore": "Topaz Ore",
+  "block.gsw.sapphire_ore": "Sapphire Ore",
+  "block.gsw.ruby_ore": "Ruby Ore",
+
+  "block.gsw.copper_block": "Copper Block",
+  "block.gsw.tin_block": "Tin Block",
+  "block.gsw.silver_block": "Silver Block",
+  "block.gsw.titanium_block": "Titanium Block",
+  "block.gsw.platinum_block": "Platinum Block",
+  "block.gsw.mithril_block": "Mithril Block",
+  "block.gsw.orichalcum_block": "Orichalcum Block",
+  "block.gsw.amethyst_block": "Amethyst Block",
+  "block.gsw.topaz_block": "Topaz Block",
+  "block.gsw.sapphire_block": "Sapphire Block",
+  "block.gsw.ruby_block": "Ruby Block",
+
+  "block.gsw.bronze_block": "Bronze Block",
+  "block.gsw.steel_block": "Steel Block",
+
+
+
+  "item.gsw.wool_helmet": "Woolen Helmet",
+  "item.gsw.wool_chestplate": "Woolen Chestplate",
+  "item.gsw.wool_leggings": "Woolen Leggings",
+  "item.gsw.wool_boots": "Woolen Boots",
+
+
+  "item.gsw.wood_dust": "Sawdust",
+  "item.gsw.wood_gear": "Wooden Gear",
+  "item.gsw.wood_hammer": "Wooden Hammer",
+
+  "item.gsw.wood_helmet": "Wooden Helmet",
+  "item.gsw.wood_chestplate": "Wooden Chestplate",
+  "item.gsw.wood_leggings": "Wooden Leggings",
+  "item.gsw.wood_boots": "Wooden Boots",
+
+
+  "item.gsw.stone_gear": "Stone Gear",
+  "item.gsw.stone_hammer": "Stone Hammer",
+
+
+  "item.gsw.bone_sword": "Bone Sword",
+  "item.gsw.bone_pickaxe": "Bone Pickaxe",
+  "item.gsw.bone_axe": "Bone Axe",
+  "item.gsw.bone_shovel": "Bone Shovel",
+  "item.gsw.bone_hoe": "Bone Hoe",
+  "item.gsw.bone_hammer": "Bone Hammer",
+
+
+  "item.gsw.flint_sword": "Flint Sword",
+  "item.gsw.flint_pickaxe": "Flint Pickaxe",
+  "item.gsw.flint_axe": "Flint Axe",
+  "item.gsw.flint_shovel": "Flint Shovel",
+  "item.gsw.flint_hoe": "Flint Hoe",
+  "item.gsw.flint_hammer": "Flint Hammer",
+
+
+  "item.gsw.amethyst_gem": "Amethyst",
+  "item.gsw.topaz_gem": "Topaz",
+  "item.gsw.sapphire_gem": "Sapphire",
+  "item.gsw.ruby_gem": "Ruby",
+
+
+  "item.gsw.copper_ingot": "Copper Ingot",
+  "item.gsw.copper_nugget": "Copper Nugget",
+  "item.gsw.copper_dust": "Copper Dust",
+  "item.gsw.copper_plate": "Copper Plate",
+  "item.gsw.copper_gear": "Copper Gear",
+  "item.gsw.copper_wire": "Copper Wire",
+
+  "item.gsw.copper_helmet": "Copper Helmet",
+  "item.gsw.copper_chestplate": "Copper Chestplate",
+  "item.gsw.copper_leggings": "Copper Leggings",
+  "item.gsw.copper_boots": "Copper Boots",
+
+  "item.gsw.copper_sword": "Copper Sword",
+  "item.gsw.copper_pickaxe": "Copper Pickaxe",
+  "item.gsw.copper_axe": "Copper Axe",
+  "item.gsw.copper_shovel": "Copper Shovel",
+  "item.gsw.copper_hoe": "Copper Hoe",
+  "item.gsw.copper_hammer": "Copper Hammer",
+
+
+  "item.gsw.tin_ingot": "Tin Ingot",
+  "item.gsw.tin_nugget": "Tin Nugget",
+  "item.gsw.tin_dust": "Tin Dust",
+  "item.gsw.tin_plate": "Tin Plate",
+
+  "item.gsw.tin_helmet": "Tin Helmet",
+  "item.gsw.tin_chestplate": "Tin Chestplate",
+  "item.gsw.tin_leggings": "Tin Leggings",
+  "item.gsw.tin_boots": "Tin Boots",
+
+  "item.gsw.tin_sword": "Tin Sword",
+  "item.gsw.tin_pickaxe": "Tin Pickaxe",
+  "item.gsw.tin_axe": "Tin Axe",
+  "item.gsw.tin_shovel": "Tin Shovel",
+  "item.gsw.tin_hoe": "Tin Hoe",
+  "item.gsw.tin_hammer": "Tin Hammer",
+
+
+  "item.gsw.silver_ingot": "Silver Ingot",
+  "item.gsw.silver_nugget": "Silver Nugget",
+  "item.gsw.silver_dust": "Silver Dust",
+  "item.gsw.silver_plate": "Silver Plate",
+
+  "item.gsw.silver_helmet": "Silver Helmet",
+  "item.gsw.silver_chestplate": "Silver Chestplate",
+  "item.gsw.silver_leggings": "Silver Leggings",
+  "item.gsw.silver_boots": "Silver Boots",
+
+  "item.gsw.silver_sword": "Silver Sword",
+  "item.gsw.silver_pickaxe": "Silver Pickaxe",
+  "item.gsw.silver_axe": "Silver Axe",
+  "item.gsw.silver_shovel": "Silver Shovel",
+  "item.gsw.silver_hoe": "Silver Hoe",
+  "item.gsw.silver_hammer": "Silver Hammer",
+
+
+  "item.gsw.titanium_ingot": "Titanium Ingot",
+  "item.gsw.titanium_nugget": "Titanium Nugget",
+  "item.gsw.titanium_dust": "Titanium Dust",
+  "item.gsw.titanium_plate": "Titanium Plate",
+
+  "item.gsw.titanium_helmet": "Titanium Helmet",
+  "item.gsw.titanium_chestplate": "Titanium Chestplate",
+  "item.gsw.titanium_leggings": "Titanium Leggings",
+  "item.gsw.titanium_boots": "Titanium Boots",
+
+  "item.gsw.titanium_sword": "Titanium Sword",
+  "item.gsw.titanium_pickaxe": "Titanium Pickaxe",
+  "item.gsw.titanium_axe": "Titanium Axe",
+  "item.gsw.titanium_shovel": "Titanium Shovel",
+  "item.gsw.titanium_hoe": "Titanium Hoe",
+  "item.gsw.titanium_hammer": "Titanium Hammer",
+
+
+  "item.gsw.platinum_ingot": "Platinum Ingot",
+  "item.gsw.platinum_nugget": "Platinum Nugget",
+  "item.gsw.platinum_dust": "Platinum Dust",
+  "item.gsw.platinum_plate": "Platinum Plate",
+
+  "item.gsw.platinum_helmet": "Platinum Helmet",
+  "item.gsw.platinum_chestplate": "Platinum Chestplate",
+  "item.gsw.platinum_leggings": "Platinum Leggings",
+  "item.gsw.platinum_boots": "Platinum Boots",
+
+  "item.gsw.platinum_sword": "Platinum Sword",
+  "item.gsw.platinum_pickaxe": "Platinum Pickaxe",
+  "item.gsw.platinum_axe": "Platinum Axe",
+  "item.gsw.platinum_shovel": "Platinum Shovel",
+  "item.gsw.platinum_hoe": "Platinum Hoe",
+  "item.gsw.platinum_hammer": "Platinum Hammer",
+
+
+  "item.gsw.bronze_ingot": "Bronze Ingot",
+  "item.gsw.bronze_nugget": "Bronze Nugget",
+  "item.gsw.bronze_dust": "Bronze Dust",
+  "item.gsw.bronze_plate": "Bronze Plate",
+
+
+  "item.gsw.bronze_helmet": "Bronze Helmet",
+  "item.gsw.bronze_chestplate": "Bronze Chestplate",
+  "item.gsw.bronze_leggings": "Bronze Leggings",
+  "item.gsw.bronze_boots": "Bronze Boots",
+
+  "item.gsw.bronze_sword": "Bronze Sword",
+  "item.gsw.bronze_pickaxe": "Bronze Pickaxe",
+  "item.gsw.bronze_axe": "Bronze Axe",
+  "item.gsw.bronze_shovel": "Bronze Shovel",
+  "item.gsw.bronze_hoe": "Bronze Hoe",
+  "item.gsw.bronze_hammer": "Bronze Hammer",
+
+
+  "item.gsw.steel_ingot": "Steel Ingot",
+  "item.gsw.steel_nugget": "Steel Nugget",
+  "item.gsw.steel_dust": "Steel Dust",
+  "item.gsw.steel_plate": "Steel Plate",
+
+  "item.gsw.steel_helmet": "Steel Helmet",
+  "item.gsw.steel_chestplate": "Steel Chestplate",
+  "item.gsw.steel_leggings": "Steel Leggings",
+  "item.gsw.steel_boots": "Steel Boots",
+
+  "item.gsw.steel_sword": "Steel Sword",
+  "item.gsw.steel_pickaxe": "Steel Pickaxe",
+  "item.gsw.steel_axe": "Steel Axe",
+  "item.gsw.steel_shovel": "Steel Shovel",
+  "item.gsw.steel_hoe": "Steel Hoe",
+  "item.gsw.steel_hammer": "Steel Hammer",
+
+
+  "item.gsw.mithril_ingot": "Mithril Ingot",
+  "item.gsw.mithril_nugget": "Mithril Nugget",
+  "item.gsw.mithril_dust": "Mithril Dust",
+  "item.gsw.mithril_plate": "Mithril Plate",
+
+  "item.gsw.mithril_helmet": "Mithril Helmet",
+  "item.gsw.mithril_chestplate": "Mithril Chestplate",
+  "item.gsw.mithril_leggings": "Mithril Leggings",
+  "item.gsw.mithril_boots": "Mithril Boots",
+
+  "item.gsw.mithril_sword": "Mithril Sword",
+  "item.gsw.mithril_pickaxe": "Mithril Pickaxe",
+  "item.gsw.mithril_axe": "Mithril Axe",
+  "item.gsw.mithril_shovel": "Mithril Shovel",
+  "item.gsw.mithril_hoe": "Mithril Hoe",
+  "item.gsw.mithril_hammer": "Mithril Hammer",
+
+
+  "item.gsw.orichalcum_ingot": "Orichalcum Ingot",
+  "item.gsw.orichalcum_nugget": "Orichalcum Nugget",
+  "item.gsw.orichalcum_dust": "Orichalcum Dust",
+  "item.gsw.orichalcum_plate": "Orichalcum Plate",
+
+  "item.gsw.orichalcum_helmet": "Orichalcum Helmet",
+  "item.gsw.orichalcum_chestplate": "Orichalcum Chestplate",
+  "item.gsw.orichalcum_leggings": "Orichalcum Leggings",
+  "item.gsw.orichalcum_boots": "Orichalcum Boots",
+
+  "item.gsw.orichalcum_sword": "Orichalcum Sword",
+  "item.gsw.orichalcum_pickaxe": "Orichalcum Pickaxe",
+  "item.gsw.orichalcum_axe": "Orichalcum Axe",
+  "item.gsw.orichalcum_shovel": "Orichalcum Shovel",
+  "item.gsw.orichalcum_hoe": "Orichalcum Hoe",
+  "item.gsw.orichalcum_hammer": "Orichalcum Hammer"
+}

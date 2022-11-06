@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "gsw:mithril_pickaxe",
+    "gsw:mithril_shovel",
+    "gsw:mithril_axe",
+    "gsw:mithril_hoe",
+    "gsw:mithril_sword"
+  ]
+}

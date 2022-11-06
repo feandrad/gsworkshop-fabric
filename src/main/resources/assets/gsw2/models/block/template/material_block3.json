@@ -1,6 +1,0 @@
-{
-  "parent": "gsw2:block/template/material_block",
-  "textures": {
-    "material": "gsw2:block/template/material_block3"
-  }
-}

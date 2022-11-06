@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "gsw",
+  "version": "${version}",
+  "name": "Griswold's Workshop",
+  "description": "Become a real Blacksmith in Minecraft.\nPort from my old 1.7.10 mod: https://www.curseforge.com/minecraft/mc-mods/griswolds-workshop\nMod under development.",
+  "authors": [
+    "feandrad"
+  ],
+  "contact": {
+    "homepage": "https://felipeandrade.io/",
+    "sources": "https://github.com/feandrad/gsworkshop-fabric"
+  },
+  "license": "CC BY-NC-SA 4.0",
+  "icon": "assets/gsw/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      {
+        "adapter": "kotlin",
+        "value": "io.felipeandrade.gsw.GSWMod"
+      }
+    ]
+  },
+  "mixins": [],
+  "depends": {
+    "fabricloader": ">=${fabricloader}",
+    "fabric-api": ">=${fabric_api}",
+    "fabric-language-kotlin": ">=${fabric_language_kotlin}",
+    "minecraft": ">=${minecraft}",
+    "java": ">=${java}"
+  }
+}

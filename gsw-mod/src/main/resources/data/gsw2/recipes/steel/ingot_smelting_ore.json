@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "tag": "c:steel_ore"
+  },
+  "result": "gsw:steel_ingot",
+  "experience": 0.7,
+  "cookingtime": 200,
+  "group": "steel_ingot"
+}

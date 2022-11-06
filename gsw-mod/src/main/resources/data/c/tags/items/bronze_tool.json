@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "gsw:bronze_pickaxe",
+    "gsw:bronze_shovel",
+    "gsw:bronze_axe",
+    "gsw:bronze_hoe",
+    "gsw:bronze_sword"
+  ]
+}

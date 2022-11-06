@@ -1,0 +1,7 @@
+{
+  "parent": "gsw:item/template/tool",
+  "textures": {
+    "layer0": "gsw:item/wood_handle_pole",
+    "layer1": "gsw:item/template/hammer"
+  }
+}

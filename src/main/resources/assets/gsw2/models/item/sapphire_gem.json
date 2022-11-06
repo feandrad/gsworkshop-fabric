@@ -1,6 +1,0 @@
-{
-  "parent": "gsw2:item/template/gem",
-  "textures": {
-    "layer0": "gsw2:item/sapphire_gem"
-  }
-}

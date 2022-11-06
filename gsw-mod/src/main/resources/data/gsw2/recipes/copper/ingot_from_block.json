@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "tag": "c:copper_block" }
+  ],
+  "result": {
+    "item": "gsw:copper_ingot",
+    "count": 9
+  },
+  "group": "copper_ingot"
+}

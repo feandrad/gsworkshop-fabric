@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "iii",
+        "i i"
+    ],
+    "key": {
+        "i": {
+            "tag": "c:silver_ingot"
+        }
+    },
+    "result": {
+        "item": "gsw:silver_helmet",
+        "count": 1
+    },
+    "group": "armor_helmet"
+}

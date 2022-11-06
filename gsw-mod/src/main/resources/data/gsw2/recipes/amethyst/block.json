@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "iii",
+        "iii",
+        "iii"
+    ],
+    "key": {
+        "i": {
+            "item": "gsw:amethyst_gem"
+        }
+    },
+    "result": {
+        "item": "gsw:amethyst_block",
+        "count": 1
+    },
+    "group": "amethyst_block"
+}

@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "i i",
+        "iii",
+        "iii"
+    ],
+    "key": {
+        "i": {
+            "tag": "c:steel_ingot"
+        }
+    },
+    "result": {
+        "item": "gsw:steel_chestplate",
+        "count": 1
+    },
+    "group": "armor_chestplate"
+}

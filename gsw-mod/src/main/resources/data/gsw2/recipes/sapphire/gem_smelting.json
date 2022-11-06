@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "gsw:sapphire_ore"
+  },
+  "result": "gsw:sapphire_gem",
+  "experience": 1.0,
+  "cookingtime": 200,
+  "group": "sapphire_gem"
+}

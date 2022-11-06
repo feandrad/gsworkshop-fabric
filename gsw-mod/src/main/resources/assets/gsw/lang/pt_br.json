@@ -1,0 +1,196 @@
+{
+  "block.gsw.copper_ore": "Minério de Cobre",
+  "block.gsw.tin_ore": "Minério de Estanho",
+  "block.gsw.silver_ore": "Minério de Prata",
+  "block.gsw.titanium_ore": "Minério de Titânio",
+  "block.gsw.platinum_ore": "Minério de Platina",
+  "block.gsw.mithril_ore": "Minério de Mithril",
+  "block.gsw.orichalcum_ore": "Minério de Orichalcum",
+  "block.gsw.amethyst_ore": "Minério de Ametista",
+  "block.gsw.topaz_ore": "Minério de Topázio",
+  "block.gsw.sapphire_ore": "Minério de Safira",
+  "block.gsw.ruby_ore": "Minério de Rubi",
+
+  "block.gsw.copper_block": "Bloco de Cobre",
+  "block.gsw.tin_block": "Bloco de Estanho",
+  "block.gsw.silver_block": "Bloco de Prata",
+  "block.gsw.titanium_block": "Bloco de Titânio",
+  "block.gsw.platinum_block": "Bloco de Platina",
+  "block.gsw.mithril_block": "Bloco de Mithril",
+  "block.gsw.orichalcum_block": "Bloco de Orichalcum",
+  "block.gsw.amethyst_block": "Bloco de Ametista",
+  "block.gsw.topaz_block": "Bloco de Topázio",
+  "block.gsw.sapphire_block": "Bloco de Safira",
+  "block.gsw.ruby_block": "Bloco de Rubi",
+
+  "block.gsw.bronze_block": "Bloco de Bronze",
+  "block.gsw.steel_block": "Bloco de Aço",
+
+
+  "item.gsw.amethyst_gem": "Ametista",
+  "item.gsw.topaz_gem": "Topázio",
+  "item.gsw.sapphire_gem": "Safira",
+  "item.gsw.ruby_gem": "Rubi",
+
+
+  "item.gsw.copper_ingot": "Barra de Cobre",
+  "item.gsw.copper_nugget": "Nugget de Cobre",
+  "item.gsw.copper_dust": "Pó de Cobre",
+  "item.gsw.copper_plate": "Placa de Cobre",
+
+  "item.gsw.copper_helmet": "Capacete de Cobre",
+  "item.gsw.copper_chestplate": "Armadura de Cobre",
+  "item.gsw.copper_leggings": "Calça de Cobre",
+  "item.gsw.copper_boots": "Botas de Cobre",
+
+  "item.gsw.copper_sword": "Espada de Cobre",
+  "item.gsw.copper_pickaxe": "Picareta de Cobre",
+  "item.gsw.copper_axe": "Machado de Cobre",
+  "item.gsw.copper_shovel": "Pá de Cobre",
+  "item.gsw.copper_hoe": "Enxada de Cobre",
+  "item.gsw.copper_hammer": "Martelo de Cobre",
+
+
+  "item.gsw.tin_ingot": "Barra de Estanho",
+  "item.gsw.tin_nugget": "Nugget de Estanho",
+  "item.gsw.tin_dust": "Pó de Estanho",
+  "item.gsw.tin_plate": "Placa de Estanho",
+
+  "item.gsw.tin_helmet": "Capacete de Estanho",
+  "item.gsw.tin_chestplate": "Armadura de Estanho",
+  "item.gsw.tin_leggings": "Calça de Estanho",
+  "item.gsw.tin_boots": "Botas de Estanho",
+
+  "item.gsw.tin_sword": "Espada de Estanho",
+  "item.gsw.tin_pickaxe": "Picareta de Estanho",
+  "item.gsw.tin_axe": "Machado de Estanho",
+  "item.gsw.tin_shovel": "Pá de Estanho",
+  "item.gsw.tin_hoe": "Enxada de Estanho",
+  "item.gsw.tin_hammer": "Martelo de Estanho",
+
+
+  "item.gsw.silver_ingot": "Barra de Prata",
+  "item.gsw.silver_nugget": "Nugget de Prata",
+  "item.gsw.silver_dust": "Pó de Prata",
+  "item.gsw.silver_plate": "Placa de Prata",
+
+  "item.gsw.silver_helmet": "Capacete de Prata",
+  "item.gsw.silver_chestplate": "Armadura de Prata",
+  "item.gsw.silver_leggings": "Calça de Prata",
+  "item.gsw.silver_boots": "Botas de Prata",
+
+  "item.gsw.silver_sword": "Espada de Prata",
+  "item.gsw.silver_pickaxe": "Picareta de Prata",
+  "item.gsw.silver_axe": "Machado de Prata",
+  "item.gsw.silver_shovel": "Pá de Prata",
+  "item.gsw.silver_hoe": "Enxada de Prata",
+  "item.gsw.silver_hammer": "Martelo de Prata",
+
+
+  "item.gsw.titanium_ingot": "Barra de Titânio",
+  "item.gsw.titanium_nugget": "Nugget de Titânio",
+  "item.gsw.titanium_dust": "Pó de Titânio",
+  "item.gsw.titanium_plate": "Placa de Titânio",
+
+  "item.gsw.titanium_helmet": "Capacete de Titânio",
+  "item.gsw.titanium_chestplate": "Armadura de Titânio",
+  "item.gsw.titanium_leggings": "Calça de Titânio",
+  "item.gsw.titanium_boots": "Botas de Titânio",
+
+  "item.gsw.titanium_sword": "Espada de Titânio",
+  "item.gsw.titanium_pickaxe": "Picareta de Titânio",
+  "item.gsw.titanium_axe": "Machado de Titânio",
+  "item.gsw.titanium_shovel": "Pá de Titânio",
+  "item.gsw.titanium_hoe": "Enxada de Titânio",
+  "item.gsw.titanium_hammer": "Martelo de Titânio",
+
+
+  "item.gsw.platinum_ingot": "Barra de Platina",
+  "item.gsw.platinum_nugget": "Nugget de Platina",
+  "item.gsw.platinum_dust": "Pó de Platina",
+  "item.gsw.platinum_plate": "Placa de Platina",
+
+  "item.gsw.platinum_helmet": "Capacete de Platina",
+  "item.gsw.platinum_chestplate": "Armadura de Platina",
+  "item.gsw.platinum_leggings": "Calça de Platina",
+  "item.gsw.platinum_boots": "Botas de Platina",
+
+  "item.gsw.platinum_sword": "Espada de Platina",
+  "item.gsw.platinum_pickaxe": "Picareta de Platina",
+  "item.gsw.platinum_axe": "Machado de Platina",
+  "item.gsw.platinum_shovel": "Pá de Platina",
+  "item.gsw.platinum_hoe": "Enxada de Platina",
+  "item.gsw.platinum_hammer": "Martelo de Platina",
+
+
+  "item.gsw.bronze_ingot": "Barra de Bronze",
+  "item.gsw.bronze_nugget": "Nugget de Bronze",
+  "item.gsw.bronze_dust": "Pó de Bronze",
+  "item.gsw.bronze_plate": "Placa de Bronze",
+
+  "item.gsw.bronze_helmet": "Capacete de Bronze",
+  "item.gsw.bronze_chestplate": "Armadura de Bronze",
+  "item.gsw.bronze_leggings": "Calça de Bronze",
+  "item.gsw.bronze_boots": "Botas de Bronze",
+
+  "item.gsw.bronze_sword": "Espada de Bronze",
+  "item.gsw.bronze_pickaxe": "Picareta de Bronze",
+  "item.gsw.bronze_axe": "Machado de Bronze",
+  "item.gsw.bronze_shovel": "Pá de Bronze",
+  "item.gsw.bronze_hoe": "Enxada de Bronze",
+  "item.gsw.bronze_hammer": "Martelo de Bronze",
+
+
+  "item.gsw.steel_ingot": "Barra de Aço",
+  "item.gsw.steel_nugget": "Nugget de Aço",
+  "item.gsw.steel_dust": "Pó de Aço",
+  "item.gsw.steel_plate": "Placa de Aço",
+
+  "item.gsw.steel_helmet": "Capacete de Aço",
+  "item.gsw.steel_chestplate": "Armadura de Aço",
+  "item.gsw.steel_leggings": "Calça de Aço",
+  "item.gsw.steel_boots": "Botas de Aço",
+
+  "item.gsw.steel_sword": "Espada de Aço",
+  "item.gsw.steel_pickaxe": "Picareta de Aço",
+  "item.gsw.steel_axe": "Machado de Aço",
+  "item.gsw.steel_shovel": "Pá de Aço",
+  "item.gsw.steel_hoe": "Enxada de Aço",
+  "item.gsw.steel_hammer": "Martelo de Aço",
+
+
+  "item.gsw.mithril_ingot": "Barra de Mithril",
+  "item.gsw.mithril_nugget": "Nugget de Mithril",
+  "item.gsw.mithril_dust": "Pó de Mithril",
+  "item.gsw.mithril_plate": "Placa de Mithril",
+
+  "item.gsw.mithril_helmet": "Capacete de Mithril",
+  "item.gsw.mithril_chestplate": "Armadura de Mithril",
+  "item.gsw.mithril_leggings": "Calça de Mithril",
+  "item.gsw.mithril_boots": "Botas de Mithril",
+
+  "item.gsw.mithril_sword": "Espada de Mithril",
+  "item.gsw.mithril_pickaxe": "Picareta de Mithril",
+  "item.gsw.mithril_axe": "Machado de Mithril",
+  "item.gsw.mithril_shovel": "Pá de Mithril",
+  "item.gsw.mithril_hoe": "Enxada de Mithril",
+  "item.gsw.mithril_hammer": "Martelo de Mithril",
+
+
+  "item.gsw.orichalcum_ingot": "Barra de Orichalcum",
+  "item.gsw.orichalcum_nugget": "Nugget de Orichalcum",
+  "item.gsw.orichalcum_dust": "Pó de Orichalcum",
+  "item.gsw.orichalcum_plate": "Placa de Orichalcum",
+
+  "item.gsw.orichalcum_helmet": "Capacete de Orichalcum",
+  "item.gsw.orichalcum_chestplate": "Armadura de Orichalcum",
+  "item.gsw.orichalcum_leggings": "Calça de Orichalcum",
+  "item.gsw.orichalcum_boots": "Botas de Orichalcum",
+
+  "item.gsw.orichalcum_sword": "Espada de Orichalcum",
+  "item.gsw.orichalcum_pickaxe": "Picareta de Orichalcum",
+  "item.gsw.orichalcum_axe": "Machado de Orichalcum",
+  "item.gsw.orichalcum_shovel": "Pá de Orichalcum",
+  "item.gsw.orichalcum_hoe": "Enxada de Orichalcum",
+  "item.gsw.orichalcum_hammer": "Martelo de Orichalcum"
+}

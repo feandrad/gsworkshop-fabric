@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " i ",
+    " #i",
+    "#  "
+  ],
+  "key": {
+    "i": { "tag": "c:platinum_block" },
+    "#": { "tag": "gsw:tool_rod" }
+  },
+  "result": {
+    "item": "gsw:platinum_hammer",
+    "count": 1
+  },
+  "group": "tool_pickaxe"
+}

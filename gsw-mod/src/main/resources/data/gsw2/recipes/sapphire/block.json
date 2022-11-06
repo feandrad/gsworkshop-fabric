@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "iii",
+        "iii",
+        "iii"
+    ],
+    "key": {
+        "i": {
+            "item": "gsw:sapphire_gem"
+        }
+    },
+    "result": {
+        "item": "gsw:sapphire_block",
+        "count": 1
+    },
+    "group": "sapphire_block"
+}
