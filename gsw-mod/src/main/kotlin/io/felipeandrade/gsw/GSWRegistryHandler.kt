@@ -1,7 +1,6 @@
 package io.felipeandrade.gsw
 
 import io.felipeandrade.gsw.common.Registrable
-import io.felipeandrade.gsw.material.gem.AmethystMaterial
 import io.felipeandrade.gsw.material.gem.RubyMaterial
 import io.felipeandrade.gsw.material.gem.SapphireMaterial
 import io.felipeandrade.gsw.material.gem.TopazMaterial
@@ -30,7 +29,6 @@ object GSWRegistryHandler {
         CobaltMaterial.MATERIAL,
         MithrilMaterial.MATERIAL,
         OrichalcumMaterial.MATERIAL,
-        AmethystMaterial.MATERIAL,
         TopazMaterial.MATERIAL,
         SapphireMaterial.MATERIAL,
         RubyMaterial.MATERIAL
