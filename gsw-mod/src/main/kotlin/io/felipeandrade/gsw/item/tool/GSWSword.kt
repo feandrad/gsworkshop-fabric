@@ -1,10 +1,7 @@
 package io.felipeandrade.gsw.item.tool
 
 import io.felipeandrade.gsw.GSWMod
-import io.felipeandrade.gsw.material.GSWItemColorProvider
 import io.felipeandrade.gsw.material.GSWMaterial
-import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry
-import net.minecraft.item.ItemStack
 import net.minecraft.item.SwordItem
 import net.minecraft.item.ToolMaterial
 import net.minecraft.util.Identifier
@@ -15,7 +12,7 @@ class GSWSword(
     private val material: GSWMaterial,
     toolMaterial: ToolMaterial,
     settings: Settings
-) : SwordItem(toolMaterial, 3, -2.4f, settings), GSWTool, GSWItemColorProvider {
+) : SwordItem(toolMaterial, 3, -2.4f, settings), GSWTool {
     constructor(
         material: GSWMaterial,
         toolMaterial: ToolMaterial,
@@ -26,15 +23,5 @@ class GSWSword(
         Registry.register(Registry.ITEM, Identifier(GSWMod.MOD_ID, unlocalizedName), this)
     }
 
-    override fun getColor(stack: ItemStack, tintIndex: Int): Int {
-        return if (tintIndex == 1) {
-            material.primaryColor
-        } else {
-            -1
-        }
-    }
 
-    override fun onClientInit() {
-        ColorProviderRegistry.ITEM.register(this, this)
-    }
 }

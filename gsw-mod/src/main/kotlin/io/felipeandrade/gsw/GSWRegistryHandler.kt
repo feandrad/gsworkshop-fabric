@@ -1,6 +1,5 @@
 package io.felipeandrade.gsw
 
-import io.felipeandrade.gsw.common.ClientResourceInit
 import io.felipeandrade.gsw.common.Registrable
 import io.felipeandrade.gsw.material.gem.AmethystMaterial
 import io.felipeandrade.gsw.material.gem.RubyMaterial
@@ -8,7 +7,6 @@ import io.felipeandrade.gsw.material.gem.SapphireMaterial
 import io.felipeandrade.gsw.material.gem.TopazMaterial
 import io.felipeandrade.gsw.material.metal.*
 import io.felipeandrade.gsw.material.vanilla.*
-import java.util.*
 
 object GSWRegistryHandler {
     private val ALL_GSW_MATERIALS = listOf(
@@ -29,6 +27,7 @@ object GSWRegistryHandler {
         PlatinumMaterial.MATERIAL,
         BronzeMaterial.MATERIAL,
         SteelMaterial.MATERIAL,
+        CobaltMaterial.MATERIAL,
         MithrilMaterial.MATERIAL,
         OrichalcumMaterial.MATERIAL,
         AmethystMaterial.MATERIAL,
@@ -43,12 +42,10 @@ object GSWRegistryHandler {
             result.addAll(material.allItems())
             result.addAll(material.allBlocks())
             result.addAll(material.allTools())
+            result.addAll(material.allArmor())
         }
         for (registrable in result) {
             registrable.register()
-            if (registrable is ClientResourceInit) {
-                GSWMod.CLIENT_RES.add(registrable as ClientResourceInit)
-            }
         }
     }
 }

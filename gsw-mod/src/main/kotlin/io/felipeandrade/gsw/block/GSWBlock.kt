@@ -9,7 +9,11 @@ import net.minecraft.item.ItemGroup
 import net.minecraft.util.Identifier
 import net.minecraft.util.registry.Registry
 
-open class GSWBlock(val unlocalizedName: String, var itemGroup: ItemGroup, settings: Settings) : Block(settings), Registrable {
+open class GSWBlock(
+    val unlocalizedName: String,
+    var itemGroup: ItemGroup,
+    settings: Settings
+) : Block(settings), Registrable {
     override fun register() {
         Registry.register(Registry.BLOCK, Identifier(GSWMod.MOD_ID, unlocalizedName), this)
         Registry.register(

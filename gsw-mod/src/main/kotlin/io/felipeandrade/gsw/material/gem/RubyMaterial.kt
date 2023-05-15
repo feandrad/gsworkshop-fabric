@@ -3,7 +3,6 @@ package io.felipeandrade.gsw.material.gem
 import io.felipeandrade.gsw.GSWItemGroup
 import io.felipeandrade.gsw.block.GSWBlock
 import io.felipeandrade.gsw.block.GSWMaterialBlock
-import io.felipeandrade.gsw.block.GemOreBlock
 import io.felipeandrade.gsw.common.GSWColor
 import io.felipeandrade.gsw.item.GSWItem
 import io.felipeandrade.gsw.item.tool.GSWTool
@@ -12,7 +11,7 @@ import io.felipeandrade.gsw.material.GSWMaterialItem
 import net.minecraft.item.*
 import java.util.*
 
-class RubyMaterial : GSWMaterial("ruby", GSWColor.light_coral) {
+class RubyMaterial : GSWMaterial("ruby") {
     override fun allItems(): List<GSWItem> {
         return listOf(GEM)
     }
@@ -29,6 +28,6 @@ class RubyMaterial : GSWMaterial("ruby", GSWColor.light_coral) {
         val MATERIAL: GSWMaterial = RubyMaterial()
         val GEM: GSWItem = GSWMaterialItem("gem", MATERIAL, Item.Settings().group(GSWItemGroup.MATERIALS))
         val GEM_BLOCK: GSWBlock = GSWMaterialBlock(MATERIAL, GSWMaterialBlock.SETTINGS_GEM)
-        val ORE_BLOCK: GSWBlock = GemOreBlock(MATERIAL, GSWMaterialBlock.SETTINGS_ORE)
+        val ORE_BLOCK: GSWBlock = GSWMaterialBlock(MATERIAL, GSWMaterialBlock.SETTINGS_ORE, "ore")
     }
 }

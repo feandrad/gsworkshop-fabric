@@ -8,7 +8,7 @@ import net.minecraft.item.Item
 import net.minecraft.item.Items
 import java.util.*
 
-class FlintMaterial : GSWMaterial("flint", GSWColor.jet_grey_gray) {
+class FlintMaterial : GSWMaterial("flint") {
     override fun allTools(): List<GSWTool> {
         return listOf(SWORD, PICKAXE, AXE, SHOVEL, HOE)
     }

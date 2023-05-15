@@ -1,9 +1,7 @@
 package io.felipeandrade.gsw.item.tool
 
 import io.felipeandrade.gsw.GSWMod
-import io.felipeandrade.gsw.material.GSWItemColorProvider
 import io.felipeandrade.gsw.material.GSWMaterial
-import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry
 import net.minecraft.block.BlockState
 import net.minecraft.entity.player.PlayerEntity
 import net.minecraft.item.ItemStack
@@ -21,7 +19,7 @@ open class GSWPickaxe internal constructor(
     attackDamage: Int,
     attackSpeed: Float,
     settings: Settings
-) : PickaxeItem(toolMaterial, attackDamage, attackSpeed, settings), GSWTool, GSWItemColorProvider {
+) : PickaxeItem(toolMaterial, attackDamage, attackSpeed, settings), GSWTool {
     constructor(
         material: GSWMaterial,
         toolMaterial: ToolMaterial,
@@ -30,18 +28,6 @@ open class GSWPickaxe internal constructor(
 
     override fun register() {
         Registry.register(Registry.ITEM, Identifier(GSWMod.MOD_ID, unlocalizedName), this)
-    }
-
-    override fun getColor(stack: ItemStack, tintIndex: Int): Int {
-        return if (tintIndex == 1) {
-            material.primaryColor
-        } else {
-            -1
-        }
-    }
-
-    override fun onClientInit() {
-        ColorProviderRegistry.ITEM.register(this, this)
     }
 
     override fun canMine(state: BlockState, world: World, pos: BlockPos, miner: PlayerEntity): Boolean {

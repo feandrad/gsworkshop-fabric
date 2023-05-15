@@ -7,7 +7,7 @@ import net.minecraft.recipe.Ingredient
 class GSWToolMaterial internal constructor(
     private val miningLevel: Int,
     private val itemDurability: Int,
-    val miningSpeed: Float,
+    private val miningSpeed: Float,
     private val attackDamage: Float,
     private val enchantability: Int,
     private val repairIngredient: Ingredient
@@ -18,28 +18,12 @@ class GSWToolMaterial internal constructor(
     ) : this(
         miningLevel, itemDurability, miningSpeed, attackDamage, enchantability,
         Ingredient.ofItems(*repairItems)
-    ) {
-    }
+    )
 
-    override fun getDurability(): Int {
-        return itemDurability
-    }
-
-    override fun getMiningSpeedMultiplier(): Float = 1.0f
-
-    override fun getAttackDamage(): Float {
-        return attackDamage
-    }
-
-    override fun getMiningLevel(): Int {
-        return miningLevel
-    }
-
-    override fun getEnchantability(): Int {
-        return enchantability
-    }
-
-    override fun getRepairIngredient(): Ingredient {
-        return repairIngredient
-    }
+    override fun getDurability(): Int = itemDurability
+    override fun getMiningSpeedMultiplier(): Float = miningSpeed
+    override fun getAttackDamage(): Float = attackDamage
+    override fun getMiningLevel(): Int = miningLevel
+    override fun getEnchantability(): Int = enchantability
+    override fun getRepairIngredient(): Ingredient = repairIngredient
 }

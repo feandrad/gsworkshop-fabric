@@ -8,7 +8,7 @@ import net.minecraft.item.Item
 import net.minecraft.item.Items
 import java.util.*
 
-class BoneMaterial : GSWMaterial("bone", GSWColor.old_lace) {
+class BoneMaterial : GSWMaterial("bone") {
     override fun allTools(): List<GSWTool> = listOf(SWORD, PICKAXE, AXE, SHOVEL, HOE, HAMMER)
 
     companion object {
