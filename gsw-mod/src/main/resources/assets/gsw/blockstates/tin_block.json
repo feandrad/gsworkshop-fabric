@@ -1,5 +1,5 @@
 {
   "variants": {
-    "": { "model": "gsw:block/tin_block" }
+    "": { "model": "gsw:block/tin/block" }
   }
 }
