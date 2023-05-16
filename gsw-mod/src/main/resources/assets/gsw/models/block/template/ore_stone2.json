@@ -1,7 +1,0 @@
-{
-  "parent": "gsw:block/template/ore_stone",
-  "textures": {
-    "stone": "gsw:block/template/ore_stone2",
-    "ore": "gsw:block/template/ore2"
-  }
-}

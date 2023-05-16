@@ -10,8 +10,8 @@ import net.minecraft.item.Items
 
 class CopperMaterial : GSWMaterial("copper") {
 
-    override fun allItems(): List<GSWItem> = listOf(NUGGET, DUST, PLATE, CRUSHED)
-    override fun allTools(): List<GSWTool> = listOf(SWORD, PICKAXE, AXE, SHOVEL, HOE, HAMMER)
+    override fun allItems(): List<GSWItem> = listOf(NUGGET, DUST, CRUSHED, PLATE)
+    override fun allTools(): List<GSWTool> = listOf(SWORD, SHOVEL, PICKAXE, AXE, HOE, HAMMER)
 
     companion object {
         val MATERIAL: GSWMaterial = CopperMaterial()

@@ -11,9 +11,9 @@ import net.minecraft.item.Item
 
 class BronzeMaterial : GSWMaterial("bronze") {
 
-    override fun allItems(): List<GSWItem> = listOf(INGOT, NUGGET, DUST, PLATE, CRUSHED)
+    override fun allItems(): List<GSWItem> = listOf(INGOT, NUGGET, DUST, CRUSHED, PLATE)
     override fun allBlocks(): List<GSWBlock> = listOf(METAL_BLOCK)
-    override fun allTools(): List<GSWTool> = listOf(SWORD, PICKAXE, AXE, SHOVEL, HOE, HAMMER)
+    override fun allTools(): List<GSWTool> = listOf(SWORD, SHOVEL, PICKAXE, AXE, HOE, HAMMER)
 
     companion object {
         val MATERIAL: GSWMaterial = BronzeMaterial()

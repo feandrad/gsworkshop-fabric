@@ -1,7 +1,9 @@
 {
-  "parent": "gsw:item/template/tool",
+  "parent": "item/handheld",
   "textures": {
     "layer0": "gsw:item/wood/sword_handle",
-    "layer1": "gsw:item/template/sword"
+    "layer1": "gsw:item/titanium/blade",
+    "layer2": "gsw:item/titanium/guard",
+    "layer3": "gsw:item/titanium/pommel"
   }
 }

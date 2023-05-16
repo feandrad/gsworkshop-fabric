@@ -1,6 +1,0 @@
-{
-  "parent": "gsw:block/template/ore_stone2",
-  "textures": {
-    "ore": "gsw:block/amethyst_ore"
-  }
-}

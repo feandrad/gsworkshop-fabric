@@ -1,6 +1,6 @@
 {
-  "parent": "gsw:block/template/ore_stone2",
+  "parent": "block/cube_all",
   "textures": {
-    "ore": "gsw:block/topaz_ore"
+    "all": "gsw:block/topaz_ore"
   }
 }

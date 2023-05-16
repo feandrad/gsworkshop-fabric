@@ -1,5 +1,5 @@
 {
   "variants": {
-    "": { "model": "gsw:block/template/material_block" }
+    "": { "model": "gsw:block/steel_block" }
   }
 }

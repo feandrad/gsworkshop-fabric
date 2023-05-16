@@ -11,9 +11,9 @@ import net.minecraft.item.Item
 
 class OrichalcumMaterial : GSWMaterial("orichalcum") {
 
-    override fun allItems(): List<GSWItem> = listOf(INGOT, NUGGET, DUST, PLATE, CRUSHED, RAW)
-    override fun allBlocks(): List<GSWBlock> = listOf(ORE_BLOCK, METAL_BLOCK)
-    override fun allTools(): List<GSWTool> = listOf(SWORD, PICKAXE, AXE, SHOVEL, HOE, HAMMER)
+    override fun allItems(): List<GSWItem> = listOf(INGOT, NUGGET, DUST, CRUSHED, PLATE, RAW)
+    override fun allBlocks(): List<GSWBlock> = listOf(ORE_BLOCK, DEEPSLATE_ORE_BLOCK, RAW_BLOCK, METAL_BLOCK)
+    override fun allTools(): List<GSWTool> = listOf(SWORD, SHOVEL, PICKAXE, AXE, HOE, HAMMER)
 
     companion object {
         val MATERIAL: GSWMaterial = OrichalcumMaterial()
@@ -33,6 +33,8 @@ class OrichalcumMaterial : GSWMaterial("orichalcum") {
         val HAMMER: GSWTool = GSWHammer(MATERIAL, TOOL_MATERIAL, Item.Settings().group(GSWItemGroup.TOOLS))
 
         val METAL_BLOCK: GSWBlock = GSWMaterialBlock(MATERIAL, GSWMaterialBlock.SETTINGS_METAL)
+        val RAW_BLOCK: GSWBlock = GSWMaterialBlock(MATERIAL, GSWMaterialBlock.SETTINGS_METAL, "raw_block")
         val ORE_BLOCK: GSWBlock = GSWMaterialBlock(MATERIAL, GSWMaterialBlock.SETTINGS_ORE, "ore")
+        val DEEPSLATE_ORE_BLOCK: GSWBlock = GSWMaterialBlock(MATERIAL, GSWMaterialBlock.SETTINGS_ORE, "deepslate_ore")
     }
 }

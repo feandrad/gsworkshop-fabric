@@ -1,6 +1,6 @@
 {
-  "parent": "gsw:block/template/ore_stone2",
+  "parent": "block/cube_all",
   "textures": {
-    "ore": "gsw:block/sapphire_ore"
+    "all": "gsw:block/sapphire_ore"
   }
 }

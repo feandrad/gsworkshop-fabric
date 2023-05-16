@@ -7,12 +7,11 @@ import io.felipeandrade.gsw.item.tool.GSWTool
 import io.felipeandrade.gsw.material.GSWMaterial
 import io.felipeandrade.gsw.material.GSWMaterialItem
 import net.minecraft.item.Item
-import net.minecraft.item.ItemGroup
 import net.minecraft.item.ToolMaterials
 
 class IronMaterial : GSWMaterial("iron") {
 
-    override fun allItems(): List<GSWItem> = listOf(DUST, PLATE, CRUSHED)
+    override fun allItems(): List<GSWItem> = listOf(DUST, CRUSHED, PLATE)
     override fun allTools(): List<GSWTool> = listOf(HAMMER)
 
     companion object {
@@ -20,6 +19,6 @@ class IronMaterial : GSWMaterial("iron") {
         val DUST: GSWMaterialItem = GSWMaterialItem("dust", MATERIAL, Item.Settings().group(GSWItemGroup.MATERIALS))
         val PLATE: GSWMaterialItem = GSWMaterialItem("plate", MATERIAL, Item.Settings().group(GSWItemGroup.MATERIALS))
         val CRUSHED: GSWMaterialItem = GSWMaterialItem("crushed", MATERIAL, Item.Settings().group(GSWItemGroup.MATERIALS))
-        val HAMMER: GSWTool = GSWHammer(MATERIAL, ToolMaterials.IRON, Item.Settings().group(ItemGroup.TOOLS))
+        val HAMMER: GSWTool = GSWHammer(MATERIAL, ToolMaterials.IRON, Item.Settings().group(GSWItemGroup.TOOLS))
     }
 }

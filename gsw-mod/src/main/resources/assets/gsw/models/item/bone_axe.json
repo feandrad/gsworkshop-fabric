@@ -1,5 +1,5 @@
 {
-  "parent": "gsw:item/template/tool",
+  "parent": "item/handheld",
   "textures": {
     "layer0": "gsw:item/wood/handle",
     "layer1": "gsw:item/bone/axe"

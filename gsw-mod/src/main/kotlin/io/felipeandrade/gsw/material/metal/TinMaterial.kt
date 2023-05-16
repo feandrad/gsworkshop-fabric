@@ -11,8 +11,8 @@ import net.minecraft.item.Item
 
 class TinMaterial : GSWMaterial("tin") {
 
-    override fun allItems(): List<GSWItem> = listOf(INGOT, NUGGET, DUST, PLATE, CRUSHED, RAW)
-    override fun allBlocks(): List<GSWBlock> = listOf(ORE_BLOCK, METAL_BLOCK)
+    override fun allItems(): List<GSWItem> = listOf(INGOT, NUGGET, DUST, CRUSHED, PLATE, RAW)
+    override fun allBlocks(): List<GSWBlock> = listOf(ORE_BLOCK, DEEPSLATE_ORE_BLOCK, RAW_BLOCK, METAL_BLOCK)
     override fun allTools(): List<GSWTool> = ArrayList()
 
     companion object {
@@ -25,6 +25,8 @@ class TinMaterial : GSWMaterial("tin") {
         val RAW: GSWMaterialItem = GSWMaterialItem("raw", MATERIAL, Item.Settings().group(GSWItemGroup.MATERIALS))
 
         val METAL_BLOCK: GSWBlock = GSWMaterialBlock(MATERIAL, GSWMaterialBlock.SETTINGS_METAL)
+        val RAW_BLOCK: GSWBlock = GSWMaterialBlock(MATERIAL, GSWMaterialBlock.SETTINGS_METAL, "raw_block")
         val ORE_BLOCK: GSWBlock = GSWMaterialBlock(MATERIAL, GSWMaterialBlock.SETTINGS_ORE, "ore")
+        val DEEPSLATE_ORE_BLOCK: GSWBlock = GSWMaterialBlock(MATERIAL, GSWMaterialBlock.SETTINGS_ORE, "deepslate_ore")
     }
 }

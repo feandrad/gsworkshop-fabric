@@ -1,3 +1,6 @@
 {
-  "parent": "gsw:item/template/ingot2"
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "gsw:item/orichalcum/ingot"
+  }
 }

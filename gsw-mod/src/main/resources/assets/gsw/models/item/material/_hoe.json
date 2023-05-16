@@ -1,7 +1,0 @@
-{
-  "parent": "gsw:item/template/tool",
-  "textures": {
-    "layer0": "gsw:item/wood/handle",
-    "layer1": "gsw:item/template/hoe"
-  }
-}

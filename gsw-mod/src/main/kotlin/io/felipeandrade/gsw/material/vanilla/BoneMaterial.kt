@@ -1,15 +1,13 @@
 package io.felipeandrade.gsw.material.vanilla
 
 import io.felipeandrade.gsw.GSWItemGroup
-import io.felipeandrade.gsw.common.GSWColor
 import io.felipeandrade.gsw.item.tool.*
 import io.felipeandrade.gsw.material.GSWMaterial
 import net.minecraft.item.Item
 import net.minecraft.item.Items
-import java.util.*
 
 class BoneMaterial : GSWMaterial("bone") {
-    override fun allTools(): List<GSWTool> = listOf(SWORD, PICKAXE, AXE, SHOVEL, HOE, HAMMER)
+    override fun allTools(): List<GSWTool> = listOf(SWORD, SHOVEL, PICKAXE, AXE, HOE, HAMMER)
 
     companion object {
         val MATERIAL: GSWMaterial = BoneMaterial()
