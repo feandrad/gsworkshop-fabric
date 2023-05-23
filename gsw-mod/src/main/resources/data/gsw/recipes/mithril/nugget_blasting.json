@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "tag": "c:mithril_tool"
+  },
+  "result": "gsw:mithril_nugget",
+  "experience": 0.1,
+  "cookingtime": 100,
+  "group": "mithril_nugget"
+}

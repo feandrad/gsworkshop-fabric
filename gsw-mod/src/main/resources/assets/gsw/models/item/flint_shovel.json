@@ -1,0 +1,7 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "gsw:item/wood/shovel_handle",
+    "layer1": "gsw:item/flint/shovel"
+  }
+}

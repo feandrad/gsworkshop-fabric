@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "i",
+    "i",
+    "#"
+  ],
+  "key": {
+    "i": { "tag": "c:tin_ingot" },
+    "#": { "tag": "gsw:tool_rod" }
+  },
+  "result": {
+    "item": "gsw:tin_sword",
+    "count": 1
+  },
+  "group": "tool_pickaxe"
+}

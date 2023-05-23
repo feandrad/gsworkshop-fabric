@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " i ",
+    " #i",
+    "#  "
+  ],
+  "key": {
+    "i": { "tag": "c:gold_block" },
+    "#": { "tag": "gsw:tool_rod" }
+  },
+  "result": {
+    "item": "gsw:gold_hammer",
+    "count": 1
+  },
+  "group": "tool_pickaxe"
+}

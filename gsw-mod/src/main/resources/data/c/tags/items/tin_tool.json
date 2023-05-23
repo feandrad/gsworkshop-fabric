@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "gsw:tin_pickaxe",
+    "gsw:tin_shovel",
+    "gsw:tin_axe",
+    "gsw:tin_hoe",
+    "gsw:tin_sword"
+  ]
+}

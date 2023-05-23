@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "iii",
+        "iii",
+        "iii"
+    ],
+    "key": {
+        "i": {
+            "tag": "c:platinum_nugget"
+        }
+    },
+    "result": {
+        "item": "gsw:platinum_ingot",
+        "count": 1
+    },
+    "group": "platinum_ingot"
+}

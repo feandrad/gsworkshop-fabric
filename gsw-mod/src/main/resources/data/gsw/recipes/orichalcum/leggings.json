@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "iii",
+    "i i",
+    "i i"
+  ],
+  "key": {
+    "i": { "tag": "c:orichalcum_ingot" }
+  },
+  "result": {
+    "item": "gsw:orichalcum_leggings",
+    "count": 1
+  },
+  "group": "armor_leggings"
+}

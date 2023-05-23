@@ -1,0 +1,9 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "gsw:item/wood/sword_handle",
+    "layer1": "gsw:item/mithril/blade",
+    "layer2": "gsw:item/mithril/guard",
+    "layer3": "gsw:item/mithril/pommel"
+  }
+}

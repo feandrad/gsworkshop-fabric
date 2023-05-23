@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "gsw:topaz_block" }
+  ],
+  "result": {
+    "item": "gsw:topaz_gem",
+    "count": 9
+  },
+  "group": "topaz_gem"
+}

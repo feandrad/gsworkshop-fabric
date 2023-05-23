@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "iii",
+    " # ",
+    " # "
+  ],
+  "key": {
+    "i": { "tag": "c:flint" },
+    "#": { "tag": "gsw:tool_rod" }
+  },
+  "result": {
+    "item": "gsw:flint_pickaxe",
+    "count": 1
+  },
+  "group": "tool_pickaxe"
+}
