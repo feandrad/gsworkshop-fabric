@@ -1,7 +1,7 @@
 {
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
-        { "tag": "c:silver_ingot" }
+        { "item": "gsw:silver_ingot" }
     ],
     "result": {
         "item": "gsw:silver_nugget",

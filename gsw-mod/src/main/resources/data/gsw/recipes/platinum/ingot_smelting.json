@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smelting",
   "ingredient": [
-    { "tag": "c:platinum_dust" }
+    { "item": "gsw:platinum_dust" }
   ],
   "result": "gsw:platinum_ingot",
   "experience": 0.1,

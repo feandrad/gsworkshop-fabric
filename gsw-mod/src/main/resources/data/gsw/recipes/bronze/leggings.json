@@ -6,7 +6,7 @@
     "i i"
   ],
   "key": {
-    "i": { "tag": "c:bronze_ingot" }
+    "i": { "item": "gsw:bronze_ingot" }
   },
   "result": {
     "item": "gsw:bronze_leggings",

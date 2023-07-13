@@ -1,7 +1,7 @@
 {
   "type": "minecraft:blasting",
   "ingredient": {
-    "tag": "c:steel_dust"
+    "item": "gsw:steel_dust"
   },
   "result": "gsw:steel_ingot",
   "experience": 0.1,

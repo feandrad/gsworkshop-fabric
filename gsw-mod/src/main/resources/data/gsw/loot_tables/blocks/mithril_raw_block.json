@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "gsw:amethyst_block"
+          "name": "gsw:mithril_raw_block"
         }
       ],
       "conditions": [

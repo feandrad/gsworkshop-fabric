@@ -2,15 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "iii",
-    "i i",
-    "i i"
+    "iii",
+    "iii"
   ],
   "key": {
-    "i": { "tag": "c:tin_ingot" }
+    "i": { "item": "gsw:tin_raw" }
   },
   "result": {
-    "item": "gsw:tin_leggings",
+    "item": "gsw:tin_raw_block",
     "count": 1
   },
-  "group": "armor_leggings"
+  "group": "tin_raw_block"
 }

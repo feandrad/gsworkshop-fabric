@@ -1,7 +1,7 @@
 {
   "type": "minecraft:blasting",
   "ingredient": {
-    "tag": "c:bronze_tool"
+    "item": "gsw:bronze_smelt_nugget"
   },
   "result": "gsw:bronze_nugget",
   "experience": 0.1,

@@ -6,7 +6,7 @@
     "#  "
   ],
   "key": {
-    "i": { "tag": "c:stone_block" },
+    "i": { "item": "gsw:stone_block" },
     "#": { "tag": "gsw:tool_rod" }
   },
   "result": {

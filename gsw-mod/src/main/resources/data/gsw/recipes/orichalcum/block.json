@@ -6,7 +6,7 @@
     "iii"
   ],
   "key": {
-    "i": { "tag": "c:orichalcum_ingot" }
+    "i": { "item": "gsw:orichalcum_ingot" }
   },
   "result": {
     "item": "gsw:orichalcum_block",

@@ -6,7 +6,7 @@
     "#"
   ],
   "key": {
-    "i": { "tag": "c:flint" },
+    "i": { "item": "gsw:flint" },
     "#": { "tag": "gsw:tool_rod" }
   },
   "result": {

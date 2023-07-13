@@ -1,7 +1,7 @@
 {
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
-        { "tag": "c:tin_ingot" }
+        { "item": "gsw:tin_ingot" }
     ],
     "result": {
         "item": "gsw:tin_nugget",

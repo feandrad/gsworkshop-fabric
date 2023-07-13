@@ -1,7 +1,7 @@
 {
   "type": "minecraft:blasting",
   "ingredient": {
-    "tag": "c:orichalcum_ore"
+    "item": "gsw:orichalcum_ore"
   },
   "result": "gsw:orichalcum_ingot",
   "experience": 0.7,

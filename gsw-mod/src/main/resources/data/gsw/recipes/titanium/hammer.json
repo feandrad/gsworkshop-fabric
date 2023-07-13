@@ -6,7 +6,7 @@
     "#  "
   ],
   "key": {
-    "i": { "tag": "c:titanium_block" },
+    "i": { "item": "gsw:titanium_block" },
     "#": { "tag": "gsw:tool_rod" }
   },
   "result": {

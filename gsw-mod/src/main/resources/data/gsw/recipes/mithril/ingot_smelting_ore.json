@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smelting",
   "ingredient": {
-    "tag": "c:mithril_ore"
+    "item": "gsw:mithril_ore"
   },
   "result": "gsw:mithril_ingot",
   "experience": 0.7,

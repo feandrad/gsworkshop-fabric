@@ -7,7 +7,7 @@
     ],
     "key": {
         "i": {
-            "tag": "c:orichalcum_ingot"
+            "item": "gsw:orichalcum_ingot"
         },
         "#": {
             "tag": "gsw:tool_rod"

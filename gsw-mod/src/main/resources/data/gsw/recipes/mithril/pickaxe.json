@@ -6,7 +6,7 @@
     " # "
   ],
   "key": {
-    "i": { "tag": "c:mithril_ingot" },
+    "i": { "item": "gsw:mithril_ingot" },
     "#": { "tag": "gsw:tool_rod" }
   },
   "result": {

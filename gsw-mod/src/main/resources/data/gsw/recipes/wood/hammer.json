@@ -6,7 +6,7 @@
     "#  "
   ],
   "key": {
-    "i": { "tag": "c:wood_log" },
+    "i": { "item": "minecraft:wood_log" },
     "#": { "tag": "gsw:tool_rod" }
   },
   "result": {

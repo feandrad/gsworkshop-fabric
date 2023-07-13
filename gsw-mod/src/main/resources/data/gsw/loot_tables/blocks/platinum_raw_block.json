@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "gsw:copper_block"
+          "name": "gsw:platinum_raw_block"
         }
       ],
       "conditions": [

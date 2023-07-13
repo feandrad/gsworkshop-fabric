@@ -1,7 +1,7 @@
 {
   "type": "minecraft:blasting",
   "ingredient": {
-    "tag": "c:silver_tool"
+    "item": "gsw:silver_smelt_nugget"
   },
   "result": "gsw:silver_nugget",
   "experience": 0.1,

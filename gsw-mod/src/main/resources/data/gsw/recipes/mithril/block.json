@@ -6,7 +6,7 @@
     "iii"
   ],
   "key": {
-    "i": { "tag": "c:mithril_ingot" }
+    "i": { "item": "gsw:mithril_ingot" }
   },
   "result": {
     "item": "gsw:mithril_block",

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "gsw:tin_ore",
+    "gsw:tin_deepslate_ore",
+    "gsw:tin_block",
+    "gsw:tin_raw_block"
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
-    { "tag": "c:bronze_block" }
+    { "item": "gsw:bronze_block" }
   ],
   "result": {
     "item": "gsw:bronze_ingot",

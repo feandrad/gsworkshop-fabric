@@ -1,7 +1,7 @@
 {
   "type": "minecraft:blasting",
   "ingredient": {
-    "tag": "c:tin_tool"
+    "tag": "gsw:tin/smelt_nugget"
   },
   "result": "gsw:tin_nugget",
   "experience": 0.1,

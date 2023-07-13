@@ -1,7 +1,7 @@
 {
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
-        { "tag": "c:titanium_ingot" }
+        { "item": "gsw:titanium_ingot" }
     ],
     "result": {
         "item": "gsw:titanium_nugget",

@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smelting",
   "ingredient": {
-    "tag": "c:steel_tool"
+    "item": "gsw:steel_smelt_nugget"
   },
   "result": "gsw:steel_nugget",
   "experience": 0.1,

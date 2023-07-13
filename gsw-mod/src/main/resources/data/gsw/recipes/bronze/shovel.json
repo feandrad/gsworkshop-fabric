@@ -7,7 +7,7 @@
     ],
     "key": {
         "i": {
-            "tag": "c:bronze_ingot"
+            "item": "gsw:bronze_ingot"
         },
         "#": {
             "tag": "gsw:tool_rod"

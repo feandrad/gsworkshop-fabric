@@ -6,7 +6,7 @@
     " #"
   ],
   "key": {
-    "i": { "tag": "c:steel_ingot" },
+    "i": { "item": "gsw:steel_ingot" },
     "#": { "tag": "gsw:tool_rod" }
   },
   "result": {

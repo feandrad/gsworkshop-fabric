@@ -1,7 +1,7 @@
 {
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
-        { "tag": "c:bronze_ingot" }
+        { "item": "gsw:bronze_ingot" }
     ],
     "result": {
         "item": "gsw:bronze_nugget",

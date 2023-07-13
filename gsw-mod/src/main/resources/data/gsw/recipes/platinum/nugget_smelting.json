@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smelting",
   "ingredient": {
-    "tag": "c:platinum_tool"
+    "item": "gsw:platinum_smelt_nugget"
   },
   "result": "gsw:platinum_nugget",
   "experience": 0.1,

@@ -6,7 +6,7 @@
     "#  "
   ],
   "key": {
-    "i": { "tag": "c:mithril_block" },
+    "i": { "item": "gsw:mithril_block" },
     "#": { "tag": "gsw:tool_rod" }
   },
   "result": {

@@ -1,7 +1,7 @@
 {
   "type": "minecraft:blasting",
   "ingredient": {
-    "tag": "c:copper_tool"
+    "item": "gsw:copper_smelt_nugget"
   },
   "result": "gsw:copper_nugget",
   "experience": 0.1,

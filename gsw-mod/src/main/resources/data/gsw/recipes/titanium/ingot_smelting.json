@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smelting",
   "ingredient": [
-    { "tag": "c:titanium_dust" }
+    { "item": "gsw:titanium_dust" }
   ],
   "result": "gsw:titanium_ingot",
   "experience": 0.1,

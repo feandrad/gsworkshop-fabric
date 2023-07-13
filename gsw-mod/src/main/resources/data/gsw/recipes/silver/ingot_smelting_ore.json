@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smelting",
   "ingredient": {
-    "tag": "c:silver_ore"
+    "item": "gsw:silver_ore"
   },
   "result": "gsw:silver_ingot",
   "experience": 0.7,

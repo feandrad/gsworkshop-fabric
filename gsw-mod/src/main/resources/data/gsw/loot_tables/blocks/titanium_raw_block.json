@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "gsw:copper_ore"
+          "name": "gsw:titanium_raw_block"
         }
       ],
       "conditions": [

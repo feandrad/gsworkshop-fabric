@@ -1,0 +1,14 @@
+{
+  "replace": true,
+  "values": [
+    "gsw:silver_sword",
+    "gsw:silver_pickaxe",
+    "gsw:silver_axe",
+    "gsw:silver_shovel",
+    "gsw:silver_hoe",
+    "gsw:silver_helmet",
+    "gsw:silver_chestplate",
+    "gsw:silver_leggings",
+    "gsw:silver_boots"
+  ]
+}

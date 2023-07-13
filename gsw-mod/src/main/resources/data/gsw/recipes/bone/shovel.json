@@ -7,7 +7,7 @@
     ],
     "key": {
         "i": {
-            "tag": "c:bone"
+            "item": "minecraft:bone"
         },
         "#": {
             "tag": "gsw:tool_rod"

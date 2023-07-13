@@ -1,0 +1,14 @@
+{
+  "replace": true,
+  "values": [
+    "gsw:tin_sword",
+    "gsw:tin_pickaxe",
+    "gsw:tin_axe",
+    "gsw:tin_shovel",
+    "gsw:tin_hoe",
+    "gsw:tin_helmet",
+    "gsw:tin_chestplate",
+    "gsw:tin_leggings",
+    "gsw:tin_boots"
+  ]
+}

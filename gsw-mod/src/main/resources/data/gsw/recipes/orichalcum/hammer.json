@@ -6,7 +6,7 @@
     "#  "
   ],
   "key": {
-    "i": { "tag": "c:orichalcum_block" },
+    "i": { "item": "gsw:orichalcum_block" },
     "#": { "tag": "gsw:tool_rod" }
   },
   "result": {

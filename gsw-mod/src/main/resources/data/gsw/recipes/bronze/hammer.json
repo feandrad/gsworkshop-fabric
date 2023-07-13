@@ -6,7 +6,7 @@
     "#  "
   ],
   "key": {
-    "i": { "tag": "c:bronze_block" },
+    "i": { "item": "gsw:bronze_block" },
     "#": { "tag": "gsw:tool_rod" }
   },
   "result": {

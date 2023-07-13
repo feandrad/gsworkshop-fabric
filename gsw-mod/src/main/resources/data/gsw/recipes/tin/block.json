@@ -6,7 +6,7 @@
     "iii"
   ],
   "key": {
-    "i": { "tag": "c:tin_ingot" }
+    "i": { "item": "gsw:tin_ingot" }
   },
   "result": {
     "item": "gsw:tin_block",

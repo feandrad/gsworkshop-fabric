@@ -1,0 +1,11 @@
+{
+  "replace": true,
+  "values": [
+    "gsw:tin_dust",
+    "gsw:tin_raw",
+    "gsw:tin_crushed",
+    "gsw:tin_plate",
+    "gsw:tin_ore",
+    "gsw:tin_deepslate_ore"
+  ]
+}
