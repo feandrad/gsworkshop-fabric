@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "iii",
+    " # ",
+    " # "
+  ],
+  "key": {
+    "i": { "item": "gsw:cobalt_ingot" },
+    "#": { "tag": "gsw:tool_rod" }
+  },
+  "result": {
+    "item": "gsw:cobalt_pickaxe",
+    "count": 1
+  },
+  "group": "tool_pickaxe"
+}

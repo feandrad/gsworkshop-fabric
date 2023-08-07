@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        { "item": "gsw:cobalt_ingot" }
+    ],
+    "result": {
+        "item": "gsw:cobalt_nugget",
+        "count": 9
+    },
+    "group": "cobalt_nugget"
+}

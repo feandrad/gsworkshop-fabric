@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": [
+    { "item": "gsw:cobalt_dust" }
+  ],
+  "result": "gsw:cobalt_ingot",
+  "experience": 0.1,
+  "cookingtime": 200,
+  "group": "cobalt_ingot"
+}
