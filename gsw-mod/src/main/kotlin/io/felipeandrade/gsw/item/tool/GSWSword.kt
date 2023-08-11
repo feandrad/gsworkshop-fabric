@@ -25,6 +25,8 @@ class GSWSword(
         settings: Settings
     ) : this(material.unlocalizedName + "_sword", material, toolMaterial, settings)
 
+    override val item = this
+
     override fun register() {
         Registry.register(Registry.ITEM, Identifier(MOD_ID, unlocalizedName), this)
     }

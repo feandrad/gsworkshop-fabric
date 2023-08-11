@@ -22,6 +22,8 @@ class GSWHoe(
     val unlocalizedName: String = material.unlocalizedName + "_hoe",
 ) : HoeItem(toolMaterial, attackDamage, attackSpeed, settings), GSWTool {
 
+    override val item = this
+
     override fun register() {
         Registry.register(Registry.ITEM, Identifier(MOD_ID, unlocalizedName), this)
     }

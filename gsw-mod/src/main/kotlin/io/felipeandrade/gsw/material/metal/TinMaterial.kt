@@ -6,7 +6,7 @@ import io.felipeandrade.gsw.datagen.offerOreMaterial
 import io.felipeandrade.gsw.item.GSWItem
 import io.felipeandrade.gsw.material.GSWMaterial
 import io.felipeandrade.gsw.material.GSWMaterialItem
-import io.felipeandrade.gsw.material.MATERIAL_GROUP
+import io.felipeandrade.gsw.material.MATERIAL_SETTINGS
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider
 import net.minecraft.data.server.recipe.RecipeJsonProvider
 import java.util.function.Consumer
@@ -23,12 +23,12 @@ class TinMaterial : GSWMaterial("tin") {
     companion object {
         val MATERIAL: GSWMaterial = TinMaterial()
 
-        val INGOT: GSWItem = GSWMaterialItem("ingot", MATERIAL, MATERIAL_GROUP)
-        val NUGGET: GSWMaterialItem = GSWMaterialItem("nugget", MATERIAL, MATERIAL_GROUP)
-        val DUST: GSWMaterialItem = GSWMaterialItem("dust", MATERIAL, MATERIAL_GROUP)
-        val PLATE: GSWMaterialItem = GSWMaterialItem("plate", MATERIAL, MATERIAL_GROUP)
-        val CRUSHED: GSWMaterialItem = GSWMaterialItem("crushed", MATERIAL, MATERIAL_GROUP)
-        val RAW: GSWMaterialItem = GSWMaterialItem("raw", MATERIAL, MATERIAL_GROUP)
+        val INGOT: GSWItem = GSWMaterialItem(MATERIAL, MATERIAL_SETTINGS, "ingot")
+        val NUGGET: GSWMaterialItem = GSWMaterialItem(MATERIAL, MATERIAL_SETTINGS, "nugget")
+        val DUST: GSWMaterialItem = GSWMaterialItem(MATERIAL, MATERIAL_SETTINGS, "dust")
+        val PLATE: GSWMaterialItem = GSWMaterialItem(MATERIAL, MATERIAL_SETTINGS, "plate")
+        val CRUSHED: GSWMaterialItem = GSWMaterialItem(MATERIAL, MATERIAL_SETTINGS, "crushed")
+        val RAW: GSWMaterialItem = GSWMaterialItem(MATERIAL, MATERIAL_SETTINGS, "raw")
 
         val METAL_BLOCK: GSWBlock = GSWMaterialBlock(MATERIAL, GSWMaterialBlock.SETTINGS_METAL)
         val RAW_BLOCK: GSWBlock = GSWMaterialBlock(MATERIAL, GSWMaterialBlock.SETTINGS_METAL, "raw_block")

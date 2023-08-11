@@ -26,11 +26,11 @@ class CopperMaterial : GSWMaterial("copper") {
 
     companion object {
         val MATERIAL: GSWMaterial = CopperMaterial()
-        val NUGGET: GSWMaterialItem = GSWMaterialItem("nugget", MATERIAL, Item.Settings().group(GSWItemGroup.MATERIALS))
-        val DUST: GSWMaterialItem = GSWMaterialItem("dust", MATERIAL, Item.Settings().group(GSWItemGroup.MATERIALS))
-        val PLATE: GSWMaterialItem = GSWMaterialItem("plate", MATERIAL, Item.Settings().group(GSWItemGroup.MATERIALS))
+        val NUGGET: GSWMaterialItem = GSWMaterialItem(MATERIAL, Item.Settings().group(GSWItemGroup.MATERIALS), "nugget")
+        val DUST: GSWMaterialItem = GSWMaterialItem(MATERIAL, Item.Settings().group(GSWItemGroup.MATERIALS), "dust")
+        val PLATE: GSWMaterialItem = GSWMaterialItem(MATERIAL, Item.Settings().group(GSWItemGroup.MATERIALS), "plate")
         val CRUSHED: GSWMaterialItem =
-            GSWMaterialItem("crushed", MATERIAL, Item.Settings().group(GSWItemGroup.MATERIALS))
+            GSWMaterialItem(MATERIAL, Item.Settings().group(GSWItemGroup.MATERIALS), "crushed")
 
         val TOOL_MATERIAL = GSWToolMaterial(1, 160, 5.0f, 1.6f, 16, Items.COPPER_INGOT)
         val SWORD: GSWSword = GSWSword(MATERIAL, TOOL_MATERIAL, Item.Settings().group(GSWItemGroup.TOOLS))

@@ -23,10 +23,10 @@ class NetheriteMaterial : GSWMaterial("netherite") {
 
     companion object {
         val MATERIAL: GSWMaterial = NetheriteMaterial()
-        val DUST: GSWMaterialItem = GSWMaterialItem("dust", MATERIAL, Item.Settings().group(GSWItemGroup.MATERIALS))
-        val PLATE: GSWMaterialItem = GSWMaterialItem("plate", MATERIAL, Item.Settings().group(GSWItemGroup.MATERIALS))
+        val DUST: GSWMaterialItem = GSWMaterialItem(MATERIAL, Item.Settings().group(GSWItemGroup.MATERIALS), "dust")
+        val PLATE: GSWMaterialItem = GSWMaterialItem(MATERIAL, Item.Settings().group(GSWItemGroup.MATERIALS), "plate")
         val CRUSHED: GSWMaterialItem =
-            GSWMaterialItem("crushed", MATERIAL, Item.Settings().group(GSWItemGroup.MATERIALS))
+            GSWMaterialItem(MATERIAL, Item.Settings().group(GSWItemGroup.MATERIALS), "crushed")
 
         val HAMMER: GSWHammer = GSWHammer(MATERIAL, ToolMaterials.NETHERITE, Item.Settings().group(GSWItemGroup.TOOLS))
     }

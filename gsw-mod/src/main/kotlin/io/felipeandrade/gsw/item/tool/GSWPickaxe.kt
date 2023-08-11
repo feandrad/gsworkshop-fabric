@@ -17,19 +17,21 @@ import net.minecraft.util.registry.Registry
 import net.minecraft.world.World
 import java.util.function.Consumer
 
-open class GSWPickaxe internal constructor(
-    protected val unlocalizedName: String,
-    protected val material: GSWMaterial,
+class GSWPickaxe internal constructor(
+    val unlocalizedName: String,
+    val material: GSWMaterial,
     toolMaterial: ToolMaterial,
-    attackDamage: Int,
-    attackSpeed: Float,
-    settings: Settings
+    settings: Settings,
+    attackDamage: Int = 1,
+    attackSpeed: Float = -2.8f
 ) : PickaxeItem(toolMaterial, attackDamage, attackSpeed, settings), GSWTool {
     constructor(
         material: GSWMaterial,
         toolMaterial: ToolMaterial,
         settings: Settings
-    ) : this(material.unlocalizedName + "_pickaxe", material, toolMaterial, 1, -2.8f, settings)
+    ) : this(material.unlocalizedName + "_pickaxe", material, toolMaterial, settings, 1, -2.8f)
+
+    override val item = this
 
     override fun register() {
         Registry.register(Registry.ITEM, Identifier(MOD_ID, unlocalizedName), this)

@@ -9,6 +9,7 @@ class GSWDataGeneration : DataGeneratorEntrypoint {
     override fun onInitializeDataGenerator(fabricDataGenerator: FabricDataGenerator) {
         fabricDataGenerator.addProvider(BlockLootTableGenerator(fabricDataGenerator))
         fabricDataGenerator.addProvider(GSWRecipeProvider(fabricDataGenerator))
+        fabricDataGenerator.addProvider(GSWModelProvider(fabricDataGenerator))
     }
 }
 

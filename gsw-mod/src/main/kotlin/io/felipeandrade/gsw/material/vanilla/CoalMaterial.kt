@@ -18,7 +18,11 @@ class CoalMaterial : GSWMaterial("coal") {
 
     companion object {
         val MATERIAL: GSWMaterial = CoalMaterial()
-        val DUST: GSWMaterialItem = GSWMaterialItem("dust", MATERIAL, Item.Settings().group(GSWItemGroup.MATERIALS))
-        val CRUSHED: GSWMaterialItem = GSWMaterialItem("crushed", MATERIAL, Item.Settings().group(GSWItemGroup.MATERIALS))
+        val DUST: GSWMaterialItem = GSWMaterialItem(MATERIAL, Item.Settings().group(GSWItemGroup.MATERIALS), "dust")
+        val CRUSHED: GSWMaterialItem = GSWMaterialItem(
+            MATERIAL,
+            Item.Settings().group(GSWItemGroup.MATERIALS),
+            "crushed"
+        )
     }
 }

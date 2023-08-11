@@ -7,21 +7,31 @@ import net.minecraft.data.server.RecipeProvider.getRecipeName
 import net.minecraft.data.server.recipe.RecipeJsonProvider
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder
 import net.minecraft.item.ItemConvertible
+import net.minecraft.item.PickaxeItem
 import net.minecraft.item.ToolMaterial
 import net.minecraft.util.Identifier
+import net.minecraft.util.registry.Registry
 import java.util.function.Consumer
 
 class GSWHammer(
-    unlocalizedName: String,
-    material: GSWMaterial,
+    val unlocalizedName: String,
+    val material: GSWMaterial,
     toolMaterial: ToolMaterial,
     settings: Settings,
-) : GSWPickaxe(unlocalizedName, material, toolMaterial, 5, -3.4f, settings) {
+    attackDamage: Int = 5,
+    attackSpeed: Float = -3.4f
+) : PickaxeItem(toolMaterial, attackDamage, attackSpeed, settings), GSWTool {
     constructor(
         material: GSWMaterial,
         toolMaterial: ToolMaterial,
         settings: Settings
     ) : this(material.unlocalizedName + "_hammer", material, toolMaterial, settings)
+
+    override val item = this
+
+    override fun register() {
+        Registry.register(Registry.ITEM, Identifier(MOD_ID, unlocalizedName), this)
+    }
 
     override fun offerRecipe(exporter: Consumer<RecipeJsonProvider>, ingot: ItemConvertible, handle: ItemConvertible) {
         ShapedRecipeJsonBuilder.create(this)
