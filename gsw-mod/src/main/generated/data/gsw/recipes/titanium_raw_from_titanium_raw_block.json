@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "titanium_raw",
+  "ingredients": [
+    {
+      "item": "gsw:titanium_raw_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "gsw:titanium_raw"
+  }
+}

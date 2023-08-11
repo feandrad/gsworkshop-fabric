@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "gsw:titanium_block"
+    },
+    "|": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " # ",
+    " |#",
+    "|  "
+  ],
+  "result": {
+    "item": "gsw:titanium_hammer"
+  }
+}

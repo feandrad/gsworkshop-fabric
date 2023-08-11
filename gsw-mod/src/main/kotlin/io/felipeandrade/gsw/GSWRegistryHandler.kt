@@ -20,15 +20,19 @@ object GSWRegistryHandler {
         WoolMaterial.MATERIAL,
         LeatherMaterial.MATERIAL,
         CopperMaterial.MATERIAL,
+        NetheriteMaterial.MATERIAL,
+
         TinMaterial.MATERIAL,
         SilverMaterial.MATERIAL,
         TitaniumMaterial.MATERIAL,
         PlatinumMaterial.MATERIAL,
-        BronzeMaterial.MATERIAL,
-        SteelMaterial.MATERIAL,
         CobaltMaterial.MATERIAL,
         MithrilMaterial.MATERIAL,
         OrichalcumMaterial.MATERIAL,
+
+        BronzeMaterial.MATERIAL,
+        SteelMaterial.MATERIAL,
+
         TopazMaterial.MATERIAL,
         SapphireMaterial.MATERIAL,
         RubyMaterial.MATERIAL

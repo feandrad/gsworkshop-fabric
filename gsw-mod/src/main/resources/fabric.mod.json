@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "id": "gsw",
-  "version": "${version}",
+  "version": "0.1.4",
   "name": "Griswold's Workshop",
-  "description": "Become a real Blacksmith in Minecraft.\nPort from my old 1.7.10 mod: https://www.curseforge.com/minecraft/mc-mods/griswolds-workshop\nMod under development.",
+  "description": "Become a real Blacksmith in Minecraft.\nMod under development.",
   "authors": [
     "feandrad"
   ],
@@ -19,6 +19,18 @@
       {
         "adapter": "kotlin",
         "value": "io.felipeandrade.gsw.GSWMod"
+      }
+    ],
+    "client": [
+      {
+        "adapter": "kotlin",
+        "value": "io.felipeandrade.gsw.GSWModClient"
+      }
+    ],
+    "fabric-datagen": [
+      {
+        "adapter": "kotlin",
+        "value": "io.felipeandrade.gsw.datagen.GSWDataGeneration"
       }
     ]
   },

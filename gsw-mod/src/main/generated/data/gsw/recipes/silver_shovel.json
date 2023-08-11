@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "gsw:silver_ingot"
+    },
+    "|": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "#",
+    "|",
+    "|"
+  ],
+  "result": {
+    "item": "gsw:silver_shovel"
+  }
+}

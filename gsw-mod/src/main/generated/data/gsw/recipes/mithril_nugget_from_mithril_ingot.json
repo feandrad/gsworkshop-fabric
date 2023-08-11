@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "mithril_nugget",
+  "ingredients": [
+    {
+      "item": "gsw:mithril_ingot"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "gsw:mithril_nugget"
+  }
+}

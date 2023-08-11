@@ -6,12 +6,18 @@ import io.felipeandrade.gsw.block.GSWMaterialBlock
 import io.felipeandrade.gsw.item.GSWItem
 import io.felipeandrade.gsw.material.GSWMaterial
 import io.felipeandrade.gsw.material.GSWMaterialItem
+import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider
+import net.minecraft.data.server.recipe.RecipeJsonProvider
 import net.minecraft.item.Item
+import java.util.function.Consumer
 
 class SapphireMaterial : GSWMaterial("sapphire") {
 
     override fun allItems(): List<GSWItem> = listOf(GEM)
     override fun allBlocks(): List<GSWBlock> = listOf(ORE_BLOCK, DEEPSLATE_ORE_BLOCK, GEM_BLOCK)
+    override fun generateRecipes(provider: FabricRecipeProvider, exporter: Consumer<RecipeJsonProvider>) {
+
+    }
 
     companion object {
         val MATERIAL: GSWMaterial = SapphireMaterial()

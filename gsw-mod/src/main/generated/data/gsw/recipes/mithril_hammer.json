@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "gsw:mithril_block"
+    },
+    "|": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " # ",
+    " |#",
+    "|  "
+  ],
+  "result": {
+    "item": "gsw:mithril_hammer"
+  }
+}

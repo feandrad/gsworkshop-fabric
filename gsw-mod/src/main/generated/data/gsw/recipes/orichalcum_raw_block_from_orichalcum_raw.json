@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "orichalcum_raw_block",
+  "key": {
+    "#": {
+      "item": "gsw:orichalcum_raw"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "gsw:orichalcum_raw_block"
+  }
+}
