@@ -6,17 +6,17 @@ import io.felipeandrade.gsw.material.gem.SapphireMaterial
 import io.felipeandrade.gsw.material.gem.TopazMaterial
 import io.felipeandrade.gsw.material.metal.*
 import io.felipeandrade.gsw.material.vanilla.*
-import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator
+import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider
-import net.minecraft.data.server.RecipeProvider.*
-import net.minecraft.data.server.recipe.RecipeJsonProvider
+import net.minecraft.data.server.recipe.RecipeExporter
+import net.minecraft.data.server.recipe.RecipeProvider.*
 import net.minecraft.item.ItemConvertible
 import net.minecraft.item.Items
-import java.util.function.Consumer
+import net.minecraft.recipe.book.RecipeCategory
 
-class GSWRecipeProvider(dataGenerator: FabricDataGenerator) : FabricRecipeProvider(dataGenerator) {
+class GSWRecipeProvider(dataOutput: FabricDataOutput) : FabricRecipeProvider(dataOutput) {
 
-    override fun generateRecipes(exporter: Consumer<RecipeJsonProvider>) {
+    override fun generate(exporter: RecipeExporter) {
         TinMaterial.MATERIAL.generateRecipes(this, exporter)
         SilverMaterial.MATERIAL.generateRecipes(this, exporter)
         PlatinumMaterial.MATERIAL.generateRecipes(this, exporter)
@@ -49,13 +49,16 @@ class GSWRecipeProvider(dataGenerator: FabricDataGenerator) : FabricRecipeProvid
 }
 
 fun offerCompactingRecipes(
-    exporter: Consumer<RecipeJsonProvider>,
+    exporter: RecipeExporter,
+    recipeCategory: RecipeCategory,
     input: ItemConvertible,
-    compacted: ItemConvertible
+    compacted: ItemConvertible,
 ) {
     offerReversibleCompactingRecipes(
         exporter,
+        recipeCategory,
         input,
+        recipeCategory,
         compacted,
         getItemPath(compacted) + "_from_" + getItemPath(input),
         getItemPath(compacted),
@@ -65,17 +68,19 @@ fun offerCompactingRecipes(
 }
 
 fun offerProgressiveCompactingRecipes(
-    exporter: Consumer<RecipeJsonProvider>,
+    exporter: RecipeExporter,
+    recipeCategory: RecipeCategory,
     nugget: ItemConvertible,
     ingot: ItemConvertible,
     block: ItemConvertible,
 ) {
-    offerCompactingRecipes(exporter, nugget, ingot)
-    offerCompactingRecipes(exporter, ingot, block)
+    offerCompactingRecipes(exporter, recipeCategory, nugget, ingot)
+    offerCompactingRecipes(exporter, recipeCategory, ingot, block)
 }
 
 fun offerOreMaterial(
-    exporter: Consumer<RecipeJsonProvider>,
+    exporter: RecipeExporter,
+    recipeCategory: RecipeCategory,
     ingot: ItemConvertible,
     nugget: ItemConvertible,
     block: ItemConvertible,
@@ -88,29 +93,30 @@ fun offerOreMaterial(
     nuggetExp: Float = 0.7f,
     nuggetCookTime: Int = 200
 ) {
-    offerCompactingRecipes(exporter, raw, rawBlock)
-    offerProgressiveCompactingRecipes(exporter, nugget, ingot, block)
+    offerCompactingRecipes(exporter, recipeCategory, raw, rawBlock)
+    offerProgressiveCompactingRecipes(exporter, recipeCategory, nugget, ingot, block)
     if (ingotSmelts.isNotEmpty()) {
-        offerSmeltingAndBlasting(exporter, ingotSmelts, ingot, ingotExp, ingotCookTime)
+        offerSmeltingAndBlasting(exporter, recipeCategory, ingotSmelts, ingot, ingotExp, ingotCookTime)
     }
     if (nuggetSmelts.isNotEmpty()) {
-        offerSmeltingAndBlasting(exporter, nuggetSmelts, nugget, nuggetExp, nuggetCookTime)
+        offerSmeltingAndBlasting(exporter, recipeCategory, nuggetSmelts, nugget, nuggetExp, nuggetCookTime)
     }
 }
 
 fun offerSmeltingAndBlasting(
-    exporter: Consumer<RecipeJsonProvider>,
+    exporter: RecipeExporter,
+    recipeCategory: RecipeCategory,
     inputList: List<ItemConvertible>,
     output: ItemConvertible,
     exp: Float,
     cookTime: Int
 ) {
-    offerSmelting(exporter, inputList, output, exp, cookTime, getItemPath(output))
-    offerBlasting(exporter, inputList, output, exp, cookTime, getItemPath(output))
+    offerSmelting(exporter, inputList, recipeCategory, output, exp, cookTime, getItemPath(output))
+    offerBlasting(exporter, inputList, recipeCategory, output, exp, cookTime, getItemPath(output))
 }
 
 fun offerTools(
-    exporter: Consumer<RecipeJsonProvider>,
+    exporter: RecipeExporter,
     ingot: ItemConvertible,
     outputList: List<GSWTool>
 ) {

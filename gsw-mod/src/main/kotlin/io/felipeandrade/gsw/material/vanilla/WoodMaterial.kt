@@ -8,15 +8,14 @@ import io.felipeandrade.gsw.material.GSWMaterialItem
 import io.felipeandrade.gsw.material.MATERIAL_GROUP
 import io.felipeandrade.gsw.material.TOOLS_GROUP
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider
-import net.minecraft.data.server.recipe.RecipeJsonProvider
+import net.minecraft.data.server.recipe.RecipeExporter
 import net.minecraft.item.ToolMaterials
-import java.util.function.Consumer
 
 class WoodMaterial : GSWMaterial("wood") {
 
     override fun allItems(): List<GSWItem> = listOf(DUST)
     override fun allTools(): List<GSWTool> = listOf(HAMMER)
-    override fun generateRecipes(provider: FabricRecipeProvider, exporter: Consumer<RecipeJsonProvider>) {
+    override fun generateRecipes(provider: FabricRecipeProvider, exporter: RecipeExporter) {
 
     }
 

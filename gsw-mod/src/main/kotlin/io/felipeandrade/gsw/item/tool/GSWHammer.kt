@@ -2,14 +2,13 @@ package io.felipeandrade.gsw.item.tool
 
 import io.felipeandrade.gsw.GSWMod.Companion.MOD_ID
 import io.felipeandrade.gsw.material.GSWMaterial
-import net.minecraft.data.server.RecipeProvider
-import net.minecraft.data.server.RecipeProvider.getRecipeName
-import net.minecraft.data.server.recipe.RecipeJsonProvider
+import net.minecraft.data.server.recipe.RecipeExporter
+import net.minecraft.data.server.recipe.RecipeProvider
+import net.minecraft.data.server.recipe.RecipeProvider.getRecipeName
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder
 import net.minecraft.item.ItemConvertible
 import net.minecraft.item.ToolMaterial
 import net.minecraft.util.Identifier
-import java.util.function.Consumer
 
 class GSWHammer(
     unlocalizedName: String,
@@ -23,7 +22,7 @@ class GSWHammer(
         settings: Settings
     ) : this(material.unlocalizedName + "_hammer", material, toolMaterial, settings)
 
-    override fun offerRecipe(exporter: Consumer<RecipeJsonProvider>, ingot: ItemConvertible, handle: ItemConvertible) {
+    override fun offerRecipe(exporter: RecipeExporter, ingot: ItemConvertible, handle: ItemConvertible) {
         ShapedRecipeJsonBuilder.create(this)
             .pattern(" # ")
             .pattern(" |#")

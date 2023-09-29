@@ -6,18 +6,16 @@ import io.felipeandrade.gsw.material.gem.RubyMaterial
 import io.felipeandrade.gsw.material.gem.SapphireMaterial
 import io.felipeandrade.gsw.material.gem.TopazMaterial
 import io.felipeandrade.gsw.material.metal.*
-import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator
+import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput
 import net.fabricmc.fabric.api.datagen.v1.provider.SimpleFabricLootTableProvider
-import net.minecraft.data.server.BlockLootTableGenerator
 import net.minecraft.item.Item
 import net.minecraft.loot.LootTable
 import net.minecraft.loot.context.LootContextTypes
 import net.minecraft.util.Identifier
 import java.util.function.BiConsumer
 
-
 class BlockLootTableGenerator(
-    dataGenerator: FabricDataGenerator
+    dataGenerator: FabricDataOutput
 ) : SimpleFabricLootTableProvider(dataGenerator, LootContextTypes.BLOCK) {
 
     override fun accept(t: BiConsumer<Identifier, LootTable.Builder>) {

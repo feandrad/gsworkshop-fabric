@@ -4,14 +4,13 @@ import io.felipeandrade.gsw.GSWMod.Companion.MOD_ID
 import io.felipeandrade.gsw.material.GSWMaterial
 import net.minecraft.data.server.RecipeProvider
 import net.minecraft.data.server.RecipeProvider.getRecipeName
-import net.minecraft.data.server.recipe.RecipeJsonProvider
+import net.minecraft.data.server.recipe.RecipeExporter
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder
 import net.minecraft.item.ItemConvertible
 import net.minecraft.item.ShovelItem
 import net.minecraft.item.ToolMaterial
+import net.minecraft.registry.Registry
 import net.minecraft.util.Identifier
-import net.minecraft.util.registry.Registry
-import java.util.function.Consumer
 
 class GSWShovel(
     private val unlocalizedName: String,
@@ -26,10 +25,10 @@ class GSWShovel(
     ) : this(material.unlocalizedName + "_shovel", material, toolMaterial, settings)
 
     override fun register() {
-        Registry.register(Registry.ITEM, Identifier(MOD_ID, unlocalizedName), this)
+        Registry.register(Registries.ITEM, Identifier(MOD_ID, unlocalizedName), this)
     }
 
-    override fun offerRecipe(exporter: Consumer<RecipeJsonProvider>, ingot: ItemConvertible, handle: ItemConvertible) {
+    override fun offerRecipe(exporter: RecipeExporter, ingot: ItemConvertible, handle: ItemConvertible) {
         ShapedRecipeJsonBuilder.create(this)
             .pattern("#")
             .pattern("|")

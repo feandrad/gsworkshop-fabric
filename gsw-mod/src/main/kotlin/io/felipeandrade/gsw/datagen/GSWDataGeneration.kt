@@ -7,8 +7,10 @@ const val PATH_BLOCK = "blocks"
 
 class GSWDataGeneration : DataGeneratorEntrypoint {
     override fun onInitializeDataGenerator(fabricDataGenerator: FabricDataGenerator) {
-        fabricDataGenerator.addProvider(BlockLootTableGenerator(fabricDataGenerator))
-        fabricDataGenerator.addProvider(GSWRecipeProvider(fabricDataGenerator))
+        val pack = fabricDataGenerator. createPack()
+            //(BlockLootTableGenerator(fabricDataGenerator))
+           pack.addProvider { BlockLootTableGenerator(fabricDataGenerator) }
+        pack.addProvider(GSWRecipeProvider(fabricDataGenerator))
     }
 }
 
