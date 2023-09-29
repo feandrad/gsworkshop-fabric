@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "id": "gsw",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "name": "Griswold's Workshop",
-  "description": "Become a real Blacksmith in Minecraft.\nMod under development.",
+  "description": "Become a Blacksmith in Minecraft.",
   "authors": [
     "feandrad"
   ],
