@@ -1,5 +1,6 @@
 package io.felipeandrade.gsw.material.metal
 
+import io.felipeandrade.gsw.GSWMod.Companion.MOD_ID
 import io.felipeandrade.gsw.block.GSWBlock
 import io.felipeandrade.gsw.block.GSWMaterialBlock
 import io.felipeandrade.gsw.datagen.offerOreMaterial
@@ -10,6 +11,10 @@ import io.felipeandrade.gsw.material.MATERIAL_GROUP
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider
 import net.minecraft.data.server.recipe.RecipeExporter
 import net.minecraft.recipe.book.RecipeCategory
+import net.minecraft.registry.RegistryKey
+import net.minecraft.registry.RegistryKeys
+import net.minecraft.util.Identifier
+import net.minecraft.world.gen.feature.PlacedFeature
 
 class TinMaterial : GSWMaterial("tin") {
 
@@ -17,7 +22,16 @@ class TinMaterial : GSWMaterial("tin") {
     override fun allBlocks(): List<GSWBlock> = listOf(ORE_BLOCK, DEEPSLATE_ORE_BLOCK, RAW_BLOCK, METAL_BLOCK)
 
     override fun generateRecipes(provider: FabricRecipeProvider, exporter: RecipeExporter) {
-        offerOreMaterial(exporter, RecipeCategory.MISC, INGOT, NUGGET, METAL_BLOCK, RAW, RAW_BLOCK, listOf(ORE_BLOCK, DEEPSLATE_ORE_BLOCK))
+        offerOreMaterial(
+            exporter,
+            RecipeCategory.MISC,
+            INGOT,
+            NUGGET,
+            METAL_BLOCK,
+            RAW,
+            RAW_BLOCK,
+            listOf(ORE_BLOCK, DEEPSLATE_ORE_BLOCK)
+        )
     }
 
     companion object {
@@ -35,5 +49,10 @@ class TinMaterial : GSWMaterial("tin") {
         val RAW_BLOCK: GSWBlock = GSWMaterialBlock(MATERIAL, GSWMaterialBlock.SETTINGS_METAL, "raw_block")
         val ORE_BLOCK: GSWBlock = GSWMaterialBlock(MATERIAL, GSWMaterialBlock.SETTINGS_ORE, "ore")
         val DEEPSLATE_ORE_BLOCK: GSWBlock = GSWMaterialBlock(MATERIAL, GSWMaterialBlock.SETTINGS_ORE, "deepslate_ore")
+
+        val oreGenFeature: RegistryKey<PlacedFeature> = RegistryKey.of(
+            RegistryKeys.PLACED_FEATURE,
+            Identifier(MOD_ID, "${ORE_BLOCK.unlocalizedName}_placed")
+        )
     }
 }

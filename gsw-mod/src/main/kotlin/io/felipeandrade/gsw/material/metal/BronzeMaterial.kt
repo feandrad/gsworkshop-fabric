@@ -43,5 +43,8 @@ class BronzeMaterial : GSWMaterial("bronze") {
         val HOE: GSWHoe = GSWHoe(MATERIAL, TOOL_MATERIAL, -1.0f, Item.Settings())
 
         val METAL_BLOCK: GSWBlock = GSWMaterialBlock(MATERIAL, GSWMaterialBlock.SETTINGS_METAL)
+
+        val MATERIAL_ENTRIES = listOf(NUGGET, DUST, PLATE, CRUSHED)
+        val TOOL_ENTRIES = listOf(SWORD, PICKAXE, AXE, SHOVEL, HOE, HAMMER)
     }
 }

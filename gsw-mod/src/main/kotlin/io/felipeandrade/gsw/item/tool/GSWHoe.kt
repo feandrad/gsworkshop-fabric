@@ -9,6 +9,7 @@ import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder
 import net.minecraft.item.HoeItem
 import net.minecraft.item.ItemConvertible
 import net.minecraft.item.ToolMaterial
+import net.minecraft.recipe.book.RecipeCategory
 import net.minecraft.registry.Registries
 import net.minecraft.registry.Registry
 import net.minecraft.util.Identifier
@@ -27,7 +28,7 @@ class GSWHoe(
     }
 
     override fun offerRecipe(exporter: RecipeExporter, ingot: ItemConvertible, handle: ItemConvertible) {
-        ShapedRecipeJsonBuilder.create(this)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, this)
             .pattern("##")
             .pattern(" |")
             .pattern(" |")

@@ -8,6 +8,7 @@ import net.minecraft.data.server.recipe.RecipeProvider.getRecipeName
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder
 import net.minecraft.item.ItemConvertible
 import net.minecraft.item.ToolMaterial
+import net.minecraft.recipe.book.RecipeCategory
 import net.minecraft.util.Identifier
 
 class GSWHammer(
@@ -23,7 +24,7 @@ class GSWHammer(
     ) : this(material.unlocalizedName + "_hammer", material, toolMaterial, settings)
 
     override fun offerRecipe(exporter: RecipeExporter, ingot: ItemConvertible, handle: ItemConvertible) {
-        ShapedRecipeJsonBuilder.create(this)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, this)
             .pattern(" # ")
             .pattern(" |#")
             .pattern("|  ")

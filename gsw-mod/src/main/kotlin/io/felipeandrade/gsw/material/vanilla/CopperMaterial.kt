@@ -37,5 +37,8 @@ class CopperMaterial : GSWMaterial("copper") {
         val SHOVEL: GSWShovel = GSWShovel(MATERIAL, TOOL_MATERIAL, Item.Settings())
         val HOE: GSWHoe = GSWHoe(MATERIAL, TOOL_MATERIAL, -2.0f, Item.Settings())
         val HAMMER: GSWHammer = GSWHammer(MATERIAL, TOOL_MATERIAL, Item.Settings())
+
+        val MATERIAL_ENTRIES = listOf(NUGGET, DUST, PLATE, CRUSHED)
+        val TOOL_ENTRIES = listOf(SWORD, PICKAXE, AXE, SHOVEL, HOE, HAMMER)
     }
 }
