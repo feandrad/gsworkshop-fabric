@@ -1,5 +1,6 @@
 package io.felipeandrade.gsw.material.metal
 
+import io.felipeandrade.gsw.GSWMod.Companion.MOD_ID
 import io.felipeandrade.gsw.block.GSWBlock
 import io.felipeandrade.gsw.block.GSWMaterialBlock
 import io.felipeandrade.gsw.datagen.offerOreMaterial
@@ -7,22 +8,30 @@ import io.felipeandrade.gsw.item.GSWItem
 import io.felipeandrade.gsw.material.GSWMaterial
 import io.felipeandrade.gsw.material.GSWMaterialItem
 import io.felipeandrade.gsw.material.MATERIAL_GROUP
-import io.felipeandrade.gsw.world.modifiersWithCount
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider
-import net.minecraft.data.server.recipe.RecipeJsonProvider
-import net.minecraft.util.registry.RegistryEntry
-import net.minecraft.world.gen.YOffset
-import net.minecraft.world.gen.feature.*
-import net.minecraft.world.gen.placementmodifier.HeightRangePlacementModifier
-import java.util.function.Consumer
+import net.minecraft.data.server.recipe.RecipeExporter
+import net.minecraft.recipe.book.RecipeCategory
+import net.minecraft.registry.RegistryKey
+import net.minecraft.registry.RegistryKeys
+import net.minecraft.util.Identifier
+import net.minecraft.world.gen.feature.PlacedFeature
 
 class TinMaterial : GSWMaterial("tin") {
 
     override fun allItems(): List<GSWItem> = listOf(INGOT, NUGGET, DUST, CRUSHED, PLATE, RAW)
     override fun allBlocks(): List<GSWBlock> = listOf(ORE_BLOCK, DEEPSLATE_ORE_BLOCK, RAW_BLOCK, METAL_BLOCK)
 
-    override fun generateRecipes(provider: FabricRecipeProvider, exporter: Consumer<RecipeJsonProvider>) {
-        offerOreMaterial(exporter, INGOT, NUGGET, METAL_BLOCK, RAW, RAW_BLOCK, listOf(ORE_BLOCK, DEEPSLATE_ORE_BLOCK))
+    override fun generateRecipes(provider: FabricRecipeProvider, exporter: RecipeExporter) {
+        offerOreMaterial(
+            exporter,
+            RecipeCategory.MISC,
+            INGOT,
+            NUGGET,
+            METAL_BLOCK,
+            RAW,
+            RAW_BLOCK,
+            listOf(ORE_BLOCK, DEEPSLATE_ORE_BLOCK)
+        )
     }
 
     companion object {
@@ -41,23 +50,9 @@ class TinMaterial : GSWMaterial("tin") {
         val ORE_BLOCK: GSWBlock = GSWMaterialBlock(MATERIAL, GSWMaterialBlock.SETTINGS_ORE, "ore")
         val DEEPSLATE_ORE_BLOCK: GSWBlock = GSWMaterialBlock(MATERIAL, GSWMaterialBlock.SETTINGS_ORE, "deepslate_ore")
 
-        val oreReplaceableList = listOf(
-            OreFeatureConfig.createTarget(OreConfiguredFeatures.STONE_ORE_REPLACEABLES, ORE_BLOCK.defaultState),
-            OreFeatureConfig.createTarget(OreConfiguredFeatures.DEEPSLATE_ORE_REPLACEABLES, DEEPSLATE_ORE_BLOCK.defaultState),
-        )
-
-        val genFeature = ConfiguredFeatures.register(
-            ORE_BLOCK.unlocalizedName,
-            Feature.ORE,
-            OreFeatureConfig(oreReplaceableList, 8)
-        )
-
-        var placedFeature: RegistryEntry<PlacedFeature> = PlacedFeatures.register(
-            "${ORE_BLOCK.unlocalizedName}_placed",
-            genFeature, modifiersWithCount(
-                6,
-                HeightRangePlacementModifier.trapezoid(YOffset.aboveBottom(-63), YOffset.aboveBottom(70))
-            )
+        val oreGenFeature: RegistryKey<PlacedFeature> = RegistryKey.of(
+            RegistryKeys.PLACED_FEATURE,
+            Identifier(MOD_ID, "${ORE_BLOCK.unlocalizedName}_placed")
         )
     }
 }

@@ -6,6 +6,7 @@ import io.felipeandrade.gsw.material.gem.TopazMaterial
 import io.felipeandrade.gsw.material.metal.*
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors
+import net.fabricmc.fabric.api.tag.convention.v1.ConventionalBiomeTags
 import net.minecraft.world.gen.GenerationStep
 import net.minecraft.world.gen.placementmodifier.*
 
@@ -13,49 +14,49 @@ fun registerWorldGen() {
     BiomeModifications.addFeature(
         BiomeSelectors.foundInOverworld(),
         GenerationStep.Feature.UNDERGROUND_ORES,
-        TinMaterial.placedFeature.key.get()
+        TinMaterial.oreGenFeature
     )
 
     BiomeModifications.addFeature(
         BiomeSelectors.foundInOverworld(),
         GenerationStep.Feature.UNDERGROUND_ORES,
-        SilverMaterial.placedFeature.key.get()
+        SilverMaterial.oreGenFeature
     )
 
     BiomeModifications.addFeature(
         BiomeSelectors.foundInOverworld(),
         GenerationStep.Feature.UNDERGROUND_ORES,
-        PlatinumMaterial.placedFeature.key.get()
+        PlatinumMaterial.oreGenFeature
     )
 
     BiomeModifications.addFeature(
         BiomeSelectors.foundInOverworld(),
         GenerationStep.Feature.UNDERGROUND_ORES,
-        TitaniumMaterial.placedFeature.key.get()
+        TitaniumMaterial.oreGenFeature
     )
 
     BiomeModifications.addFeature(
         BiomeSelectors.foundInOverworld(),
         GenerationStep.Feature.UNDERGROUND_ORES,
-        CobaltMaterial.placedFeature.key.get()
+        CobaltMaterial.oreGenFeature
     )
 
     BiomeModifications.addFeature(
-        BiomeSelectors.foundInOverworld(),
+        BiomeSelectors.tag(ConventionalBiomeTags.JUNGLE),
         GenerationStep.Feature.UNDERGROUND_ORES,
-        RubyMaterial.placedFeature.key.get()
+        RubyMaterial.oreGenFeature
     )
 
     BiomeModifications.addFeature(
-        BiomeSelectors.foundInOverworld(),
+        BiomeSelectors.tag(ConventionalBiomeTags.ICY),
         GenerationStep.Feature.UNDERGROUND_ORES,
-        SapphireMaterial.placedFeature.key.get()
+        SapphireMaterial.oreGenFeature
     )
 
     BiomeModifications.addFeature(
-        BiomeSelectors.foundInOverworld(),
+        BiomeSelectors.tag(ConventionalBiomeTags.DESERT),
         GenerationStep.Feature.UNDERGROUND_ORES,
-        TopazMaterial.placedFeature.key.get()
+        TopazMaterial.oreGenFeature
     )
 }
 

@@ -5,21 +5,20 @@ import io.felipeandrade.gsw.common.Registrable
 import net.minecraft.block.Block
 import net.minecraft.item.BlockItem
 import net.minecraft.item.Item
-import net.minecraft.item.ItemGroup
+import net.minecraft.registry.Registries
+import net.minecraft.registry.Registry
 import net.minecraft.util.Identifier
-import net.minecraft.util.registry.Registry
 
 open class GSWBlock(
     val unlocalizedName: String,
-    var itemGroup: ItemGroup,
     settings: Settings
 ) : Block(settings), Registrable {
     override fun register() {
-        Registry.register(Registry.BLOCK, Identifier(GSWMod.MOD_ID, unlocalizedName), this)
+        Registry.register(Registries.BLOCK, Identifier(GSWMod.MOD_ID, unlocalizedName), this)
         Registry.register(
-            Registry.ITEM,
+            Registries.ITEM,
             Identifier(GSWMod.MOD_ID, unlocalizedName),
-            BlockItem(this, Item.Settings().group(itemGroup))
+            BlockItem(this, Item.Settings())
         )
     }
 }
