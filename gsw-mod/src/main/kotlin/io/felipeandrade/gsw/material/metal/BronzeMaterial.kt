@@ -3,17 +3,28 @@ package io.felipeandrade.gsw.material.metal
 import io.felipeandrade.gsw.GSWItemGroup
 import io.felipeandrade.gsw.block.GSWBlock
 import io.felipeandrade.gsw.block.GSWMaterialBlock
+import io.felipeandrade.gsw.datagen.offerProgressiveCompactingRecipes
+import io.felipeandrade.gsw.datagen.offerTools
 import io.felipeandrade.gsw.item.GSWItem
 import io.felipeandrade.gsw.item.tool.*
 import io.felipeandrade.gsw.material.GSWMaterial
 import io.felipeandrade.gsw.material.GSWMaterialItem
+import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider
+import net.minecraft.data.server.recipe.RecipeJsonProvider
 import net.minecraft.item.Item
+import net.minecraft.item.Items
+import java.util.function.Consumer
 
 class BronzeMaterial : GSWMaterial("bronze") {
 
     override fun allItems(): List<GSWItem> = listOf(INGOT, NUGGET, DUST, CRUSHED, PLATE)
     override fun allBlocks(): List<GSWBlock> = listOf(METAL_BLOCK)
     override fun allTools(): List<GSWTool> = listOf(SWORD, SHOVEL, PICKAXE, AXE, HOE, HAMMER)
+    override fun generateRecipes(provider: FabricRecipeProvider, exporter: Consumer<RecipeJsonProvider>) {
+        offerProgressiveCompactingRecipes(exporter, NUGGET, INGOT, METAL_BLOCK)
+        offerTools(exporter, INGOT, listOf(SWORD, SHOVEL, PICKAXE, AXE, HOE))
+        HAMMER.offerRecipe(exporter, METAL_BLOCK, Items.STICK)
+    }
 
     companion object {
         val MATERIAL: GSWMaterial = BronzeMaterial()
@@ -21,15 +32,16 @@ class BronzeMaterial : GSWMaterial("bronze") {
         val NUGGET: GSWMaterialItem = GSWMaterialItem("nugget", MATERIAL, Item.Settings().group(GSWItemGroup.MATERIALS))
         val DUST: GSWMaterialItem = GSWMaterialItem("dust", MATERIAL, Item.Settings().group(GSWItemGroup.MATERIALS))
         val PLATE: GSWMaterialItem = GSWMaterialItem("plate", MATERIAL, Item.Settings().group(GSWItemGroup.MATERIALS))
-        val CRUSHED: GSWMaterialItem = GSWMaterialItem("crushed", MATERIAL, Item.Settings().group(GSWItemGroup.MATERIALS))
+        val CRUSHED: GSWMaterialItem =
+            GSWMaterialItem("crushed", MATERIAL, Item.Settings().group(GSWItemGroup.MATERIALS))
 
         val TOOL_MATERIAL = GSWToolMaterial(2, 250, 6.0f, 2.0f, 14, INGOT)
-        val SHOVEL: GSWTool = GSWShovel(MATERIAL, TOOL_MATERIAL, Item.Settings().group(GSWItemGroup.TOOLS))
+        val SHOVEL: GSWShovel = GSWShovel(MATERIAL, TOOL_MATERIAL, Item.Settings().group(GSWItemGroup.TOOLS))
         val SWORD: GSWTool = GSWSword(MATERIAL, TOOL_MATERIAL, Item.Settings().group(GSWItemGroup.TOOLS))
-        val AXE: GSWTool = GSWAxe(MATERIAL, TOOL_MATERIAL, Item.Settings().group(GSWItemGroup.TOOLS))
+        val AXE: GSWAxe = GSWAxe(MATERIAL, TOOL_MATERIAL, Item.Settings().group(GSWItemGroup.TOOLS))
         val PICKAXE: GSWTool = GSWPickaxe(MATERIAL, TOOL_MATERIAL, Item.Settings().group(GSWItemGroup.TOOLS))
-        val HAMMER: GSWTool = GSWHammer(MATERIAL, TOOL_MATERIAL, Item.Settings().group(GSWItemGroup.TOOLS))
-        val HOE: GSWTool = GSWHoe(MATERIAL, TOOL_MATERIAL, -1.0f, Item.Settings().group(GSWItemGroup.TOOLS))
+        val HAMMER: GSWHammer = GSWHammer(MATERIAL, TOOL_MATERIAL, Item.Settings().group(GSWItemGroup.TOOLS))
+        val HOE: GSWHoe = GSWHoe(MATERIAL, TOOL_MATERIAL, -1.0f, Item.Settings().group(GSWItemGroup.TOOLS))
 
         val METAL_BLOCK: GSWBlock = GSWMaterialBlock(MATERIAL, GSWMaterialBlock.SETTINGS_METAL)
     }

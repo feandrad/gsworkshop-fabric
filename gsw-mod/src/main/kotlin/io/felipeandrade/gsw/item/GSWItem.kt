@@ -6,7 +6,7 @@ import net.minecraft.item.Item
 import net.minecraft.util.Identifier
 import net.minecraft.util.registry.Registry
 
-open class GSWItem(protected var unlocalizedName: String, settings: Settings) : Item(settings), Registrable {
+open class GSWItem(var unlocalizedName: String, settings: Settings) : Item(settings), Registrable {
     override fun register() {
         Registry.register(Registry.ITEM, Identifier(GSWMod.MOD_ID, unlocalizedName), this)
     }

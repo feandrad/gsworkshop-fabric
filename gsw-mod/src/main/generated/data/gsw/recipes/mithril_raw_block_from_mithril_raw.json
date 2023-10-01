@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "mithril_raw_block",
+  "key": {
+    "#": {
+      "item": "gsw:mithril_raw"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "gsw:mithril_raw_block"
+  }
+}

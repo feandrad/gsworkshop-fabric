@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "silver_raw_block",
+  "key": {
+    "#": {
+      "item": "gsw:silver_raw"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "gsw:silver_raw_block"
+  }
+}

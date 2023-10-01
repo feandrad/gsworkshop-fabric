@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "gsw:bronze_block",
+    "gsw:silver_ore",
+    "gsw:silver_deepslate_ore",
+    "gsw:silver_block",
+    "gsw:silver_raw_block",
+    "gsw:topaz_ore",
+    "gsw:topaz_deepslate_ore",
+    "gsw:topaz_block",
+    "gsw:sapphire_ore",
+    "gsw:sapphire_deepslate_ore",
+    "gsw:sapphire_block",
+    "gsw:ruby_ore",
+    "gsw:ruby_deepslate_ore",
+    "gsw:ruby_block"
+  ]
+}

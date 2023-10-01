@@ -1,17 +1,14 @@
 package io.felipeandrade.gsw
 
-import net.fabricmc.api.ClientModInitializer
+import io.felipeandrade.gsw.world.registerWorldGen
 import net.fabricmc.api.ModInitializer
-import net.minecraft.client.gui.screen.Screen
-import net.minecraft.client.gui.screen.ingame.HandledScreens
-import net.minecraft.screen.ScreenHandler
 
-class GSWMod : ModInitializer, ClientModInitializer {
+class GSWMod : ModInitializer {
+
     override fun onInitialize() {
         GSWRegistryHandler.registerAll()
+        registerWorldGen()
     }
-
-    override fun onInitializeClient() {}
 
     companion object {
         const val MOD_ID = "gsw"

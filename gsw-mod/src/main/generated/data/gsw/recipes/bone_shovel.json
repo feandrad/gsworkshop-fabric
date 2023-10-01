@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:bone"
+    },
+    "|": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "#",
+    "|",
+    "|"
+  ],
+  "result": {
+    "item": "gsw:bone_shovel"
+  }
+}
