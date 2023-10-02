@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "gsw:tin_dust"
+    },
+    {
+      "item": "gsw:copper_dust"
+    },
+    {
+      "item": "gsw:copper_dust"
+    },
+    {
+      "item": "gsw:copper_dust"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "gsw:bronze_dust"
+  }
+}

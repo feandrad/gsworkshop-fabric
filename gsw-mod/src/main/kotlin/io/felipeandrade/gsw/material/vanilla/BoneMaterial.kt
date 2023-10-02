@@ -9,7 +9,7 @@ import net.minecraft.item.Item
 import net.minecraft.item.Items
 
 class BoneMaterial : GSWMaterial("bone") {
-    override fun allTools(): List<GSWTool> = listOf(SWORD, SHOVEL, PICKAXE, AXE, HOE, HAMMER)
+    override fun allTools(): List<GSWTool> = BASIC_TOOLS.plus(HAMMER)
 
     override fun generateRecipes(provider: FabricRecipeProvider, exporter: RecipeExporter) {
         offerTools(exporter, Items.BONE, listOf(SWORD, SHOVEL, PICKAXE, AXE, HOE))
@@ -25,5 +25,7 @@ class BoneMaterial : GSWMaterial("bone") {
         val SHOVEL: GSWShovel = GSWShovel(MATERIAL, TOOL_MATERIAL, Item.Settings())
         val HOE: GSWHoe = GSWHoe(MATERIAL, TOOL_MATERIAL, -3.0f, Item.Settings())
         val HAMMER: GSWHammer = GSWHammer(MATERIAL, TOOL_MATERIAL, Item.Settings())
+
+        val BASIC_TOOLS: List<GSWTool> = listOf(SWORD, SHOVEL, PICKAXE, AXE, HOE)
     }
 }

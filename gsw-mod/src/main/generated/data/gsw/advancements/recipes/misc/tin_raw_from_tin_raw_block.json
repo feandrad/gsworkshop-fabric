@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:tin_raw_from_tin_raw_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_tin_raw_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "gsw:tin_raw_block"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_tin_raw_block"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:tin_raw_from_tin_raw_block"
+    ]
+  },
+  "sends_telemetry_event": false
+}

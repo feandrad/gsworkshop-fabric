@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:topaz_gem_from_smelting_topaz_deepslate_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_topaz_deepslate_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "gsw:topaz_deepslate_ore"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_topaz_deepslate_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:topaz_gem_from_smelting_topaz_deepslate_ore"
+    ]
+  },
+  "sends_telemetry_event": false
+}

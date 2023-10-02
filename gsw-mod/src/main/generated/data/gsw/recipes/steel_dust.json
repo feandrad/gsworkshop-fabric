@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "gsw:iron_dust"
+    },
+    {
+      "item": "gsw:coal_dust"
+    },
+    {
+      "item": "gsw:coal_dust"
+    },
+    {
+      "item": "gsw:coal_dust"
+    }
+  ],
+  "result": {
+    "item": "gsw:steel_dust"
+  }
+}

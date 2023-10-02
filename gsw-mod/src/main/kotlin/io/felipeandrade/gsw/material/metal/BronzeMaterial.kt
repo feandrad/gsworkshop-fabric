@@ -1,5 +1,6 @@
 package io.felipeandrade.gsw.material.metal
 
+import io.felipeandrade.gsw.GSWMod
 import io.felipeandrade.gsw.block.GSWBlock
 import io.felipeandrade.gsw.block.GSWMaterialBlock
 import io.felipeandrade.gsw.datagen.offerProgressiveCompactingRecipes
@@ -8,21 +9,38 @@ import io.felipeandrade.gsw.item.GSWItem
 import io.felipeandrade.gsw.item.tool.*
 import io.felipeandrade.gsw.material.GSWMaterial
 import io.felipeandrade.gsw.material.GSWMaterialItem
+import io.felipeandrade.gsw.material.vanilla.CopperMaterial
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider
 import net.minecraft.data.server.recipe.RecipeExporter
+import net.minecraft.data.server.recipe.RecipeProvider
+import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder
 import net.minecraft.item.Item
 import net.minecraft.item.Items
 import net.minecraft.recipe.book.RecipeCategory
+import net.minecraft.util.Identifier
 
 class BronzeMaterial : GSWMaterial("bronze") {
 
     override fun allItems(): List<GSWItem> = listOf(INGOT, NUGGET, DUST, CRUSHED, PLATE)
     override fun allBlocks(): List<GSWBlock> = listOf(METAL_BLOCK)
-    override fun allTools(): List<GSWTool> = listOf(SWORD, SHOVEL, PICKAXE, AXE, HOE, HAMMER)
+    override fun allTools(): List<GSWTool> = BASIC_TOOLS.plus(HAMMER)
     override fun generateRecipes(provider: FabricRecipeProvider, exporter: RecipeExporter) {
-        offerProgressiveCompactingRecipes(exporter, RecipeCategory.MISC, NUGGET, INGOT, METAL_BLOCK)
-        offerTools(exporter, INGOT, listOf(SWORD, SHOVEL, PICKAXE, AXE, HOE))
+        offerProgressiveCompactingRecipes(exporter, NUGGET, INGOT, METAL_BLOCK)
+        offerTools(exporter, INGOT, BASIC_TOOLS)
         HAMMER.offerRecipe(exporter, METAL_BLOCK, Items.STICK)
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, DUST, 4)
+            .input(TinMaterial.DUST, 1)
+            .input(CopperMaterial.DUST, 3)
+            .criterion(RecipeProvider.hasItem(TinMaterial.DUST), RecipeProvider.conditionsFromItem(TinMaterial.DUST))
+            .offerTo(exporter, Identifier(GSWMod.MOD_ID, RecipeProvider.getRecipeName(DUST)))
+
+        // Remove after Hammer crush Recipe is implemented
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, DUST, 4)
+            .input(TinMaterial.INGOT, 1)
+            .input(Items.COPPER_INGOT, 3)
+            .criterion(RecipeProvider.hasItem(TinMaterial.RAW), RecipeProvider.conditionsFromItem(TinMaterial.RAW))
+            .offerTo(exporter, Identifier(GSWMod.MOD_ID, "${RecipeProvider.getRecipeName(DUST)}_temp"))
     }
 
     companion object {
@@ -31,8 +49,8 @@ class BronzeMaterial : GSWMaterial("bronze") {
         val NUGGET: GSWMaterialItem = GSWMaterialItem("nugget", MATERIAL, Item.Settings())
         val DUST: GSWMaterialItem = GSWMaterialItem("dust", MATERIAL, Item.Settings())
         val PLATE: GSWMaterialItem = GSWMaterialItem("plate", MATERIAL, Item.Settings())
-        val CRUSHED: GSWMaterialItem =
-            GSWMaterialItem("crushed", MATERIAL, Item.Settings())
+        val CRUSHED: GSWMaterialItem = GSWMaterialItem("crushed", MATERIAL, Item.Settings())
+        val METAL_BLOCK: GSWBlock = GSWMaterialBlock(MATERIAL, GSWMaterialBlock.SETTINGS_METAL)
 
         val TOOL_MATERIAL = GSWToolMaterial(2, 250, 6.0f, 2.0f, 14, INGOT)
         val SHOVEL: GSWShovel = GSWShovel(MATERIAL, TOOL_MATERIAL, Item.Settings())
@@ -42,9 +60,6 @@ class BronzeMaterial : GSWMaterial("bronze") {
         val HAMMER: GSWHammer = GSWHammer(MATERIAL, TOOL_MATERIAL, Item.Settings())
         val HOE: GSWHoe = GSWHoe(MATERIAL, TOOL_MATERIAL, -1.0f, Item.Settings())
 
-        val METAL_BLOCK: GSWBlock = GSWMaterialBlock(MATERIAL, GSWMaterialBlock.SETTINGS_METAL)
-
-        val MATERIAL_ENTRIES = listOf(NUGGET, DUST, PLATE, CRUSHED)
-        val TOOL_ENTRIES = listOf(SWORD, PICKAXE, AXE, SHOVEL, HOE, HAMMER)
+        val BASIC_TOOLS: List<GSWTool> = listOf(SWORD, SHOVEL, PICKAXE, AXE, HOE)
     }
 }

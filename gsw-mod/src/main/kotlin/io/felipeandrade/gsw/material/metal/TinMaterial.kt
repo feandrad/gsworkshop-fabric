@@ -10,7 +10,6 @@ import io.felipeandrade.gsw.material.GSWMaterialItem
 import io.felipeandrade.gsw.material.MATERIAL_GROUP
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider
 import net.minecraft.data.server.recipe.RecipeExporter
-import net.minecraft.recipe.book.RecipeCategory
 import net.minecraft.registry.RegistryKey
 import net.minecraft.registry.RegistryKeys
 import net.minecraft.util.Identifier
@@ -22,16 +21,7 @@ class TinMaterial : GSWMaterial("tin") {
     override fun allBlocks(): List<GSWBlock> = listOf(ORE_BLOCK, DEEPSLATE_ORE_BLOCK, RAW_BLOCK, METAL_BLOCK)
 
     override fun generateRecipes(provider: FabricRecipeProvider, exporter: RecipeExporter) {
-        offerOreMaterial(
-            exporter,
-            RecipeCategory.MISC,
-            INGOT,
-            NUGGET,
-            METAL_BLOCK,
-            RAW,
-            RAW_BLOCK,
-            listOf(ORE_BLOCK, DEEPSLATE_ORE_BLOCK)
-        )
+        offerOreMaterial(exporter, INGOT, NUGGET, METAL_BLOCK, RAW, RAW_BLOCK, listOf(ORE_BLOCK, DEEPSLATE_ORE_BLOCK))
     }
 
     companion object {

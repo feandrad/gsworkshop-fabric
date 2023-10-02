@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "equipment",
   "key": {
     "#": {
       "item": "gsw:silver_block"
@@ -15,5 +16,6 @@
   ],
   "result": {
     "item": "gsw:silver_hammer"
-  }
+  },
+  "show_notification": true
 }

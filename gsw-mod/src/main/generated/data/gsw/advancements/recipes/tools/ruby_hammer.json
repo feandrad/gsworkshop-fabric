@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_ruby_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "gsw:ruby_block"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "gsw:ruby_hammer"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_ruby_block"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "gsw:ruby_hammer"
+    ]
+  },
+  "sends_telemetry_event": false
+}

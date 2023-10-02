@@ -23,8 +23,7 @@ class IronMaterial : GSWMaterial("iron") {
         val MATERIAL: GSWMaterial = IronMaterial()
         val DUST: GSWMaterialItem = GSWMaterialItem("dust", MATERIAL, Item.Settings())
         val PLATE: GSWMaterialItem = GSWMaterialItem("plate", MATERIAL, Item.Settings())
-        val CRUSHED: GSWMaterialItem =
-            GSWMaterialItem("crushed", MATERIAL, Item.Settings())
+        val CRUSHED: GSWMaterialItem = GSWMaterialItem("crushed", MATERIAL, Item.Settings())
         val HAMMER: GSWHammer = GSWHammer(MATERIAL, ToolMaterials.IRON, Item.Settings())
     }
 }

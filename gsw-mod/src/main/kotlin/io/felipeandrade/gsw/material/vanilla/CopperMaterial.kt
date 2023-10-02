@@ -15,7 +15,7 @@ import net.minecraft.recipe.book.RecipeCategory
 class CopperMaterial : GSWMaterial("copper") {
 
     override fun allItems(): List<GSWItem> = listOf(NUGGET, DUST, CRUSHED, PLATE)
-    override fun allTools(): List<GSWTool> = listOf(SWORD, SHOVEL, PICKAXE, AXE, HOE, HAMMER)
+    override fun allTools(): List<GSWTool> = BASIC_TOOLS.plus(HAMMER)
 
     override fun generateRecipes(provider: FabricRecipeProvider, exporter: RecipeExporter) {
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.COPPER_INGOT, RecipeCategory.MISC, NUGGET)
@@ -38,7 +38,6 @@ class CopperMaterial : GSWMaterial("copper") {
         val HOE: GSWHoe = GSWHoe(MATERIAL, TOOL_MATERIAL, -2.0f, Item.Settings())
         val HAMMER: GSWHammer = GSWHammer(MATERIAL, TOOL_MATERIAL, Item.Settings())
 
-        val MATERIAL_ENTRIES = listOf(NUGGET, DUST, PLATE, CRUSHED)
-        val TOOL_ENTRIES = listOf(SWORD, PICKAXE, AXE, SHOVEL, HOE, HAMMER)
+        val BASIC_TOOLS: List<GSWTool> = listOf(SWORD, SHOVEL, PICKAXE, AXE, HOE)
     }
 }

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "gsw:topaz_axe"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_topaz_gem": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "gsw:topaz_gem"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_topaz_gem"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "gsw:topaz_axe"
+    ]
+  },
+  "sends_telemetry_event": false
+}

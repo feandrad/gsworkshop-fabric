@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "equipment",
   "key": {
     "#": {
       "item": "gsw:silver_ingot"
@@ -15,5 +16,6 @@
   ],
   "result": {
     "item": "gsw:silver_sword"
-  }
+  },
+  "show_notification": true
 }

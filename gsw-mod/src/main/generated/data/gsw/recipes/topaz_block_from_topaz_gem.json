@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "topaz_block",
+  "key": {
+    "#": {
+      "item": "gsw:topaz_gem"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "gsw:topaz_block"
+  },
+  "show_notification": true
+}

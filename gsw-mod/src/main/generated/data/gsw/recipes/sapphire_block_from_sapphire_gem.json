@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "sapphire_block",
+  "key": {
+    "#": {
+      "item": "gsw:sapphire_gem"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "gsw:sapphire_block"
+  },
+  "show_notification": true
+}

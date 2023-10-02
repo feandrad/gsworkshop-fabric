@@ -10,7 +10,7 @@ import net.minecraft.item.Items
 
 class FlintMaterial : GSWMaterial("flint") {
 
-    override fun allTools(): List<GSWTool> = listOf(SWORD, SHOVEL, PICKAXE, AXE, HOE)
+    override fun allTools(): List<GSWTool> = BASIC_TOOLS
     override fun generateRecipes(provider: FabricRecipeProvider, exporter: RecipeExporter) {
         offerTools(exporter, Items.FLINT, listOf(SWORD, SHOVEL, PICKAXE, AXE, HOE))
     }
@@ -23,5 +23,7 @@ class FlintMaterial : GSWMaterial("flint") {
         val PICKAXE: GSWTool = GSWPickaxe(MATERIAL, TOOL_MATERIAL, Item.Settings())
         val AXE: GSWAxe = GSWAxe(MATERIAL, TOOL_MATERIAL, Item.Settings())
         val HOE: GSWHoe = GSWHoe(MATERIAL, TOOL_MATERIAL, -3.0f, Item.Settings())
+
+        val BASIC_TOOLS: List<GSWTool> = listOf(SWORD, SHOVEL, PICKAXE, AXE, HOE)
     }
 }

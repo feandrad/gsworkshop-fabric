@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "equipment",
   "key": {
     "#": {
       "item": "gsw:cobalt_ingot"
@@ -15,5 +16,6 @@
   ],
   "result": {
     "item": "gsw:cobalt_shovel"
-  }
+  },
+  "show_notification": true
 }

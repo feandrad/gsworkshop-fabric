@@ -50,9 +50,9 @@ class GSWRecipeProvider(dataOutput: FabricDataOutput) : FabricRecipeProvider(dat
 
 fun offerCompactingRecipes(
     exporter: RecipeExporter,
-    recipeCategory: RecipeCategory,
     input: ItemConvertible,
     compacted: ItemConvertible,
+    recipeCategory: RecipeCategory = RecipeCategory.MISC,
 ) {
     offerReversibleCompactingRecipes(
         exporter,
@@ -69,18 +69,17 @@ fun offerCompactingRecipes(
 
 fun offerProgressiveCompactingRecipes(
     exporter: RecipeExporter,
-    recipeCategory: RecipeCategory,
     nugget: ItemConvertible,
     ingot: ItemConvertible,
     block: ItemConvertible,
+    recipeCategory: RecipeCategory = RecipeCategory.MISC,
 ) {
-    offerCompactingRecipes(exporter, recipeCategory, nugget, ingot)
-    offerCompactingRecipes(exporter, recipeCategory, ingot, block)
+    offerCompactingRecipes(exporter, nugget, ingot, recipeCategory)
+    offerCompactingRecipes(exporter, ingot, block, recipeCategory)
 }
 
 fun offerOreMaterial(
     exporter: RecipeExporter,
-    recipeCategory: RecipeCategory,
     ingot: ItemConvertible,
     nugget: ItemConvertible,
     block: ItemConvertible,
@@ -91,28 +90,29 @@ fun offerOreMaterial(
     ingotCookTime: Int = 200,
     nuggetSmelts: List<ItemConvertible> = listOf(),
     nuggetExp: Float = 0.7f,
-    nuggetCookTime: Int = 200
+    nuggetCookTime: Int = 200,
+    recipeCategory: RecipeCategory = RecipeCategory.MISC,
 ) {
-    offerCompactingRecipes(exporter, recipeCategory, raw, rawBlock)
-    offerProgressiveCompactingRecipes(exporter, recipeCategory, nugget, ingot, block)
+    offerCompactingRecipes(exporter, raw, rawBlock, recipeCategory)
+    offerProgressiveCompactingRecipes(exporter, nugget, ingot, block, recipeCategory)
     if (ingotSmelts.isNotEmpty()) {
-        offerSmeltingAndBlasting(exporter, recipeCategory, ingotSmelts, ingot, ingotExp, ingotCookTime)
+        offerSmeltingAndBlasting(exporter, ingotSmelts, ingot, ingotExp, ingotCookTime, recipeCategory)
     }
     if (nuggetSmelts.isNotEmpty()) {
-        offerSmeltingAndBlasting(exporter, recipeCategory, nuggetSmelts, nugget, nuggetExp, nuggetCookTime)
+        offerSmeltingAndBlasting(exporter, nuggetSmelts, nugget, nuggetExp, nuggetCookTime, recipeCategory)
     }
 }
 
 fun offerSmeltingAndBlasting(
     exporter: RecipeExporter,
-    recipeCategory: RecipeCategory,
     inputList: List<ItemConvertible>,
     output: ItemConvertible,
-    exp: Float,
-    cookTime: Int
+    exp: Float = 0.1f,
+    cookTime: Int = 200,
+    recipeCategory: RecipeCategory = RecipeCategory.MISC,
 ) {
     offerSmelting(exporter, inputList, recipeCategory, output, exp, cookTime, getItemPath(output))
-    offerBlasting(exporter, inputList, recipeCategory, output, exp, cookTime, getItemPath(output))
+    offerBlasting(exporter, inputList, recipeCategory, output, exp, cookTime/2, getItemPath(output))
 }
 
 fun offerTools(

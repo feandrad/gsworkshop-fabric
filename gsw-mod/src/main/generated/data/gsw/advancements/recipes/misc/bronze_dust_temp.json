@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "gsw:bronze_dust_temp"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_tin_raw": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "gsw:tin_raw"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_tin_raw"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "gsw:bronze_dust_temp"
+    ]
+  },
+  "sends_telemetry_event": false
+}

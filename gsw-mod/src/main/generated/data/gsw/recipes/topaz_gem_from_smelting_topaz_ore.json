@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "group": "topaz_gem",
+  "ingredient": {
+    "item": "gsw:topaz_ore"
+  },
+  "result": "gsw:topaz_gem"
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "ruby_block",
+  "key": {
+    "#": {
+      "item": "gsw:ruby_gem"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "gsw:ruby_block"
+  },
+  "show_notification": true
+}

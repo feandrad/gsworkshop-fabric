@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "gsw:sapphire_gem"
+    },
+    "|": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "##",
+    "#|",
+    " |"
+  ],
+  "result": {
+    "item": "gsw:sapphire_axe"
+  },
+  "show_notification": true
+}

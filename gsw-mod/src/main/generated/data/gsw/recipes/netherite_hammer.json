@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "equipment",
   "key": {
     "#": {
       "item": "minecraft:netherite_block"
@@ -15,5 +16,6 @@
   ],
   "result": {
     "item": "gsw:netherite_hammer"
-  }
+  },
+  "show_notification": true
 }
