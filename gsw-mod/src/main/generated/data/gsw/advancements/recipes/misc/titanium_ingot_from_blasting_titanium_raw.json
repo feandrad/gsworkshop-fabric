@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:titanium_ingot_from_blasting_titanium_raw"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_titanium_raw": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "gsw:titanium_raw"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_titanium_raw"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:titanium_ingot_from_blasting_titanium_raw"
+    ]
+  },
+  "sends_telemetry_event": false
+}

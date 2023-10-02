@@ -29,9 +29,8 @@ class BoneMaterial : GSWMaterial("bone") {
 
         val BASIC_TOOLS: List<GSWTool> = listOf(SWORD, SHOVEL, PICKAXE, AXE, HOE)
 
-        fun addMaterialsToItemGroup(entries: ItemGroup.Entries): Unit = with(entries) {
+        fun addMaterialsToItemGroup(entries: ItemGroup.Entries) { }
 
-        }
         fun addToolsToItemGroup(entries: ItemGroup.Entries): Unit = with(entries) {
             add(SWORD)
             add(PICKAXE)

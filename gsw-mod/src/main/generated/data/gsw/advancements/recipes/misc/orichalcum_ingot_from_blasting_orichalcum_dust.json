@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_orichalcum_dust": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "gsw:orichalcum_dust"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:orichalcum_ingot_from_blasting_orichalcum_dust"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_orichalcum_dust"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:orichalcum_ingot_from_blasting_orichalcum_dust"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -1,5 +1,8 @@
 package io.felipeandrade.gsw
 
+import io.felipeandrade.gsw.material.gem.RubyMaterial
+import io.felipeandrade.gsw.material.gem.SapphireMaterial
+import io.felipeandrade.gsw.material.gem.TopazMaterial
 import io.felipeandrade.gsw.material.metal.*
 import io.felipeandrade.gsw.material.vanilla.*
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup
@@ -34,9 +37,15 @@ object GSWItemGroup {
                 BronzeMaterial.addMaterialsToItemGroup(entries)
                 SilverMaterial.addMaterialsToItemGroup(entries)
                 SteelMaterial.addMaterialsToItemGroup(entries)
+
+                RubyMaterial.addMaterialsToItemGroup(entries)
+                SapphireMaterial.addMaterialsToItemGroup(entries)
+                TopazMaterial.addMaterialsToItemGroup(entries)
+
                 PlatinumMaterial.addMaterialsToItemGroup(entries)
                 TitaniumMaterial.addMaterialsToItemGroup(entries)
                 CobaltMaterial.addMaterialsToItemGroup(entries)
+
                 MithrilMaterial.addMaterialsToItemGroup(entries)
                 OrichalcumMaterial.addMaterialsToItemGroup(entries)
             }
@@ -65,9 +74,15 @@ object GSWItemGroup {
                 BronzeMaterial.addToolsToItemGroup(entries)
                 SilverMaterial.addToolsToItemGroup(entries)
                 SteelMaterial.addToolsToItemGroup(entries)
+
+                RubyMaterial.addToolsToItemGroup(entries)
+                SapphireMaterial.addToolsToItemGroup(entries)
+                TopazMaterial.addToolsToItemGroup(entries)
+
                 PlatinumMaterial.addToolsToItemGroup(entries)
                 TitaniumMaterial.addToolsToItemGroup(entries)
                 CobaltMaterial.addToolsToItemGroup(entries)
+
                 MithrilMaterial.addToolsToItemGroup(entries)
                 OrichalcumMaterial.addToolsToItemGroup(entries)
             }

@@ -84,7 +84,6 @@ class BlockLootTableGenerator(
     }
 
     private fun miningDrops(oreBlock: GSWBlock, rawItem: Item) {
-        addDrop(oreBlock, rawItem)
-        addDropWithSilkTouch(oreBlock)
+        addDrop(oreBlock, oreDrops(oreBlock, rawItem))
     }
 }

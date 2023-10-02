@@ -95,15 +95,42 @@
   "item.gsw.gold_crushed": "Crushed Gold",
   "item.gsw.gold_hammer": "Gold Hammer",
 
+  "item.gsw.diamond_nugget": "Diamond Nugget",
   "item.gsw.diamond_dust": "Diamond Dust",
   "item.gsw.diamond_plate": "Diamond Plate",
   "item.gsw.diamond_crushed": "Crushed Diamond",
   "item.gsw.diamond_hammer": "Diamond Hammer",
 
+  "item.gsw.netherite_nugget": "Netherite Nugget",
+  "item.gsw.netherite_dust": "Netherite Dust",
+  "item.gsw.netherite_plate": "Netherite Plate",
+  "item.gsw.netherite_crushed": "Crushed Netherite",
+  "item.gsw.netherite_hammer": "Netherite Hammer",
+
 
   "item.gsw.topaz_gem": "Topaz",
+  "item.gsw.topaz_sword": "Topaz Sword",
+  "item.gsw.topaz_pickaxe": "Topaz Pickaxe",
+  "item.gsw.topaz_axe": "Topaz Axe",
+  "item.gsw.topaz_shovel": "Topaz Shovel",
+  "item.gsw.topaz_hoe": "Topaz Hoe",
+  "item.gsw.topaz_hammer": "Topaz Hammer",
+  
   "item.gsw.sapphire_gem": "Sapphire",
+  "item.gsw.sapphire_sword": "Sapphire Sword",
+  "item.gsw.sapphire_pickaxe": "Sapphire Pickaxe",
+  "item.gsw.sapphire_axe": "Sapphire Axe",
+  "item.gsw.sapphire_shovel": "Sapphire Shovel",
+  "item.gsw.sapphire_hoe": "Sapphire Hoe",
+  "item.gsw.sapphire_hammer": "Sapphire Hammer",
+  
   "item.gsw.ruby_gem": "Ruby",
+  "item.gsw.ruby_sword": "Ruby Sword",
+  "item.gsw.ruby_pickaxe": "Ruby Pickaxe",
+  "item.gsw.ruby_axe": "Ruby Axe",
+  "item.gsw.ruby_shovel": "Ruby Shovel",
+  "item.gsw.ruby_hoe": "Ruby Hoe",
+  "item.gsw.ruby_hammer": "Ruby Hammer",
 
 
   "item.gsw.copper_nugget": "Copper Nugget",

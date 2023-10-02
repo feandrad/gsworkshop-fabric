@@ -1,5 +1,6 @@
 package io.felipeandrade.gsw.material.vanilla
 
+import io.felipeandrade.gsw.datagen.offerSmeltingAndBlasting
 import io.felipeandrade.gsw.item.GSWItem
 import io.felipeandrade.gsw.item.tool.GSWHammer
 import io.felipeandrade.gsw.item.tool.GSWTool
@@ -17,6 +18,7 @@ class GoldMaterial : GSWMaterial("gold") {
     override fun allItems(): List<GSWItem> = listOf(DUST, CRUSHED, PLATE)
     override fun allTools(): List<GSWTool> = listOf(HAMMER)
     override fun generateRecipes(provider: FabricRecipeProvider, exporter: RecipeExporter) {
+        offerSmeltingAndBlasting(exporter, listOf(DUST, CRUSHED), Items.GOLD_INGOT, 0.7f)
         HAMMER.offerRecipe(exporter, Items.GOLD_BLOCK, Items.STICK)
     }
 

@@ -9,6 +9,8 @@ import io.felipeandrade.gsw.item.tool.*
 import io.felipeandrade.gsw.material.GSWMaterial
 import io.felipeandrade.gsw.material.GSWMaterialItem
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider
+import net.fabricmc.fabric.api.`object`.builder.v1.block.FabricBlockSettings
+import net.minecraft.block.Blocks
 import net.minecraft.data.server.recipe.RecipeExporter
 import net.minecraft.item.Item
 import net.minecraft.item.ItemGroup
@@ -19,7 +21,15 @@ class OrichalcumMaterial : GSWMaterial("orichalcum") {
     override fun allBlocks(): List<GSWBlock> = listOf(ORE_BLOCK, DEEPSLATE_ORE_BLOCK, RAW_BLOCK, METAL_BLOCK)
     override fun allTools(): List<GSWTool> = BASIC_TOOLS.plus(HAMMER)
     override fun generateRecipes(provider: FabricRecipeProvider, exporter: RecipeExporter) {
-        offerOreMaterial(exporter, INGOT, NUGGET, METAL_BLOCK, RAW, RAW_BLOCK, listOf(ORE_BLOCK, DEEPSLATE_ORE_BLOCK))
+        offerOreMaterial(
+            exporter = exporter,
+            ingot = INGOT,
+            nugget = NUGGET,
+            block = METAL_BLOCK,
+            raw = RAW,
+            rawBlock = RAW_BLOCK,
+            ingotSmelts = listOf(RAW, DUST, CRUSHED, ORE_BLOCK, DEEPSLATE_ORE_BLOCK)
+        )
         offerTools(exporter, INGOT, BASIC_TOOLS)
         HAMMER.offerRecipe(exporter, METAL_BLOCK)
     }
@@ -43,8 +53,16 @@ class OrichalcumMaterial : GSWMaterial("orichalcum") {
 
         val METAL_BLOCK: GSWBlock = GSWMaterialBlock(MATERIAL, GSWMaterialBlock.SETTINGS_METAL)
         val RAW_BLOCK: GSWBlock = GSWMaterialBlock(MATERIAL, GSWMaterialBlock.SETTINGS_METAL, "raw_block")
-        val ORE_BLOCK: GSWBlock = GSWMaterialBlock(MATERIAL, GSWMaterialBlock.SETTINGS_ORE, "ore")
-        val DEEPSLATE_ORE_BLOCK: GSWBlock = GSWMaterialBlock(MATERIAL, GSWMaterialBlock.SETTINGS_ORE, "deepslate_ore")
+        val ORE_BLOCK: GSWBlock = GSWMaterialBlock(
+            gswMaterial = MATERIAL,
+            settings = FabricBlockSettings.copy(Blocks.ANCIENT_DEBRIS),
+            unlocalizedName = "ore"
+        )
+        val DEEPSLATE_ORE_BLOCK: GSWBlock = GSWMaterialBlock(
+            gswMaterial = MATERIAL,
+            settings = FabricBlockSettings.copy(Blocks.ANCIENT_DEBRIS),
+            unlocalizedName = "deepslate_ore"
+        )
 
         val BASIC_TOOLS: List<GSWTool> = listOf(SWORD, SHOVEL, PICKAXE, AXE, HOE)
 

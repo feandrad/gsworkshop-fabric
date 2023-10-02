@@ -11,6 +11,8 @@ import io.felipeandrade.gsw.item.tool.*
 import io.felipeandrade.gsw.material.GSWMaterial
 import io.felipeandrade.gsw.material.GSWMaterialItem
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider
+import net.fabricmc.fabric.api.`object`.builder.v1.block.FabricBlockSettings
+import net.minecraft.block.Blocks
 import net.minecraft.data.server.recipe.RecipeExporter
 import net.minecraft.item.Item
 import net.minecraft.item.ItemGroup
@@ -35,8 +37,9 @@ class TopazMaterial : GSWMaterial("topaz") {
         val MATERIAL: GSWMaterial = TopazMaterial()
         val GEM: GSWItem = GSWMaterialItem("gem", MATERIAL, Item.Settings())
         val GEM_BLOCK: GSWBlock = GSWMaterialBlock(MATERIAL, GSWMaterialBlock.SETTINGS_GEM)
-        val ORE_BLOCK: GSWBlock = GSWMaterialBlock(MATERIAL, GSWMaterialBlock.SETTINGS_ORE, "ore")
-        val DEEPSLATE_ORE_BLOCK: GSWBlock = GSWMaterialBlock(MATERIAL, GSWMaterialBlock.SETTINGS_ORE, "deepslate_ore")
+        val ORE_BLOCK: GSWBlock = GSWMaterialBlock(MATERIAL, FabricBlockSettings.copy(Blocks.IRON_ORE), "ore")
+        val DEEPSLATE_ORE_BLOCK: GSWBlock =
+            GSWMaterialBlock(MATERIAL, FabricBlockSettings.copy(Blocks.IRON_ORE), "deepslate_ore")
 
         val TOOL_MATERIAL: GSWToolMaterial = GSWToolMaterial(3, 800, 6.0f, 3.0f, 5, GEM)
         val SWORD: GSWSword = GSWSword(MATERIAL, TOOL_MATERIAL, Item.Settings())

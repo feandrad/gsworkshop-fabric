@@ -11,7 +11,6 @@ open class GSWMaterialBlock(
 ) : GSWBlock("${gswMaterial.unlocalizedName}_$unlocalizedName", settings) {
 
     companion object {
-        val SETTINGS_ORE: Settings = FabricBlockSettings.copy(Blocks.IRON_ORE)
         val SETTINGS_DEEPSLATE_ORE: Settings = FabricBlockSettings.copy(Blocks.DEEPSLATE_IRON_ORE)
         val SETTINGS_METAL: Settings = FabricBlockSettings.copy(Blocks.IRON_BLOCK)
         val SETTINGS_GEM: Settings = FabricBlockSettings.copy(Blocks.EMERALD_BLOCK)

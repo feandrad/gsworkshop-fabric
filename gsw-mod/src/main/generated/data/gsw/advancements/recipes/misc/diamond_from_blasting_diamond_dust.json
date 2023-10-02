@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_diamond_dust": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "gsw:diamond_dust"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:diamond_from_blasting_diamond_dust"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_diamond_dust"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:diamond_from_blasting_diamond_dust"
+    ]
+  },
+  "sends_telemetry_event": false
+}

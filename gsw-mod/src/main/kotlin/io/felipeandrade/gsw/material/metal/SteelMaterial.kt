@@ -4,6 +4,7 @@ import io.felipeandrade.gsw.GSWMod
 import io.felipeandrade.gsw.block.GSWBlock
 import io.felipeandrade.gsw.block.GSWMaterialBlock
 import io.felipeandrade.gsw.datagen.offerProgressiveCompactingRecipes
+import io.felipeandrade.gsw.datagen.offerSmeltingAndBlasting
 import io.felipeandrade.gsw.datagen.offerTools
 import io.felipeandrade.gsw.item.GSWItem
 import io.felipeandrade.gsw.item.tool.*
@@ -27,6 +28,7 @@ class SteelMaterial : GSWMaterial("steel") {
     override fun allTools(): List<GSWTool> = BASIC_TOOLS.plus(HAMMER)
     override fun generateRecipes(provider: FabricRecipeProvider, exporter: RecipeExporter) {
         offerProgressiveCompactingRecipes(exporter, NUGGET, INGOT, METAL_BLOCK, RecipeCategory.MISC)
+        offerSmeltingAndBlasting(exporter, listOf(DUST, CRUSHED), INGOT, 0.7f)
         offerTools(exporter, INGOT, BASIC_TOOLS)
         HAMMER.offerRecipe(exporter, METAL_BLOCK)
 
@@ -40,14 +42,14 @@ class SteelMaterial : GSWMaterial("steel") {
             .offerTo(exporter, Identifier(GSWMod.MOD_ID, RecipeProvider.getRecipeName(DUST)))
 
         // Remove after Hammer crush Recipe is implemented
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, DUST, 1)
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, INGOT, 1)
             .input(Items.IRON_INGOT, 1)
             .input(Items.COAL, 3)
             .criterion(
                 RecipeProvider.hasItem(IronMaterial.HAMMER),
                 RecipeProvider.conditionsFromItem(IronMaterial.HAMMER)
             )
-            .offerTo(exporter, Identifier(GSWMod.MOD_ID, "${RecipeProvider.getRecipeName(DUST)}_temp"))
+            .offerTo(exporter, Identifier(GSWMod.MOD_ID, "${RecipeProvider.getRecipeName(INGOT)}_temp"))
     }
 
     companion object {

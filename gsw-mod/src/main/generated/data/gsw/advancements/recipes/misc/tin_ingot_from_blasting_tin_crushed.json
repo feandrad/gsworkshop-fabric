@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:tin_ingot_from_blasting_tin_crushed"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_tin_crushed": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "gsw:tin_crushed"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_tin_crushed"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:tin_ingot_from_blasting_tin_crushed"
+    ]
+  },
+  "sends_telemetry_event": false
+}
