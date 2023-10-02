@@ -24,9 +24,10 @@ class CobaltMaterial : GSWMaterial("cobalt") {
     override fun allBlocks(): List<GSWBlock> = listOf(ORE_BLOCK, DEEPSLATE_ORE_BLOCK, RAW_BLOCK, METAL_BLOCK)
     override fun allTools(): List<GSWTool> = listOf(SWORD, SHOVEL, PICKAXE, AXE, HOE, HAMMER)
     override fun generateRecipes(provider: FabricRecipeProvider, exporter: RecipeExporter) {
-        offerOreMaterial(exporter, RecipeCategory.MISC, INGOT, NUGGET, METAL_BLOCK, RAW, RAW_BLOCK, listOf(ORE_BLOCK, DEEPSLATE_ORE_BLOCK))
+        offerOreMaterial(exporter, RecipeCategory.MISC, INGOT, NUGGET, METAL_BLOCK, RAW, RAW_BLOCK, listOf(RAW, ORE_BLOCK, DEEPSLATE_ORE_BLOCK))
         offerTools(exporter, INGOT, listOf(SWORD, SHOVEL, PICKAXE, AXE, HOE))
         HAMMER.offerRecipe(exporter, METAL_BLOCK)
+        HAMMER.offerTier3CrushRecipes(exporter)
     }
 
     companion object {

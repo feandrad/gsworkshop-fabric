@@ -3,6 +3,7 @@ package io.felipeandrade.gsw.material.metal
 import io.felipeandrade.gsw.block.GSWBlock
 import io.felipeandrade.gsw.block.GSWMaterialBlock
 import io.felipeandrade.gsw.datagen.offerOreMaterial
+import io.felipeandrade.gsw.datagen.offerTools
 import io.felipeandrade.gsw.item.GSWItem
 import io.felipeandrade.gsw.item.tool.*
 import io.felipeandrade.gsw.material.GSWMaterial
@@ -19,7 +20,9 @@ class OrichalcumMaterial : GSWMaterial("orichalcum") {
     override fun allTools(): List<GSWTool> = listOf(SWORD, SHOVEL, PICKAXE, AXE, HOE, HAMMER)
     override fun generateRecipes(provider: FabricRecipeProvider, exporter: RecipeExporter) {
         offerOreMaterial(exporter, RecipeCategory.MISC, INGOT, NUGGET, METAL_BLOCK, RAW, RAW_BLOCK, listOf(ORE_BLOCK, DEEPSLATE_ORE_BLOCK))
+        offerTools(exporter, INGOT, listOf(SWORD, SHOVEL, PICKAXE, AXE, HOE))
         HAMMER.offerRecipe(exporter, METAL_BLOCK)
+        HAMMER.offerTier4CrushRecipes(exporter)
     }
 
     companion object {

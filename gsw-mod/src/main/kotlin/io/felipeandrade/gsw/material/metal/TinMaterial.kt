@@ -23,14 +23,14 @@ class TinMaterial : GSWMaterial("tin") {
 
     override fun generateRecipes(provider: FabricRecipeProvider, exporter: RecipeExporter) {
         offerOreMaterial(
-            exporter,
-            RecipeCategory.MISC,
-            INGOT,
-            NUGGET,
-            METAL_BLOCK,
-            RAW,
-            RAW_BLOCK,
-            listOf(ORE_BLOCK, DEEPSLATE_ORE_BLOCK)
+            exporter = exporter,
+            recipeCategory = RecipeCategory.MISC,
+            ingot = INGOT,
+            nugget = NUGGET,
+            block = METAL_BLOCK,
+            raw = RAW,
+            rawBlock = RAW_BLOCK,
+            ingotSmelts = listOf(RAW, ORE_BLOCK, DEEPSLATE_ORE_BLOCK)
         )
     }
 

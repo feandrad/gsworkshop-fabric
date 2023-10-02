@@ -17,6 +17,7 @@ class IronMaterial : GSWMaterial("iron") {
     override fun allTools(): List<GSWTool> = listOf(HAMMER)
     override fun generateRecipes(provider: FabricRecipeProvider, exporter: RecipeExporter) {
         HAMMER.offerRecipe(exporter, Items.IRON_BLOCK, Items.STICK)
+        HAMMER.offerTier2CrushRecipes(exporter)
     }
 
     companion object {

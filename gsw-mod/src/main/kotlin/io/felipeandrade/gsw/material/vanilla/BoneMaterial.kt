@@ -14,6 +14,7 @@ class BoneMaterial : GSWMaterial("bone") {
     override fun generateRecipes(provider: FabricRecipeProvider, exporter: RecipeExporter) {
         offerTools(exporter, Items.BONE, listOf(SWORD, SHOVEL, PICKAXE, AXE, HOE))
         HAMMER.offerRecipe(exporter, Items.BONE_BLOCK)
+        HAMMER.offerTier1CrushRecipes(exporter)
     }
 
     companion object {

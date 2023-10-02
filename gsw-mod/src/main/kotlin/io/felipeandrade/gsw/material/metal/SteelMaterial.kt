@@ -21,6 +21,7 @@ class SteelMaterial : GSWMaterial("steel") {
         offerProgressiveCompactingRecipes(exporter, RecipeCategory.MISC, NUGGET, INGOT, METAL_BLOCK)
         offerTools(exporter, INGOT, listOf(SWORD, SHOVEL, PICKAXE, AXE, HOE))
         HAMMER.offerRecipe(exporter, METAL_BLOCK)
+        HAMMER.offerTier2CrushRecipes(exporter)
     }
 
     companion object {

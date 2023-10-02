@@ -16,7 +16,7 @@ class WoodMaterial : GSWMaterial("wood") {
     override fun allItems(): List<GSWItem> = listOf(DUST)
     override fun allTools(): List<GSWTool> = listOf(HAMMER)
     override fun generateRecipes(provider: FabricRecipeProvider, exporter: RecipeExporter) {
-
+        HAMMER.offerTier1CrushRecipes(exporter)
     }
 
     companion object {

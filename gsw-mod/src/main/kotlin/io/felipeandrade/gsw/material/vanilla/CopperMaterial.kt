@@ -21,6 +21,7 @@ class CopperMaterial : GSWMaterial("copper") {
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.COPPER_INGOT, RecipeCategory.MISC, NUGGET)
         offerTools(exporter, Items.COPPER_INGOT, listOf(SWORD, SHOVEL, PICKAXE, AXE, HOE))
         HAMMER.offerRecipe(exporter, Items.COPPER_BLOCK, Items.STICK)
+        HAMMER.offerTier1CrushRecipes(exporter)
     }
 
     companion object {

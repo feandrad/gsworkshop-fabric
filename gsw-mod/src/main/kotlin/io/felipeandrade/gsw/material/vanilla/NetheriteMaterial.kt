@@ -17,14 +17,15 @@ class NetheriteMaterial : GSWMaterial("netherite") {
     override fun allTools(): List<GSWTool> = listOf(HAMMER)
     override fun generateRecipes(provider: FabricRecipeProvider, exporter: RecipeExporter) {
         HAMMER.offerRecipe(exporter, Items.NETHERITE_BLOCK, Items.STICK)
+        HAMMER.offerTier4CrushRecipes(exporter)
     }
 
     companion object {
         val MATERIAL: GSWMaterial = NetheriteMaterial()
+        val NUGGET: GSWMaterialItem = GSWMaterialItem("nugget", MATERIAL, Item.Settings())
         val DUST: GSWMaterialItem = GSWMaterialItem("dust", MATERIAL, Item.Settings())
         val PLATE: GSWMaterialItem = GSWMaterialItem("plate", MATERIAL, Item.Settings())
-        val CRUSHED: GSWMaterialItem =
-            GSWMaterialItem("crushed", MATERIAL, Item.Settings())
+        val CRUSHED: GSWMaterialItem = GSWMaterialItem("crushed", MATERIAL, Item.Settings())
 
         val HAMMER: GSWHammer = GSWHammer(MATERIAL, ToolMaterials.NETHERITE, Item.Settings())
     }

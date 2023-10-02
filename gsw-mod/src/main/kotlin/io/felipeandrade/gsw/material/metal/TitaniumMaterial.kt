@@ -4,6 +4,7 @@ import io.felipeandrade.gsw.GSWMod
 import io.felipeandrade.gsw.block.GSWBlock
 import io.felipeandrade.gsw.block.GSWMaterialBlock
 import io.felipeandrade.gsw.datagen.offerOreMaterial
+import io.felipeandrade.gsw.datagen.offerTools
 import io.felipeandrade.gsw.item.GSWItem
 import io.felipeandrade.gsw.item.tool.*
 import io.felipeandrade.gsw.material.GSWMaterial
@@ -23,8 +24,19 @@ class TitaniumMaterial : GSWMaterial("titanium") {
     override fun allBlocks(): List<GSWBlock> = listOf(ORE_BLOCK, DEEPSLATE_ORE_BLOCK, RAW_BLOCK, METAL_BLOCK)
     override fun allTools(): List<GSWTool> = listOf(SWORD, SHOVEL, PICKAXE, AXE, HOE, HAMMER)
     override fun generateRecipes(provider: FabricRecipeProvider, exporter: RecipeExporter) {
-        offerOreMaterial(exporter, RecipeCategory.MISC, INGOT, NUGGET, METAL_BLOCK, RAW, RAW_BLOCK, listOf(ORE_BLOCK, DEEPSLATE_ORE_BLOCK))
+        offerOreMaterial(
+            exporter = exporter,
+            recipeCategory = RecipeCategory.MISC,
+            ingot = INGOT,
+            nugget = NUGGET,
+            block = METAL_BLOCK,
+            raw = RAW,
+            rawBlock = RAW_BLOCK,
+            ingotSmelts = listOf(RAW, ORE_BLOCK, DEEPSLATE_ORE_BLOCK)
+        )
+        offerTools(exporter, INGOT, listOf(SWORD, SHOVEL, PICKAXE, AXE, HOE))
         HAMMER.offerRecipe(exporter, METAL_BLOCK)
+        HAMMER.offerTier3CrushRecipes(exporter)
     }
 
     companion object {
@@ -33,8 +45,7 @@ class TitaniumMaterial : GSWMaterial("titanium") {
         val NUGGET: GSWMaterialItem = GSWMaterialItem("nugget", MATERIAL, Item.Settings())
         val DUST: GSWMaterialItem = GSWMaterialItem("dust", MATERIAL, Item.Settings())
         val PLATE: GSWMaterialItem = GSWMaterialItem("plate", MATERIAL, Item.Settings())
-        val CRUSHED: GSWMaterialItem =
-            GSWMaterialItem("crushed", MATERIAL, Item.Settings())
+        val CRUSHED: GSWMaterialItem = GSWMaterialItem("crushed", MATERIAL, Item.Settings())
         val RAW: GSWMaterialItem = GSWMaterialItem("raw", MATERIAL, Item.Settings())
 
         val TOOL_MATERIAL: GSWToolMaterial = GSWToolMaterial(3, 2500, 7.0f, 2.0f, 5, INGOT)

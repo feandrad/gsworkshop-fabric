@@ -14,6 +14,7 @@ class StoneMaterial : GSWMaterial("stone") {
     override fun allTools(): List<GSWTool> = listOf(HAMMER)
     override fun generateRecipes(provider: FabricRecipeProvider, exporter: RecipeExporter) {
         HAMMER.offerRecipe(exporter, Items.STONE, Items.STICK)
+        HAMMER.offerTier1CrushRecipes(exporter)
     }
 
     companion object {

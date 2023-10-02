@@ -10,8 +10,8 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider
 import net.minecraft.item.Item
 
 class BlockLootTableGenerator(
-    dataGenerator: FabricDataOutput
-) : FabricBlockLootTableProvider(dataGenerator) {
+    dataOutput: FabricDataOutput
+) : FabricBlockLootTableProvider(dataOutput) {
 
     override fun generate() {
 
