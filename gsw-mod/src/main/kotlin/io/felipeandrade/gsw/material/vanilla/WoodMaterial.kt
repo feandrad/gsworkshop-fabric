@@ -9,6 +9,7 @@ import io.felipeandrade.gsw.material.MATERIAL_GROUP
 import io.felipeandrade.gsw.material.TOOLS_GROUP
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider
 import net.minecraft.data.server.recipe.RecipeExporter
+import net.minecraft.item.ItemGroup
 import net.minecraft.item.ToolMaterials
 
 class WoodMaterial : GSWMaterial("wood") {
@@ -23,5 +24,12 @@ class WoodMaterial : GSWMaterial("wood") {
         val MATERIAL: GSWMaterial = WoodMaterial()
         val DUST: GSWMaterialItem = GSWMaterialItem("dust", MATERIAL, MATERIAL_GROUP)
         val HAMMER: GSWHammer = GSWHammer(MATERIAL, ToolMaterials.WOOD, TOOLS_GROUP)
+
+        fun addMaterialsToItemGroup(entries: ItemGroup.Entries): Unit = with(entries) {
+            add(DUST)
+        }
+        fun addToolsToItemGroup(entries: ItemGroup.Entries): Unit = with(entries) {
+            add(HAMMER)
+        }
     }
 }

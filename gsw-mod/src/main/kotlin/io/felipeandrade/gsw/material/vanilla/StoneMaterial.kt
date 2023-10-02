@@ -6,6 +6,7 @@ import io.felipeandrade.gsw.material.GSWMaterial
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider
 import net.minecraft.data.server.recipe.RecipeExporter
 import net.minecraft.item.Item
+import net.minecraft.item.ItemGroup
 import net.minecraft.item.Items
 import net.minecraft.item.ToolMaterials
 
@@ -19,5 +20,10 @@ class StoneMaterial : GSWMaterial("stone") {
     companion object {
         val MATERIAL: GSWMaterial = StoneMaterial()
         val HAMMER: GSWHammer = GSWHammer(MATERIAL, ToolMaterials.STONE, Item.Settings())
+
+        fun addMaterialsToItemGroup(entries: ItemGroup.Entries){}
+        fun addToolsToItemGroup(entries: ItemGroup.Entries): Unit = with(entries) {
+            add(HAMMER)
+        }
     }
 }

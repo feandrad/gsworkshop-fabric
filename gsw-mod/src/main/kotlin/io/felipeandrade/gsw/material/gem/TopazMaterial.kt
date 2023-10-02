@@ -13,6 +13,7 @@ import io.felipeandrade.gsw.material.GSWMaterialItem
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider
 import net.minecraft.data.server.recipe.RecipeExporter
 import net.minecraft.item.Item
+import net.minecraft.item.ItemGroup
 import net.minecraft.item.Items
 import net.minecraft.registry.RegistryKey
 import net.minecraft.registry.RegistryKeys
@@ -38,8 +39,8 @@ class TopazMaterial : GSWMaterial("topaz") {
         val DEEPSLATE_ORE_BLOCK: GSWBlock = GSWMaterialBlock(MATERIAL, GSWMaterialBlock.SETTINGS_ORE, "deepslate_ore")
 
         val TOOL_MATERIAL: GSWToolMaterial = GSWToolMaterial(3, 800, 6.0f, 3.0f, 5, GEM)
-        val SWORD: GSWTool = GSWSword(MATERIAL, TOOL_MATERIAL, Item.Settings())
-        val PICKAXE: GSWTool = GSWPickaxe(MATERIAL, TOOL_MATERIAL, Item.Settings())
+        val SWORD: GSWSword = GSWSword(MATERIAL, TOOL_MATERIAL, Item.Settings())
+        val PICKAXE: GSWPickaxe = GSWPickaxe(MATERIAL, TOOL_MATERIAL, Item.Settings())
         val AXE: GSWAxe = GSWAxe(MATERIAL, TOOL_MATERIAL, Item.Settings())
         val SHOVEL: GSWShovel = GSWShovel(MATERIAL, TOOL_MATERIAL, Item.Settings())
         val HOE: GSWHoe = GSWHoe(MATERIAL, TOOL_MATERIAL, -0.0f, Item.Settings())
@@ -51,5 +52,20 @@ class TopazMaterial : GSWMaterial("topaz") {
             RegistryKeys.PLACED_FEATURE,
             Identifier(GSWMod.MOD_ID, "${ORE_BLOCK.unlocalizedName}_placed")
         )
+
+        fun addMaterialsToItemGroup(entries: ItemGroup.Entries): Unit = with(entries) {
+            add(GEM)
+            add(GEM_BLOCK)
+            add(ORE_BLOCK)
+            add(DEEPSLATE_ORE_BLOCK)
+        }
+        fun addToolsToItemGroup(entries: ItemGroup.Entries): Unit = with(entries) {
+            add(SWORD)
+            add(PICKAXE)
+            add(AXE)
+            add(SHOVEL)
+            add(HOE)
+            add(HAMMER)
+        }
     }
 }

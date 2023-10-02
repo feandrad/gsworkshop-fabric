@@ -8,6 +8,7 @@ import io.felipeandrade.gsw.material.GSWMaterialItem
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider
 import net.minecraft.data.server.recipe.RecipeExporter
 import net.minecraft.item.Item
+import net.minecraft.item.ItemGroup
 import net.minecraft.item.Items
 import net.minecraft.item.ToolMaterials
 
@@ -25,5 +26,14 @@ class IronMaterial : GSWMaterial("iron") {
         val PLATE: GSWMaterialItem = GSWMaterialItem("plate", MATERIAL, Item.Settings())
         val CRUSHED: GSWMaterialItem = GSWMaterialItem("crushed", MATERIAL, Item.Settings())
         val HAMMER: GSWHammer = GSWHammer(MATERIAL, ToolMaterials.IRON, Item.Settings())
+
+        fun addMaterialsToItemGroup(entries: ItemGroup.Entries): Unit = with(entries) {
+            add(DUST)
+            add(PLATE)
+            add(CRUSHED)
+        }
+        fun addToolsToItemGroup(entries: ItemGroup.Entries): Unit = with(entries) {
+            add(HAMMER)
+        }
     }
 }

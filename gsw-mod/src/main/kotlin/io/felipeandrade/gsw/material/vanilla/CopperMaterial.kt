@@ -9,6 +9,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider
 import net.minecraft.data.server.recipe.RecipeExporter
 import net.minecraft.data.server.recipe.RecipeProvider.offerReversibleCompactingRecipes
 import net.minecraft.item.Item
+import net.minecraft.item.ItemGroup
 import net.minecraft.item.Items
 import net.minecraft.recipe.book.RecipeCategory
 
@@ -39,5 +40,20 @@ class CopperMaterial : GSWMaterial("copper") {
         val HAMMER: GSWHammer = GSWHammer(MATERIAL, TOOL_MATERIAL, Item.Settings())
 
         val BASIC_TOOLS: List<GSWTool> = listOf(SWORD, SHOVEL, PICKAXE, AXE, HOE)
+
+        fun addMaterialsToItemGroup(entries: ItemGroup.Entries): Unit = with(entries) {
+            add(NUGGET)
+            add(DUST)
+            add(PLATE)
+            add(CRUSHED)
+        }
+        fun addToolsToItemGroup(entries: ItemGroup.Entries): Unit = with(entries) {
+            add(SWORD)
+            add(PICKAXE)
+            add(AXE)
+            add(SHOVEL)
+            add(HOE)
+            add(HAMMER)
+        }
     }
 }

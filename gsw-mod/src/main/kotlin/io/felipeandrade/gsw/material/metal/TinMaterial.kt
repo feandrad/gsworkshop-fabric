@@ -10,6 +10,7 @@ import io.felipeandrade.gsw.material.GSWMaterialItem
 import io.felipeandrade.gsw.material.MATERIAL_GROUP
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider
 import net.minecraft.data.server.recipe.RecipeExporter
+import net.minecraft.item.ItemGroup
 import net.minecraft.registry.RegistryKey
 import net.minecraft.registry.RegistryKeys
 import net.minecraft.util.Identifier
@@ -39,6 +40,22 @@ class TinMaterial : GSWMaterial("tin") {
         val RAW_BLOCK: GSWBlock = GSWMaterialBlock(MATERIAL, GSWMaterialBlock.SETTINGS_METAL, "raw_block")
         val ORE_BLOCK: GSWBlock = GSWMaterialBlock(MATERIAL, GSWMaterialBlock.SETTINGS_ORE, "ore")
         val DEEPSLATE_ORE_BLOCK: GSWBlock = GSWMaterialBlock(MATERIAL, GSWMaterialBlock.SETTINGS_ORE, "deepslate_ore")
+
+        fun addMaterialsToItemGroup(entries: ItemGroup.Entries): Unit = with(entries) {
+            add(INGOT)
+            add(NUGGET)
+            add(DUST)
+            add(PLATE)
+            add(CRUSHED)
+            add(RAW)
+            add(ORE_BLOCK)
+            add(DEEPSLATE_ORE_BLOCK)
+            add(RAW_BLOCK)
+            add(METAL_BLOCK)
+        }
+        fun addToolsToItemGroup(entries: ItemGroup.Entries): Unit = with(entries) {
+
+        }
 
         val oreGenFeature: RegistryKey<PlacedFeature> = RegistryKey.of(
             RegistryKeys.PLACED_FEATURE,
