@@ -21,7 +21,7 @@ class DiamondMaterial : GSWMaterial("diamond") {
     override fun allTools() = listOf(HAMMER)
 
     override fun generateRecipes(provider: FabricRecipeProvider, exporter: RecipeExporter) {
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.DIAMOND, RecipeCategory.MISC, NUGGET)
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, NUGGET, RecipeCategory.MISC, Items.DIAMOND)
         offerSmeltingAndBlasting(exporter, listOf(DUST, CRUSHED), Items.DIAMOND, 0.7f)
         HAMMER.offerRecipe(exporter, Items.DIAMOND_BLOCK, Items.STICK)
     }

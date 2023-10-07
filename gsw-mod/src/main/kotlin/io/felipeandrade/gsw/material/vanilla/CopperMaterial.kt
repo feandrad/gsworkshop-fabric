@@ -20,7 +20,7 @@ class CopperMaterial : GSWMaterial("copper") {
     override fun allTools(): List<GSWTool> = BASIC_TOOLS.plus(HAMMER)
 
     override fun generateRecipes(provider: FabricRecipeProvider, exporter: RecipeExporter) {
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.COPPER_INGOT, RecipeCategory.MISC, NUGGET)
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, NUGGET, RecipeCategory.MISC, Items.COPPER_INGOT)
         offerSmeltingAndBlasting(exporter, listOf(DUST, CRUSHED), Items.COPPER_INGOT, 0.7f)
         offerTools(exporter, Items.COPPER_INGOT, listOf(SWORD, SHOVEL, PICKAXE, AXE, HOE))
         HAMMER.offerRecipe(exporter, Items.COPPER_BLOCK, Items.STICK)

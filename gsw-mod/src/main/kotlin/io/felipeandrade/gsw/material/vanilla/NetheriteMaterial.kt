@@ -21,7 +21,7 @@ class NetheriteMaterial : GSWMaterial("netherite") {
     override fun allItems(): List<GSWItem> = listOf(NUGGET, DUST, CRUSHED, PLATE)
     override fun allTools(): List<GSWTool> = listOf(HAMMER)
     override fun generateRecipes(provider: FabricRecipeProvider, exporter: RecipeExporter) {
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, Items.NETHERITE_INGOT, RecipeCategory.MISC, NUGGET)
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, NUGGET, RecipeCategory.MISC, Items.NETHERITE_INGOT)
         offerSmeltingAndBlasting(exporter, listOf(DUST, CRUSHED), Items.NETHERITE_INGOT, 0.7f)
         HAMMER.offerRecipe(exporter, Items.NETHERITE_BLOCK, Items.STICK)
     }
