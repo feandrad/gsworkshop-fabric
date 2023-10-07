@@ -55,12 +55,12 @@ class MithrilMaterial : GSWMaterial("mithril") {
         val RAW_BLOCK: GSWBlock = GSWMaterialBlock(MATERIAL, GSWMaterialBlock.SETTINGS_METAL, "raw_block")
         val ORE_BLOCK: GSWBlock = GSWMaterialBlock(
             gswMaterial = MATERIAL,
-            settings = FabricBlockSettings.copy(Blocks.ANCIENT_DEBRIS),
+            settings = FabricBlockSettings.copy(Blocks.DIAMOND_ORE),
             unlocalizedName = "ore"
         )
         val DEEPSLATE_ORE_BLOCK: GSWBlock = GSWMaterialBlock(
             gswMaterial = MATERIAL,
-            settings = FabricBlockSettings.copy(Blocks.ANCIENT_DEBRIS),
+            settings = FabricBlockSettings.copy(Blocks.DEEPSLATE_DIAMOND_ORE),
             unlocalizedName = "deepslate_ore"
         )
 

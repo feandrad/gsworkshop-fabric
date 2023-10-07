@@ -1,5 +1,7 @@
 package io.felipeandrade.gsw.datagen
 
+import io.felipeandrade.gsw.GSWMod
+import io.felipeandrade.gsw.GswItemTags
 import io.felipeandrade.gsw.item.tool.GSWTool
 import io.felipeandrade.gsw.material.gem.RubyMaterial
 import io.felipeandrade.gsw.material.gem.SapphireMaterial
@@ -8,11 +10,17 @@ import io.felipeandrade.gsw.material.metal.*
 import io.felipeandrade.gsw.material.vanilla.*
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider
+import net.minecraft.advancement.AdvancementCriterion
 import net.minecraft.data.server.recipe.RecipeExporter
 import net.minecraft.data.server.recipe.RecipeProvider.*
+import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder
+import net.minecraft.item.Item
 import net.minecraft.item.ItemConvertible
 import net.minecraft.item.Items
 import net.minecraft.recipe.book.RecipeCategory
+import net.minecraft.registry.tag.ItemTags
+import net.minecraft.registry.tag.TagKey
+import net.minecraft.util.Identifier
 
 class GSWRecipeProvider(dataOutput: FabricDataOutput) : FabricRecipeProvider(dataOutput) {
 
@@ -45,6 +53,8 @@ class GSWRecipeProvider(dataOutput: FabricDataOutput) : FabricRecipeProvider(dat
         CoalMaterial.MATERIAL.generateRecipes(this, exporter)
         WoolMaterial.MATERIAL.generateRecipes(this, exporter)
         LeatherMaterial.MATERIAL.generateRecipes(this, exporter)
+
+        offerIronAlternatives(exporter)
     }
 }
 
@@ -112,7 +122,7 @@ fun offerSmeltingAndBlasting(
     recipeCategory: RecipeCategory = RecipeCategory.MISC,
 ) {
     offerSmelting(exporter, inputList, recipeCategory, output, exp, cookTime, getItemPath(output))
-    offerBlasting(exporter, inputList, recipeCategory, output, exp, cookTime/2, getItemPath(output))
+    offerBlasting(exporter, inputList, recipeCategory, output, exp, cookTime / 2, getItemPath(output))
 }
 
 fun offerTools(
@@ -124,3 +134,52 @@ fun offerTools(
         it.offerRecipe(exporter, ingot, Items.STICK)
     }
 }
+
+fun offerIronAlternatives(exporter: RecipeExporter) {
+    offerShieldRecipe(exporter, GswItemTags.IRON_ALTERNATIVE)
+    offerBucketRecipe(exporter, GswItemTags.IRON_ALTERNATIVE)
+    offerShearsRecipe(exporter, GswItemTags.IRON_ALTERNATIVE)
+    offerCompassRecipe(exporter, GswItemTags.IRON_ALTERNATIVE)
+}
+
+fun offerShieldRecipe(exporter: RecipeExporter, tag: TagKey<Item>) {
+    ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, Items.SHIELD)
+        .pattern("#i#")
+        .pattern("###")
+        .pattern(" # ")
+        .input('#', ItemTags.PLANKS)
+        .input('i', tag)
+        .criterion(HAS_IRON_ALTERNATIVE, conditionsFromTag(tag) as AdvancementCriterion<*>)
+        .offerTo(exporter, Identifier(GSWMod.MOD_ID, getRecipeName(Items.SHIELD)))
+}
+
+fun offerBucketRecipe(exporter: RecipeExporter, tag: TagKey<Item> ) {
+    ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, Items.BUCKET)
+        .pattern("# #")
+        .pattern(" # ")
+        .input('#', tag)
+        .criterion(HAS_IRON_ALTERNATIVE, conditionsFromTag(tag) as AdvancementCriterion<*>)
+        .offerTo(exporter, Identifier(GSWMod.MOD_ID, getRecipeName(Items.BUCKET)))
+}
+
+fun offerShearsRecipe(exporter: RecipeExporter, tag: TagKey<Item>) {
+    ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, Items.SHEARS)
+        .pattern(" #")
+        .pattern("# ")
+        .input('#', tag)
+        .criterion(HAS_IRON_ALTERNATIVE, conditionsFromTag(tag) as AdvancementCriterion<*>)
+        .offerTo(exporter, Identifier(GSWMod.MOD_ID, getRecipeName(Items.SHEARS)))
+}
+
+fun offerCompassRecipe(exporter: RecipeExporter, tag: TagKey<Item>) {
+    ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, Items.COMPASS)
+        .pattern(" # ")
+        .pattern("#R#")
+        .pattern(" # ")
+        .input('#', tag)
+        .input('R', Items.REDSTONE)
+        .criterion(HAS_IRON_ALTERNATIVE, conditionsFromTag(tag) as AdvancementCriterion<*>)
+        .offerTo(exporter, Identifier(GSWMod.MOD_ID, getRecipeName(Items.COMPASS)))
+}
+
+private const val HAS_IRON_ALTERNATIVE = "has_iron_alternative"

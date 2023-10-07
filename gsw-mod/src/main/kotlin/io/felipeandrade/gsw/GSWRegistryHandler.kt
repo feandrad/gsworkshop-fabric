@@ -8,7 +8,7 @@ import io.felipeandrade.gsw.material.metal.*
 import io.felipeandrade.gsw.material.vanilla.*
 
 object GSWRegistryHandler {
-    private val ALL_GSW_MATERIALS = listOf(
+     val ALL_GSW_MATERIALS = listOf(
         WoodMaterial.MATERIAL,
         StoneMaterial.MATERIAL,
         IronMaterial.MATERIAL,

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "tag": "gsw:iron_alternative"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#R#",
+    " # "
+  ],
+  "result": {
+    "item": "minecraft:compass"
+  },
+  "show_notification": true
+}

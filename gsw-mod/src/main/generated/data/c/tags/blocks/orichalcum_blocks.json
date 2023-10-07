@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "gsw:orichalcum_raw_block",
+    "gsw:orichalcum_block",
+    "#c:orichalcum_ores"
+  ]
+}

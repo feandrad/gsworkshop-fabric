@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "gsw:mithril_raw_block",
+    "gsw:mithril_block",
+    "#c:mithril_ores"
+  ]
+}

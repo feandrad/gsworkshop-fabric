@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "gsw:silver_raw_block",
+    "gsw:silver_block",
+    "#c:silver_ores"
+  ]
+}

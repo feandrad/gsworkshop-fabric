@@ -30,7 +30,7 @@
     "fabric-datagen": [
       {
         "adapter": "kotlin",
-        "value": "io.felipeandrade.gsw.datagen.GSWDataGeneration"
+        "value": "io.felipeandrade.gsw.datagen.GswDataGeneration"
       }
     ]
   },

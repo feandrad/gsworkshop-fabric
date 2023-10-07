@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "gsw:bronze_pickaxe",
+    "gsw:steel_pickaxe",
+    "gsw:silver_pickaxe",
+    "gsw:platinum_pickaxe",
+    "gsw:titanium_pickaxe",
+    "gsw:cobalt_pickaxe",
+    "gsw:mithril_pickaxe",
+    "gsw:orichalcum_pickaxe",
+    "gsw:ruby_pickaxe",
+    "gsw:sapphire_pickaxe",
+    "gsw:topaz_pickaxe"
+  ]
+}

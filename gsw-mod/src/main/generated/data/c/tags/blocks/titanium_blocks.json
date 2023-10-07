@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "gsw:titanium_raw_block",
+    "gsw:titanium_block",
+    "#c:titanium_ores"
+  ]
+}

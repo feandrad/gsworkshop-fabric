@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "gsw:tin_ingot",
+    "gsw:bronze_ingot",
+    "gsw:silver_ingot"
+  ]
+}

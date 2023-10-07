@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "gsw:platinum_raw_block",
+    "gsw:platinum_block",
+    "#c:platinum_ores"
+  ]
+}

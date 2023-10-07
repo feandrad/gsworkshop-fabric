@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "gsw:topaz_block",
+    "#c:topaz_ores"
+  ]
+}
