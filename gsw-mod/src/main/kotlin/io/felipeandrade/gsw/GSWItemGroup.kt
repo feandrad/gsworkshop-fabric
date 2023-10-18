@@ -59,6 +59,7 @@ object GSWItemGroup {
             .icon { ItemStack(MithrilMaterial.PICKAXE as ItemConvertible) }
             .displayName(Text.translatable("itemGroup.gsw.tools"))
             .entries { _, entries ->
+                WoolMaterial.addToolsToItemGroup(entries)
                 BoneMaterial.addToolsToItemGroup(entries)
                 WoodMaterial.addToolsToItemGroup(entries)
                 StoneMaterial.addToolsToItemGroup(entries)

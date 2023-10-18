@@ -54,17 +54,17 @@
   "block.gsw.steel_raw_block": "Block of Raw Steel",
 
 
-  "item.gsw.wool_helmet": "Woolen Helmet",
-  "item.gsw.wool_chestplate": "Woolen Chestplate",
-  "item.gsw.wool_leggings": "Woolen Leggings",
-  "item.gsw.wool_boots": "Woolen Boots",
+  "item.gsw.woolen_helmet": "Woolen Helmet",
+  "item.gsw.woolen_chestplate": "Woolen Chestplate",
+  "item.gsw.woolen_leggings": "Woolen Leggings",
+  "item.gsw.woolen_boots": "Woolen Boots",
 
-  "item.gsw.wood_dust": "Sawdust",
-  "item.gsw.wood_hammer": "Wooden Hammer",
-  "item.gsw.wood_helmet": "Wooden Helmet",
-  "item.gsw.wood_chestplate": "Wooden Chestplate",
-  "item.gsw.wood_leggings": "Wooden Leggings",
-  "item.gsw.wood_boots": "Wooden Boots",
+  "item.gsw.wooden_dust": "Sawdust",
+  "item.gsw.wooden_hammer": "Wooden Hammer",
+  "item.gsw.wooden_helmet": "Wooden Helmet",
+  "item.gsw.wooden_chestplate": "Wooden Chestplate",
+  "item.gsw.wooden_leggings": "Wooden Leggings",
+  "item.gsw.wooden_boots": "Wooden Boots",
 
   "item.gsw.stone_hammer": "Stone Hammer",
 

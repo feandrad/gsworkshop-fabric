@@ -1,7 +1,7 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "gsw:item/wood/sword_handle",
+    "layer0": "gsw:item/wooden/sword_handle",
     "layer1": "gsw:item/bone/sword"
   }
 }

@@ -7,5 +7,4 @@ open class GSWMaterialItem(
     protected val material: GSWMaterial,
     settings: Settings,
 ) :
-    GSWItem(material.unlocalizedName + "_" + unlocalizedName, settings
-)
+    GSWItem("${material.unlocalizedName}_$unlocalizedName", settings)

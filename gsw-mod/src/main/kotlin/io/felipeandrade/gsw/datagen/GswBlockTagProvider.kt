@@ -128,11 +128,11 @@ class GswBlockTagProvider(
             .forceAddTag(GswBlockTags.ORICHALCUM_BLOCKS)
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
-            .forceAddTag(GswBlockTags.BRONZE_BLOCKS)
-            .forceAddTag(GswBlockTags.STEEL_BLOCKS)
             .forceAddTag(GswBlockTags.PLATINUM_BLOCKS)
             .forceAddTag(GswBlockTags.TITANIUM_BLOCKS)
             .forceAddTag(GswBlockTags.COBALT_BLOCKS)
+            .add(BronzeMaterial.METAL_BLOCK)
+            .add(SteelMaterial.METAL_BLOCK)
 
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
             .forceAddTag(GswBlockTags.TIN_BLOCKS)

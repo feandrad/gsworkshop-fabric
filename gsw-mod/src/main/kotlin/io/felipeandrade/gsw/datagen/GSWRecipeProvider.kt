@@ -2,6 +2,7 @@ package io.felipeandrade.gsw.datagen
 
 import io.felipeandrade.gsw.GSWMod
 import io.felipeandrade.gsw.GswItemTags
+import io.felipeandrade.gsw.item.GswArmorItem
 import io.felipeandrade.gsw.item.tool.GSWTool
 import io.felipeandrade.gsw.material.gem.RubyMaterial
 import io.felipeandrade.gsw.material.gem.SapphireMaterial
@@ -135,6 +136,26 @@ fun offerTools(
     }
 }
 
+fun offerArmors(
+    exporter: RecipeExporter,
+    ingot: ItemConvertible,
+    outputList: List<GswArmorItem>
+) {
+    outputList.forEach {
+        it.offerRecipe(exporter, ingot)
+    }
+}
+
+fun offerArmors(
+    exporter: RecipeExporter,
+    tag: TagKey<Item>,
+    outputList: List<GswArmorItem>
+) {
+    outputList.forEach {
+        it.offerRecipeFromTag(exporter, tag)
+    }
+}
+
 fun offerIronAlternatives(exporter: RecipeExporter) {
     offerShieldRecipe(exporter, GswItemTags.IRON_ALTERNATIVE)
     offerBucketRecipe(exporter, GswItemTags.IRON_ALTERNATIVE)
@@ -149,16 +170,16 @@ fun offerShieldRecipe(exporter: RecipeExporter, tag: TagKey<Item>) {
         .pattern(" # ")
         .input('#', ItemTags.PLANKS)
         .input('i', tag)
-        .criterion(HAS_IRON_ALTERNATIVE, conditionsFromTag(tag) as AdvancementCriterion<*>)
+        .criterion(HAS_TAG_ITEM, conditionsFromTag(tag) as AdvancementCriterion<*>)
         .offerTo(exporter, Identifier(GSWMod.MOD_ID, getRecipeName(Items.SHIELD)))
 }
 
-fun offerBucketRecipe(exporter: RecipeExporter, tag: TagKey<Item> ) {
+fun offerBucketRecipe(exporter: RecipeExporter, tag: TagKey<Item>) {
     ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, Items.BUCKET)
         .pattern("# #")
         .pattern(" # ")
         .input('#', tag)
-        .criterion(HAS_IRON_ALTERNATIVE, conditionsFromTag(tag) as AdvancementCriterion<*>)
+        .criterion(HAS_TAG_ITEM, conditionsFromTag(tag) as AdvancementCriterion<*>)
         .offerTo(exporter, Identifier(GSWMod.MOD_ID, getRecipeName(Items.BUCKET)))
 }
 
@@ -167,7 +188,7 @@ fun offerShearsRecipe(exporter: RecipeExporter, tag: TagKey<Item>) {
         .pattern(" #")
         .pattern("# ")
         .input('#', tag)
-        .criterion(HAS_IRON_ALTERNATIVE, conditionsFromTag(tag) as AdvancementCriterion<*>)
+        .criterion(HAS_TAG_ITEM, conditionsFromTag(tag) as AdvancementCriterion<*>)
         .offerTo(exporter, Identifier(GSWMod.MOD_ID, getRecipeName(Items.SHEARS)))
 }
 
@@ -178,8 +199,8 @@ fun offerCompassRecipe(exporter: RecipeExporter, tag: TagKey<Item>) {
         .pattern(" # ")
         .input('#', tag)
         .input('R', Items.REDSTONE)
-        .criterion(HAS_IRON_ALTERNATIVE, conditionsFromTag(tag) as AdvancementCriterion<*>)
+        .criterion(HAS_TAG_ITEM, conditionsFromTag(tag) as AdvancementCriterion<*>)
         .offerTo(exporter, Identifier(GSWMod.MOD_ID, getRecipeName(Items.COMPASS)))
 }
 
-private const val HAS_IRON_ALTERNATIVE = "has_iron_alternative"
+ const val HAS_TAG_ITEM = "has_tag_item"

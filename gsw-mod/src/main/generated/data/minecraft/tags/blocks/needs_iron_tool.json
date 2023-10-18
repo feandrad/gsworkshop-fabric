@@ -1,10 +1,10 @@
 {
   "replace": false,
   "values": [
-    "#c:bronze_blocks",
-    "#c:steel_blocks",
     "#c:platinum_blocks",
     "#c:titanium_blocks",
-    "#c:cobalt_blocks"
+    "#c:cobalt_blocks",
+    "gsw:bronze_block",
+    "gsw:steel_block"
   ]
 }

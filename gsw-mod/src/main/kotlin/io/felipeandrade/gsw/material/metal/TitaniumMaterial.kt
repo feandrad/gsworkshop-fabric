@@ -3,25 +3,31 @@ package io.felipeandrade.gsw.material.metal
 import io.felipeandrade.gsw.GSWMod
 import io.felipeandrade.gsw.block.GSWBlock
 import io.felipeandrade.gsw.block.GSWMaterialBlock
+import io.felipeandrade.gsw.datagen.offerArmors
 import io.felipeandrade.gsw.datagen.offerOreMaterial
 import io.felipeandrade.gsw.datagen.offerTools
 import io.felipeandrade.gsw.item.GSWItem
+import io.felipeandrade.gsw.item.GswArmorItem
 import io.felipeandrade.gsw.item.tool.*
 import io.felipeandrade.gsw.material.GSWMaterial
 import io.felipeandrade.gsw.material.GSWMaterialItem
+import io.felipeandrade.gsw.material.GswArmorMaterial
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider
 import net.fabricmc.fabric.api.`object`.builder.v1.block.FabricBlockSettings
 import net.minecraft.block.Blocks
 import net.minecraft.data.server.recipe.RecipeExporter
+import net.minecraft.item.ArmorItem
 import net.minecraft.item.Item
 import net.minecraft.item.ItemGroup
+import net.minecraft.recipe.Ingredient
 import net.minecraft.registry.RegistryKey
 import net.minecraft.registry.RegistryKeys
+import net.minecraft.sound.SoundEvents
 import net.minecraft.util.Identifier
 import net.minecraft.world.gen.feature.PlacedFeature
 
 class TitaniumMaterial : GSWMaterial("titanium") {
-
+    override fun allArmor(): List<GswArmorItem> = listOf(BOOTS, LEGGINGS, CHESTPLATE, HELMET)
     override fun allItems(): List<GSWItem> = listOf(INGOT, NUGGET, DUST, CRUSHED, PLATE, RAW)
     override fun allBlocks(): List<GSWBlock> = listOf(ORE_BLOCK, DEEPSLATE_ORE_BLOCK, RAW_BLOCK, METAL_BLOCK)
     override fun allTools(): List<GSWTool> = BASIC_TOOLS.plus(HAMMER)
@@ -35,11 +41,14 @@ class TitaniumMaterial : GSWMaterial("titanium") {
             rawBlock = RAW_BLOCK,
             ingotSmelts = listOf(RAW, DUST, CRUSHED, ORE_BLOCK, DEEPSLATE_ORE_BLOCK)
         )
+        offerArmors(exporter, INGOT, allArmor())
         offerTools(exporter, INGOT, BASIC_TOOLS)
         HAMMER.offerRecipe(exporter, METAL_BLOCK)
     }
 
     companion object {
+        const val ENCHANTABILITY = 5
+
         val MATERIAL: GSWMaterial = TitaniumMaterial()
         val INGOT: GSWItem = GSWMaterialItem("ingot", MATERIAL, Item.Settings())
         val NUGGET: GSWMaterialItem = GSWMaterialItem("nugget", MATERIAL, Item.Settings())
@@ -61,7 +70,7 @@ class TitaniumMaterial : GSWMaterial("titanium") {
             unlocalizedName = "deepslate_ore"
         )
 
-        val TOOL_MATERIAL: GSWToolMaterial = GSWToolMaterial(3, 2500, 7.0f, 2.0f, 5, INGOT)
+        val TOOL_MATERIAL: GSWToolMaterial = GSWToolMaterial(3, 2500, 7.0f, 2.0f, ENCHANTABILITY, INGOT)
         val SWORD: GSWSword = GSWSword(MATERIAL, TOOL_MATERIAL, Item.Settings())
         val PICKAXE: GSWPickaxe = GSWPickaxe(MATERIAL, TOOL_MATERIAL, Item.Settings())
         val AXE: GSWAxe = GSWAxe(MATERIAL, TOOL_MATERIAL, Item.Settings())
@@ -71,18 +80,27 @@ class TitaniumMaterial : GSWMaterial("titanium") {
 
         val BASIC_TOOLS: List<GSWTool> = listOf(SWORD, SHOVEL, PICKAXE, AXE, HOE)
 
+        val ARMOR_MATERIAL = GswArmorMaterial(
+            unlocalizedName = MATERIAL.unlocalizedName,
+            durabilityMultiplier = 35,
+            protectionAmounts = intArrayOf(3, 6, 8, 3),
+            enchantability = ENCHANTABILITY,
+            equipSound = SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE,
+            toughness = 2.5f,
+            knockbackResistance = 0.1f,
+            repairIngredient = { Ingredient.ofItems(INGOT) }
+        )
+
+        val BOOTS = GswArmorItem("boots", MATERIAL, ARMOR_MATERIAL, ArmorItem.Type.BOOTS)
+        val LEGGINGS = GswArmorItem("leggings", MATERIAL, ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS)
+        val CHESTPLATE = GswArmorItem("chestplate", MATERIAL, ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE)
+        val HELMET = GswArmorItem("helmet", MATERIAL, ARMOR_MATERIAL, ArmorItem.Type.HELMET)
+
         fun addMaterialsToItemGroup(entries: ItemGroup.Entries): Unit = with(entries) {
-            add(INGOT)
-            add(NUGGET)
-            add(DUST)
-            add(PLATE)
-            add(CRUSHED)
-            add(RAW)
-            add(ORE_BLOCK)
-            add(DEEPSLATE_ORE_BLOCK)
-            add(RAW_BLOCK)
-            add(METAL_BLOCK)
+            MATERIAL.allItems().forEach { add(it) }
+            MATERIAL.allBlocks().forEach { add(it) }
         }
+
         fun addToolsToItemGroup(entries: ItemGroup.Entries): Unit = with(entries) {
             add(SWORD)
             add(PICKAXE)
@@ -90,6 +108,7 @@ class TitaniumMaterial : GSWMaterial("titanium") {
             add(SHOVEL)
             add(HOE)
             add(HAMMER)
+            MATERIAL.allArmor().forEach { add(it) }
         }
 
         val oreGenFeature: RegistryKey<PlacedFeature> = RegistryKey.of(

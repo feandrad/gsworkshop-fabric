@@ -3,32 +3,40 @@ package io.felipeandrade.gsw.material.metal
 import io.felipeandrade.gsw.GSWMod
 import io.felipeandrade.gsw.block.GSWBlock
 import io.felipeandrade.gsw.block.GSWMaterialBlock
+import io.felipeandrade.gsw.datagen.offerArmors
 import io.felipeandrade.gsw.datagen.offerProgressiveCompactingRecipes
 import io.felipeandrade.gsw.datagen.offerSmeltingAndBlasting
 import io.felipeandrade.gsw.datagen.offerTools
 import io.felipeandrade.gsw.item.GSWItem
+import io.felipeandrade.gsw.item.GswArmorItem
 import io.felipeandrade.gsw.item.tool.*
 import io.felipeandrade.gsw.material.GSWMaterial
 import io.felipeandrade.gsw.material.GSWMaterialItem
+import io.felipeandrade.gsw.material.GswArmorMaterial
 import io.felipeandrade.gsw.material.vanilla.CoalMaterial
 import io.felipeandrade.gsw.material.vanilla.IronMaterial
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider
 import net.minecraft.data.server.recipe.RecipeExporter
 import net.minecraft.data.server.recipe.RecipeProvider
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder
+import net.minecraft.item.ArmorItem
 import net.minecraft.item.Item
 import net.minecraft.item.ItemGroup
 import net.minecraft.item.Items
+import net.minecraft.recipe.Ingredient
 import net.minecraft.recipe.book.RecipeCategory
+import net.minecraft.sound.SoundEvents
 import net.minecraft.util.Identifier
 
 class SteelMaterial : GSWMaterial("steel") {
+    override fun allArmor(): List<GswArmorItem> = listOf(BOOTS, LEGGINGS, CHESTPLATE, HELMET)
     override fun allItems(): List<GSWItem> = listOf(INGOT, NUGGET, DUST, CRUSHED, PLATE)
     override fun allBlocks(): List<GSWBlock> = listOf(METAL_BLOCK)
     override fun allTools(): List<GSWTool> = BASIC_TOOLS.plus(HAMMER)
     override fun generateRecipes(provider: FabricRecipeProvider, exporter: RecipeExporter) {
         offerProgressiveCompactingRecipes(exporter, NUGGET, INGOT, METAL_BLOCK, RecipeCategory.MISC)
         offerSmeltingAndBlasting(exporter, listOf(DUST, CRUSHED), INGOT, 0.7f)
+        offerArmors(exporter, INGOT, allArmor())
         offerTools(exporter, INGOT, BASIC_TOOLS)
         HAMMER.offerRecipe(exporter, METAL_BLOCK)
 
@@ -53,16 +61,18 @@ class SteelMaterial : GSWMaterial("steel") {
     }
 
     companion object {
+        const val ENCHANTABILITY = 5
+
         val MATERIAL: GSWMaterial = SteelMaterial()
         val INGOT: GSWItem = GSWMaterialItem("ingot", MATERIAL, Item.Settings())
         val NUGGET: GSWMaterialItem = GSWMaterialItem("nugget", MATERIAL, Item.Settings())
         val DUST: GSWMaterialItem = GSWMaterialItem("dust", MATERIAL, Item.Settings())
         val PLATE: GSWMaterialItem = GSWMaterialItem("plate", MATERIAL, Item.Settings())
         val CRUSHED: GSWMaterialItem = GSWMaterialItem("crushed", MATERIAL, Item.Settings())
-        
+
         val METAL_BLOCK: GSWBlock = GSWMaterialBlock(MATERIAL, GSWMaterialBlock.SETTINGS_METAL)
 
-        val TOOL_MATERIAL = GSWToolMaterial(2, 600, 6.0f, 2.0f, 5, INGOT)
+        val TOOL_MATERIAL = GSWToolMaterial(2, 600, 6.0f, 2.0f, ENCHANTABILITY, INGOT)
         val SWORD: GSWSword = GSWSword(MATERIAL, TOOL_MATERIAL, Item.Settings())
         val PICKAXE: GSWPickaxe = GSWPickaxe(MATERIAL, TOOL_MATERIAL, Item.Settings())
         val AXE: GSWAxe = GSWAxe(MATERIAL, TOOL_MATERIAL, Item.Settings())
@@ -72,14 +82,27 @@ class SteelMaterial : GSWMaterial("steel") {
 
         val BASIC_TOOLS: List<GSWTool> = listOf(SWORD, SHOVEL, PICKAXE, AXE, HOE)
 
+        val ARMOR_MATERIAL = GswArmorMaterial(
+            unlocalizedName = MATERIAL.unlocalizedName,
+            durabilityMultiplier = 20,
+            protectionAmounts = intArrayOf(2, 5, 6, 2),
+            enchantability = ENCHANTABILITY,
+            equipSound = SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE,
+            toughness = 0.5f,
+            knockbackResistance = 0.1f,
+            repairIngredient = { Ingredient.ofItems(INGOT) }
+        )
+
+        val BOOTS = GswArmorItem("boots", MATERIAL, ARMOR_MATERIAL, ArmorItem.Type.BOOTS)
+        val LEGGINGS = GswArmorItem("leggings", MATERIAL, ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS)
+        val CHESTPLATE = GswArmorItem("chestplate", MATERIAL, ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE)
+        val HELMET = GswArmorItem("helmet", MATERIAL, ARMOR_MATERIAL, ArmorItem.Type.HELMET)
+
         fun addMaterialsToItemGroup(entries: ItemGroup.Entries): Unit = with(entries) {
-            add(INGOT)
-            add(NUGGET)
-            add(DUST)
-            add(PLATE)
-            add(CRUSHED)
-            add(METAL_BLOCK)
+            MATERIAL.allItems().forEach { add(it) }
+            MATERIAL.allBlocks().forEach { add(it) }
         }
+
         fun addToolsToItemGroup(entries: ItemGroup.Entries): Unit = with(entries) {
             add(SWORD)
             add(PICKAXE)
@@ -87,6 +110,7 @@ class SteelMaterial : GSWMaterial("steel") {
             add(SHOVEL)
             add(HOE)
             add(HAMMER)
+            MATERIAL.allArmor().forEach { add(it) }
         }
     }
 }

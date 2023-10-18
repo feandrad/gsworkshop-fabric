@@ -11,6 +11,7 @@ class GswDataGeneration : DataGeneratorEntrypoint {
             addProvider { output, future -> GswItemTagProvider(output, future) }
             addProvider(Pack.Factory { BlockLootTableGenerator(it) })
             addProvider(Pack.Factory { GSWRecipeProvider(it) })
+            addProvider(Pack.Factory { GswModelProvider(it) })
         }
     }
 }
