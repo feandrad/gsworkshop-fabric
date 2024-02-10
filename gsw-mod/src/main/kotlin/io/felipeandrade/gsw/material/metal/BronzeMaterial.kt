@@ -18,10 +18,10 @@ class BronzeMaterial : GSWMaterial("bronze") {
 
     override fun allItems(): List<GSWItem> = listOf(INGOT, NUGGET, DUST, CRUSHED, PLATE)
     override fun allBlocks(): List<GSWBlock> = listOf(METAL_BLOCK)
-    override fun allTools(): List<GSWTool> = listOf(SWORD, SHOVEL, PICKAXE, AXE, HOE, HAMMER)
+    override fun allTools(): List<GSWTool> = listOf(SWORD, SHOVEL, PICKAXE, AXE, HOE, HAMMER, SHOVEL, EXCAVATOR)
     override fun generateRecipes(provider: FabricRecipeProvider, exporter: RecipeExporter) {
         offerProgressiveCompactingRecipes(exporter, RecipeCategory.MISC, NUGGET, INGOT, METAL_BLOCK)
-        offerTools(exporter, INGOT, listOf(SWORD, SHOVEL, PICKAXE, AXE, HOE))
+        offerTools(exporter, INGOT, listOf(SWORD, SHOVEL, PICKAXE, AXE, HOE, EXCAVATOR))
         HAMMER.offerRecipe(exporter, METAL_BLOCK, Items.STICK)
     }
 
@@ -41,10 +41,11 @@ class BronzeMaterial : GSWMaterial("bronze") {
         val PICKAXE: GSWTool = GSWPickaxe(MATERIAL, TOOL_MATERIAL, Item.Settings())
         val HAMMER: GSWHammer = GSWHammer(MATERIAL, TOOL_MATERIAL, Item.Settings())
         val HOE: GSWHoe = GSWHoe(MATERIAL, TOOL_MATERIAL, -1.0f, Item.Settings())
+        val EXCAVATOR: GSWExcavator = GSWExcavator(MATERIAL, TOOL_MATERIAL, Item.Settings())
 
         val METAL_BLOCK: GSWBlock = GSWMaterialBlock(MATERIAL, GSWMaterialBlock.SETTINGS_METAL)
 
         val MATERIAL_ENTRIES = listOf(NUGGET, DUST, PLATE, CRUSHED)
-        val TOOL_ENTRIES = listOf(SWORD, PICKAXE, AXE, SHOVEL, HOE, HAMMER)
+        val TOOL_ENTRIES = listOf(SWORD, PICKAXE, AXE, SHOVEL, HOE, HAMMER, EXCAVATOR)
     }
 }
